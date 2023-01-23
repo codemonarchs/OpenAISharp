@@ -1,0 +1,22 @@
+﻿using OpenAISharp.Embedding.Models;
+using System.Collections.Generic;
+using System.Text.Json.Serialization;
+
+namespace OpenAISharp.Embedding.Responses
+{
+    public class CreateEmbeddingResponse
+    {
+        [JsonPropertyName("object")]
+        public string? Object { get; set; }
+
+        [JsonPropertyName("data")]
+        public List<EmbeddingData> Data { get; set; }
+
+        [JsonPropertyName("model")]
+        public string? Model { get; set; }
+
+        [JsonPropertyName("usage")]
+        public EmbeddingUsage? Usage { get; set; }
+    }
+}
+
