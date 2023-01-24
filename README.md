@@ -1,7 +1,9 @@
 # OpenAISharp
+
 WIP: C# wrapper library for the Open AI API.
 
-##### Work In Progress (Search solution for 'TODO' to see missing pieces)
+## Work In Progress (Search solution for 'TODO' to see missing pieces)
+
 1. Implement Encode.
 2. Implement Decode.
 3. Write Integration/Unit Tests where applicable.
