@@ -2,6 +2,18 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.1</TargetFramework>
+    <IsPackable>true</IsPackable>
+    <PackageId>CodeMonarchs.OpenAISharp.Moderation</PackageId>
+    <Description>Wrapper for the OpenAI Moderation API</Description>
+    <Copyright>Copyright © CodeMonarchs</Copyright>
+    <Version>0.0.1</Version>
+    <Authors>CodeMonarchs</Authors>
+    <Company>CodeMonarchs</Company>
+    <Product>OpenAISharp</Product>
+    <PackageTags>REST;api;OpenAI;ai</PackageTags>
+    <PackageLicenseExpression>GPL-3.0-only</PackageLicenseExpression>
+    <RepositoryUrl>https://github.com/codemonarchs/OpenAISharp.git</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
