@@ -1,5 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations;
-using System.Text.Json.Serialization;
+﻿using System.Text.Json.Serialization;
 
 namespace OpenAISharp.File.Requests
 {
@@ -11,8 +10,7 @@ namespace OpenAISharp.File.Requests
         /// </summary>
         /// <remarks>https://beta.openai.com/docs/api-reference/files/upload#files/upload-file</remarks>
         [JsonPropertyName("string?")]
-        [Required]
-        public string? File { get; set; }
+        public string File { get; set; }
 
         /// <summary>
         /// The intended purpose of the uploaded documents.
@@ -20,8 +18,7 @@ namespace OpenAISharp.File.Requests
         /// </summary>
         /// <remarks>https://beta.openai.com/docs/api-reference/files/upload#files/upload-purpose</remarks>
         [JsonPropertyName("purpose")]
-        [Required]
-        public string? Purpose { get; set; }
+        public string Purpose { get; set; }
     }
 }
 

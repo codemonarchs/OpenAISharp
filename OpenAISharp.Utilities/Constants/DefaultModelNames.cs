@@ -1,4 +1,4 @@
-﻿namespace OpenAISharp.Constants
+﻿namespace OpenAISharp.Utilities.Constants
 {
     public static class DefaultModelNames
     {

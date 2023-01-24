@@ -1,5 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations;
-using System.Text.Json.Serialization;
+﻿using System.Text.Json.Serialization;
 
 namespace OpenAISharp.Moderation.Requests
 {
@@ -10,8 +9,7 @@ namespace OpenAISharp.Moderation.Requests
         /// </summary>
         /// <remarks>https://beta.openai.com/docs/api-reference/moderations/create#moderations/create-input</remarks>
         [JsonPropertyName("input")]
-        [Required]
-        public string? Input { get; set; }
+        public string Input { get; set; }
 
         /// <summary>
         /// Two content moderations models are available: text-moderation-stable and text-moderation-latest.

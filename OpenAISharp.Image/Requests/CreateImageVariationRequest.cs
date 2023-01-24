@@ -1,5 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations;
-using System.Text.Json.Serialization;
+﻿using System.Text.Json.Serialization;
 
 namespace OpenAISharp.Image.Requests
 {
@@ -10,8 +9,7 @@ namespace OpenAISharp.Image.Requests
         /// </summary>
         /// <remarks>https://beta.openai.com/docs/api-reference/images/create-variation#images/create-variation-image</remarks>
         [JsonPropertyName("image")]
-        [Required]
-        public string? Image { get; set; }
+        public string Image { get; set; }
 
         /// <summary>
         /// The number of images to generate. Must be between 1 and 10.

@@ -1,5 +1,6 @@
 ﻿using Microsoft.Extensions.Options;
-using OpenAISharp.Exceptions;
+using OpenAISharp.Client.Exceptions;
+using OpenAISharp.Client.Options;
 using System;
 using System.Collections.Generic;
 using System.Linq;

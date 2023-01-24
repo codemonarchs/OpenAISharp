@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Net;
 
-namespace OpenAISharp.Exceptions
+namespace OpenAISharp.Client.Exceptions
 {
     public class OpenAIClientException : Exception
     {

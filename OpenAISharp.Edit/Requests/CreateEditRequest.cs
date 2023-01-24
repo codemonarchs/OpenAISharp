@@ -1,5 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations;
-using System.Text.Json.Serialization;
+﻿using System.Text.Json.Serialization;
 
 namespace OpenAISharp.Edit.Requests
 {
@@ -10,8 +9,7 @@ namespace OpenAISharp.Edit.Requests
         /// </summary>
         /// <remarks>https://beta.openai.com/docs/api-reference/edits/create#edits/create-model</remarks>
         [JsonPropertyName("model")]
-        [Required]
-        public string? Model { get; set; }
+        public string Model { get; set; }
 
         /// <summary>
         /// The input text to use as a starting point for the edit.
@@ -26,8 +24,7 @@ namespace OpenAISharp.Edit.Requests
         /// </summary>
         /// <remarks>https://beta.openai.com/docs/api-reference/edits/create#edits/create-instruction</remarks>
         [JsonPropertyName("instruction")]
-        [Required]
-        public string? Instruction { get; set; }
+        public string Instruction { get; set; }
 
         /// <summary>
         /// How many edits to generate for the input and instruction.

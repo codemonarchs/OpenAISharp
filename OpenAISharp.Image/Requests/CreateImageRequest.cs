@@ -1,5 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations;
-using System.Text.Json.Serialization;
+﻿using System.Text.Json.Serialization;
 
 namespace OpenAISharp.Image.Requests
 {
@@ -10,8 +9,7 @@ namespace OpenAISharp.Image.Requests
         /// </summary>
         /// <remarks>https://beta.openai.com/docs/api-reference/images/create#images/create-prompt</remarks>
         [JsonPropertyName("prompt")]
-        [Required]
-        public string? Prompt { get; set; }
+        public string Prompt { get; set; }
 
         /// <summary>
         /// The number of images to generate. Must be between 1 and 10.
