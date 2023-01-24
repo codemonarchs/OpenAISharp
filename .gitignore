@@ -452,3 +452,6 @@ $RECYCLE.BIN/
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
+
+## OpenAISharp - JS, JSON, and .bpe files for testing locally
+OpenAISharp/_TestAssets
