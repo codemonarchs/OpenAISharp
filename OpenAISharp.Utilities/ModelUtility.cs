@@ -1,4 +1,4 @@
-﻿using OpenAISharp.Constants;
+﻿using OpenAISharp.Utilities.Constants;
 using System.Collections.Generic;
 
 namespace OpenAISharp.Utilities
@@ -27,6 +27,6 @@ namespace OpenAISharp.Utilities
         /// </summary>
         /// <param name="model"></param>
         /// <returns></returns>
-        public static string GetModelId(DefaultModels model) => DefaultModels[model];
+        public static string GetModelName(DefaultModels model) => DefaultModels[model];
     }
 }

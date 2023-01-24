@@ -1,5 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations;
-using System.Text.Json.Serialization;
+﻿using System.Text.Json.Serialization;
 
 namespace OpenAISharp.Embedding.Requests
 {
@@ -10,8 +9,7 @@ namespace OpenAISharp.Embedding.Requests
         /// </summary>
         /// <remarks>https://beta.openai.com/docs/api-reference/embeddings/create#embeddings/create-model</remarks>
         [JsonPropertyName("model")]
-        [Required]
-        public string? Model { get; set; }
+        public string Model { get; set; }
 
         /// <summary>
         /// Input text to get embeddings for, encoded as a string or array of tokens. 
@@ -20,8 +18,7 @@ namespace OpenAISharp.Embedding.Requests
         /// </summary>
         /// <remarks>https://beta.openai.com/docs/api-reference/embeddings/create#embeddings/create-input</remarks>
         [JsonPropertyName("input")]
-        [Required]
-        public string? Input { get; set; }
+        public string Input { get; set; }
 
         /// <summary>
         /// A unique identifier representing your end-user, which can help OpenAI to monitor and detect abuse. Learn more.

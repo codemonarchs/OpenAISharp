@@ -1,5 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations;
-using System.Text.Json.Serialization;
+﻿using System.Text.Json.Serialization;
 
 namespace OpenAISharp.Image.Requests
 {
@@ -10,8 +9,7 @@ namespace OpenAISharp.Image.Requests
         /// </summary>
         /// <remarks>https://beta.openai.com/docs/api-reference/images/create-edit#images/create-edit-image</remarks>
         [JsonPropertyName("image")]
-        [Required]
-        public string? Image { get; set; }
+        public string Image { get; set; }
 
         /// <summary>
         /// An additional image whose fully transparent areas (e.g. where alpha is zero) indicate where image should be edited. Must be a valid PNG file, less than 4MB, and have the same dimensions as image.
@@ -26,8 +24,7 @@ namespace OpenAISharp.Image.Requests
         /// </summary>
         /// <remarks>https://beta.openai.com/docs/api-reference/images/create-edit#images/create-edit-prompt</remarks>
         [JsonPropertyName("prompt")]
-        [Required]
-        public string? Prompt { get; set; }
+        public string Prompt { get; set; }
 
         /// <summary>
         /// The number of images to generate. Must be between 1 and 10.

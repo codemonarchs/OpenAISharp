@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
 using System.Text.Json.Serialization;
 
 namespace OpenAISharp.FineTune.Requests
@@ -13,8 +12,7 @@ namespace OpenAISharp.FineTune.Requests
         /// </summary>
         /// <remarks>https://beta.openai.com/docs/api-reference/fine-tunes/create#fine-tunes/create-training_file</remarks>
         [JsonPropertyName("training_file")]
-        [Required]
-        public string? TrainingFile { get; set; }
+        public string TrainingFile { get; set; }
 
         /// <summary>
         /// The ID of an uploaded file that contains validation data.
@@ -102,7 +100,6 @@ namespace OpenAISharp.FineTune.Requests
         public string? ClassificationPositiveClass { get; set; }
 
         /// <summary>
-        /// TODO: Figure out the type for this.
         /// If this is provided, we calculate F-beta scores at the specified beta values. 
         /// The F-beta score is a generalization of F-1 score. This is only used for binary classification.
         /// With a beta of 1 (i.e.the F-1 score), precision and recall are given the same weight.

@@ -5,8 +5,4 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\OpenAISharp.Client\OpenAISharp.Client.csproj" />
-  </ItemGroup>
-
 </Project>

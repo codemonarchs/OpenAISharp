@@ -1,7 +1,8 @@
 using System.Collections.Generic;
-namespace OpenAISharp.Constants
+
+namespace OpenAISharp.Utilities.Lookups
 {
-    public static class AIEncoder
+    public static class EncoderLookup
     {
         public static Dictionary<string, int> Data = new Dictionary<string, int>
         {

@@ -14,7 +14,6 @@ namespace OpenAISharp.Model.Responses
         [JsonPropertyName("owned_by")]
         public string? OwnedBy { get; set; }
 
-        // TODO: Figure out the type for this.
         [JsonPropertyName("permission")]
         public List<object>? Permission { get; set; }
     }

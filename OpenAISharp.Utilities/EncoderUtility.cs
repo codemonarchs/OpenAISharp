@@ -1,9 +1,9 @@
-﻿using OpenAISharp.Constants;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
+using OpenAISharp.Utilities.Lookups;
 
 namespace OpenAISharp.Utilities
 {
@@ -12,12 +12,12 @@ namespace OpenAISharp.Utilities
         /// <summary>
         /// A dictionary that maps strings to integers, used for encoding text.
         /// </summary>
-        public static Dictionary<string, int> Encoder = AIEncoder.Data;
+        public static Dictionary<string, int> Encoder = EncoderLookup.Data;
 
         /// <summary>
         /// An array of strings that contains the contents of a file named "vocab.bpe".
         /// </summary>
-        public static string[] BpeFile = AIVocab.Data;
+        public static string[] BpeFile = VocabLookup.Data;
 
         /// <summary>
         /// A regular expression used for matching text.

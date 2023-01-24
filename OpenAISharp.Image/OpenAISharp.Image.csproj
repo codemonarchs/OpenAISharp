@@ -6,7 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\OpenAISharp\OpenAISharp.csproj" />
+    <ProjectReference Include="..\OpenAISharp.Client\OpenAISharp.Client.csproj" />
   </ItemGroup>
 
 </Project>

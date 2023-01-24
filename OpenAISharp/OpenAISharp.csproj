@@ -11,4 +11,17 @@
     <PackageReference Include="System.Text.Json" Version="7.0.1" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\OpenAISharp.Client\OpenAISharp.Client.csproj" />
+    <ProjectReference Include="..\OpenAISharp.Completion\OpenAISharp.Completion.csproj" />
+    <ProjectReference Include="..\OpenAISharp.Edit\OpenAISharp.Edit.csproj" />
+    <ProjectReference Include="..\OpenAISharp.Embedding\OpenAISharp.Embedding.csproj" />
+    <ProjectReference Include="..\OpenAISharp.File\OpenAISharp.File.csproj" />
+    <ProjectReference Include="..\OpenAISharp.FineTune\OpenAISharp.FineTune.csproj" />
+    <ProjectReference Include="..\OpenAISharp.Image\OpenAISharp.Image.csproj" />
+    <ProjectReference Include="..\OpenAISharp.Model\OpenAISharp.Model.csproj" />
+    <ProjectReference Include="..\OpenAISharp.Moderation\OpenAISharp.Moderation.csproj" />
+    <ProjectReference Include="..\OpenAISharp.Utilities\OpenAISharp.Utilities.csproj" />
+  </ItemGroup>
+
 </Project>
