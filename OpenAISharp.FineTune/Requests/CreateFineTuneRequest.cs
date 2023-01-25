@@ -3,8 +3,20 @@ using System.Text.Json.Serialization;
 
 namespace OpenAISharp.FineTune.Requests
 {
+    /// <summary>
+    /// Creates a job that fine-tunes a specified model from a given dataset. Response includes details of the enqueued job including job status and the name of the fine-tuned models once complete.
+    /// </summary>
     public class CreateFineTuneRequest
     {
+        /// <summary>
+        /// The almighty constructor.
+        /// </summary>
+        /// <param name="trainingFile"></param>
+        public CreateFineTuneRequest(string trainingFile)
+        {
+            TrainingFile = trainingFile;
+        }
+
         /// <summary>
         /// The ID of an uploaded file that contains training data. See upload file for how to upload a file.
         /// Your dataset must be formatted as a JSONL file, where each training example is a JSON object with the keys "prompt" and "completion". 
@@ -12,7 +24,7 @@ namespace OpenAISharp.FineTune.Requests
         /// </summary>
         /// <remarks>https://beta.openai.com/docs/api-reference/fine-tunes/create#fine-tunes/create-training_file</remarks>
         [JsonPropertyName("training_file")]
-        public string TrainingFile { get; set; }
+        public string TrainingFile { get; }
 
         /// <summary>
         /// The ID of an uploaded file that contains validation data.

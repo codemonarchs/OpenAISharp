@@ -2,8 +2,20 @@
 
 namespace OpenAISharp.Image.Requests
 {
+    /// <summary>
+    /// Creates an image given a prompt.
+    /// </summary>
     public class CreateImageRequest
     {
+        /// <summary>
+        /// The almighty constructor.
+        /// </summary>
+        /// <param name="prompt"></param>
+        public CreateImageRequest(string prompt)
+        {
+            Prompt = prompt;
+        }
+
         /// <summary>
         /// A text description of the desired image(s). The maximum length is 1000 characters.
         /// </summary>

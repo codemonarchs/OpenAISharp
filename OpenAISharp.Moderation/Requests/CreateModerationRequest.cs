@@ -2,14 +2,26 @@
 
 namespace OpenAISharp.Moderation.Requests
 {
+    /// <summary>
+    /// Classifies if text violates OpenAI's Content Policy.
+    /// </summary>
     public class CreateModerationRequest
     {
+        /// <summary>
+        /// The almighty constructor.
+        /// </summary>
+        /// <param name="input"></param>
+        public CreateModerationRequest(string input)
+        {
+            Input = input;
+        }
+
         /// <summary>
         /// The input text to classify.
         /// </summary>
         /// <remarks>https://beta.openai.com/docs/api-reference/moderations/create#moderations/create-input</remarks>
         [JsonPropertyName("input")]
-        public string Input { get; set; }
+        public string Input { get; }
 
         /// <summary>
         /// Two content moderations models are available: text-moderation-stable and text-moderation-latest.

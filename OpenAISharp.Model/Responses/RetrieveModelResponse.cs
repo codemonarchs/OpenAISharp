@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using OpenAISharp.Model.Models;
+using System.Collections.Generic;
 using System.Text.Json.Serialization;
 
 namespace OpenAISharp.Model.Responses
@@ -15,6 +16,6 @@ namespace OpenAISharp.Model.Responses
         public string? OwnedBy { get; set; }
 
         [JsonPropertyName("permission")]
-        public List<object>? Permission { get; set; }
+        public List<ModelPermission?>? Permission { get; set; }
     }
 }

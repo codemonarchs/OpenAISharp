@@ -2,14 +2,26 @@
 
 namespace OpenAISharp.Completion.Requests
 {
+    /// <summary>
+    /// Creates a completion for the provided prompt and parameters.
+    /// </summary>
     public class CreateCompletionRequest
     {
+        /// <summary>
+        /// The almighty constructor.
+        /// </summary>
+        /// <param name="model"></param>
+        public CreateCompletionRequest(string model)
+        {
+            Model = model;
+        }
+
         /// <summary>
         /// ID of the model to use. You can use the List models API to see all of your available models, or see our Model overview for descriptions of them.
         /// </summary>
         /// <remarks>https://beta.openai.com/docs/api-reference/completions/create#completions/create-model</remarks>
         [JsonPropertyName("model")]
-        public string Model { get; set; }
+        public string Model { get; }
 
         /// <summary>
         /// The prompt(s) to generate completions for, encoded as a string, array of strings, array of tokens, or array of token arrays.
