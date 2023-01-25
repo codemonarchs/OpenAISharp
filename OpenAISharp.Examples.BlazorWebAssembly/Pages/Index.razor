@@ -1,0 +1,20 @@
+﻿@page "/"
+@using OpenAISharp.Model;
+@using OpenAISharp.Model.Models;
+@using OpenAISharp.Model.Responses;
+
+@inject IModelService ModelService
+<h1>Models</h1>
+@foreach (var item in Models)
+{
+    <p>Id: @item.Id</p>
+}
+
+@code {
+    public List<ModelData> Models { get; set; } = new List<ModelData>();
+    protected override async Task OnInitializedAsync()
+    {
+        var response = await ModelService.ListModelsAsync();
+        Models = response.Data;
+    }
+}
