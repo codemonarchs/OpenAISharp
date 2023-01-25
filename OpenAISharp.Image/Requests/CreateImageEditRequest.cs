@@ -2,14 +2,31 @@
 
 namespace OpenAISharp.Image.Requests
 {
+    /// <summary>
+    /// Creates an edited or extended image given an original image and a prompt.
+    /// </summary>
     public class CreateImageEditRequest
     {
+        /// <summary>
+        /// The almighty constructor.
+        /// </summary>
+        /// <param name="image"></param>
+        /// <param name="imagePath"></param>
+        /// <param name="prompt"></param>
+        public CreateImageEditRequest(string image, string imagePath, string prompt, bool useImageFilePath)
+        {
+            Image = image;
+            ImageContent = imagePath;
+            Prompt = prompt;
+            UseImageFilePath = useImageFilePath;
+        }
+
         /// <summary>
         /// The image to edit. Must be a valid PNG file, less than 4MB, and square. If mask is not provided, image must have transparency, which will be used as the mask.
         /// </summary>
         /// <remarks>https://beta.openai.com/docs/api-reference/images/create-edit#images/create-edit-image</remarks>
         [JsonPropertyName("image")]
-        public string Image { get; set; }
+        public string Image { get; }
 
         /// <summary>
         /// An additional image whose fully transparent areas (e.g. where alpha is zero) indicate where image should be edited. Must be a valid PNG file, less than 4MB, and have the same dimensions as image.
@@ -24,7 +41,7 @@ namespace OpenAISharp.Image.Requests
         /// </summary>
         /// <remarks>https://beta.openai.com/docs/api-reference/images/create-edit#images/create-edit-prompt</remarks>
         [JsonPropertyName("prompt")]
-        public string Prompt { get; set; }
+        public string Prompt { get; }
 
         /// <summary>
         /// The number of images to generate. Must be between 1 and 10.
@@ -57,6 +74,28 @@ namespace OpenAISharp.Image.Requests
         [JsonPropertyName("user")]
         [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
         public string? User { get; set; }
+
+        /// <summary>
+        /// The actual image content or a path to the image file.
+        /// </summary>
+        [JsonIgnore]
+        public string ImageContent { get; }
+
+        /// <summary>
+        /// A flag to determine whether to get image data from a file path or if the data is already included.
+        /// </summary>
+        public bool UseImageFilePath { get; }
+
+        /// <summary>
+        /// The actual mask content or a path to the mask image file.
+        /// </summary>
+        [JsonIgnore]
+        public string? MaskContent { get; set; }
+
+        /// <summary>
+        /// A flag to determine whether to get mask image data from a file path or if the data is already included.
+        /// </summary>
+        public bool UseMaskFilePath { get; set; }
     }
 }
 

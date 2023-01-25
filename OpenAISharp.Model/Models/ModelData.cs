@@ -15,6 +15,6 @@ namespace OpenAISharp.Model.Models
         public string? OwnedBy { get; set; }
 
         [JsonPropertyName("permission")]
-        public List<object>? Permission { get; set; }
+        public IEnumerable<ModelPermission?>? Permission { get; set; }
     }
 }
