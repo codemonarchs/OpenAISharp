@@ -30,8 +30,8 @@ namespace OpenAISharp.IntegrationTests
             services.AddScoped<IModerationService, ModerationService>();
             services.Configure<OpenAIClientOptions>(options =>
             {
-                options.ApiKey = Environment.GetEnvironmentVariable("OpenAIOptions:ApiKey");
-                options.OrganizationId = Environment.GetEnvironmentVariable("OpenAIOptions:OrganizationId");
+                options.ApiKey = Environment.GetEnvironmentVariable("OpenAI:ApiKey");
+                options.OrganizationId = Environment.GetEnvironmentVariable("OpenAI:OrganizationId");
             });
         }
 

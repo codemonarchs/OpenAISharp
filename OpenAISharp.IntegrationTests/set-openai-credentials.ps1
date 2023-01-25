@@ -7,5 +7,5 @@
     [string] $OrganizationId
 )
 
-[Environment]::SetEnvironmentVariable("OpenAIOptions:ApiKey", $ApiKey, "User")
-[Environment]::SetEnvironmentVariable("OpenAIOptions:OrganizationId", $OrganizationId, "User")
+[Environment]::SetEnvironmentVariable("OpenAI:ApiKey", $ApiKey, "User")
+[Environment]::SetEnvironmentVariable("OpenAI:OrganizationId", $OrganizationId, "User")
