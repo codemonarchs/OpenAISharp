@@ -84,6 +84,7 @@ namespace OpenAISharp.Image.Requests
         /// <summary>
         /// A flag to determine whether to get image data from a file path or if the data is already included.
         /// </summary>
+        [JsonIgnore]
         public bool UseImageFilePath { get; }
 
         /// <summary>
@@ -95,6 +96,7 @@ namespace OpenAISharp.Image.Requests
         /// <summary>
         /// A flag to determine whether to get mask image data from a file path or if the data is already included.
         /// </summary>
+        [JsonIgnore]
         public bool UseMaskFilePath { get; set; }
     }
 }
