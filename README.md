@@ -150,12 +150,7 @@ var response = await service.CreateModerationAsync(request);
 ```
 
 #### Examples
-1. .NET/.NET Core Web API 
-   - https://github.com/codemonarchs/OpenAISharp/tree/main/OpenAISharp.Examples.WebApi
-2. Blazor WebAssembly 
-   - https://github.com/codemonarchs/OpenAISharp/tree/main/OpenAISharp.Examples.BlazorWebAssembly
-3. Blazor Server 
-   - https://github.com/codemonarchs/OpenAISharp/tree/main/OpenAISharp.Examples.BlazorServer
+https://github.com/codemonarchs/OpenAISharp/tree/main/Examples
 
 #### Libraries
 1. `CodeMonarchs.OpenAISharp`
