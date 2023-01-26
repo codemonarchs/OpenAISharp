@@ -12,7 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\OpenAISharp\OpenAISharp.csproj" />
+    <ProjectReference Include="..\..\OpenAISharp\OpenAISharp.csproj" />
   </ItemGroup>
 
 </Project>
