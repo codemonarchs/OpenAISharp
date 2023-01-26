@@ -5,15 +5,7 @@
     <IsPackable>true</IsPackable>
     <PackageId>CodeMonarchs.OpenAISharp.File</PackageId>
     <Description>Wrapper for the OpenAI File API</Description>
-    <Copyright>Copyright © CodeMonarchs</Copyright>
     <Version>0.0.1</Version>
-    <Authors>CodeMonarchs</Authors>
-    <Company>CodeMonarchs</Company>
-    <Product>OpenAISharp</Product>
-    <PackageTags>REST;api;OpenAI;ai</PackageTags>
-    <PackageLicenseExpression>GPL-3.0-only</PackageLicenseExpression>
-    <RepositoryUrl>https://github.com/codemonarchs/OpenAISharp.git</RepositoryUrl>
-    <RepositoryType>git</RepositoryType>
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
