@@ -2,7 +2,7 @@ using Microsoft.AspNetCore.Mvc;
 using OpenAISharp.Model;
 using OpenAISharp.Model.Responses;
 
-namespace OpenAISharp.Examples.WebApi.Controllers
+namespace OpenAISharp.Examples.WebApiNet6.Controllers
 {
     [ApiController]
     [Route("[controller]")]
