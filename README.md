@@ -7,7 +7,7 @@ A <b>.NET Standard 2.1</b> C# class library created to easily interface with the
 
 ### Getting Started - Web API (.NET/.NET Core)
 1. Install the NuGet package from <a href="#">CodeMonarchs.OpenAISharp</a>:
-    ```dotnet add package CodeMonarchs.OpenAISharp```
+    - ```dotnet add package CodeMonarchs.OpenAISharp```
 2. Open your `appsettings.json` file and add the following key/value pair:
     ```json
     {
@@ -45,10 +45,14 @@ A <b>.NET Standard 2.1</b> C# class library created to easily interface with the
 <i><b>Note: </b>If you add the base package `CodeMonarchs.OpenAISharp` it will include all of the packages listed above. If you are only interested in a particular endpoint (such as the Completion API) from Open AI then just install the package related to that endpoint you're interested in. Example: </i> ```dotnet add package CodeMonarchs.OpenAISharp.Completion```
 
 #### Examples
-1. .NET/.NET Core Web API - https://github.com/codemonarchs/OpenAISharp/tree/main/OpenAISharp.Examples.WebApi
-2. Blazor WebAssembly - https://github.com/codemonarchs/OpenAISharp/tree/main/OpenAISharp.Examples.BlazorWebAssembly
-3. Blazor Server - https://github.com/codemonarchs/OpenAISharp/tree/main/OpenAISharp.Examples.BlazorServer
-4. Azure Functions v4 - https://github.com/codemonarchs/OpenAISharp/tree/main/OpenAISharp.Examples.AzureFunctions
+1. .NET/.NET Core Web API 
+   - https://github.com/codemonarchs/OpenAISharp/tree/main/OpenAISharp.Examples.WebApi
+2. Blazor WebAssembly 
+   - https://github.com/codemonarchs/OpenAISharp/tree/main/OpenAISharp.Examples.BlazorWebAssembly
+3. Blazor Server 
+   - https://github.com/codemonarchs/OpenAISharp/tree/main/OpenAISharp.Examples.BlazorServer
+4. Azure Functions v4 
+   - https://github.com/codemonarchs/OpenAISharp/tree/main/OpenAISharp.Examples.AzureFunctions
 
 #### NuGet Packages
 1. `CodeMonarchs.OpenAISharp`
