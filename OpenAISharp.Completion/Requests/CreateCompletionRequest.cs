@@ -56,7 +56,7 @@ namespace OpenAISharp.Completion.Requests
         /// <remarks>https://beta.openai.com/docs/api-reference/completions/create#completions/create-temperature</remarks>
         [JsonPropertyName("temperature")]
         [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
-        public int? Temperature { get; set; }
+        public double? Temperature { get; set; }
 
         /// <summary>
         /// An alternative to sampling with temperature, called nucleus sampling, where the model considers the results of the tokens with top_p probability mass. So 0.1 means only the tokens comprising the top 10% probability mass are considered.
@@ -65,7 +65,7 @@ namespace OpenAISharp.Completion.Requests
         /// <remarks>https://beta.openai.com/docs/api-reference/completions/create#completions/create-top_p</remarks>
         [JsonPropertyName("top_p")]
         [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
-        public int? TopP { get; set; }
+        public double? TopP { get; set; }
 
         /// <summary>
         /// How many completions to generate for each prompt.
