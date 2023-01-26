@@ -1,17 +1,29 @@
-﻿using System.ComponentModel.DataAnnotations;
-using System.Text.Json.Serialization;
+﻿using System.Text.Json.Serialization;
 
 namespace OpenAISharp.Edit.Requests
 {
+    /// <summary>
+    /// Creates a new edit for the provided input, instruction, and parameters.
+    /// </summary>
     public class CreateEditRequest
     {
+        /// <summary>
+        /// The almighty constructor.
+        /// </summary>
+        /// <param name="model"></param>
+        /// <param name="instruction"></param>
+        public CreateEditRequest(string model, string instruction)
+        {
+            Model = model;
+            Instruction = instruction;
+        }
+
         /// <summary>
         /// ID of the model to use. You can use the List models API to see all of your available models, or see our Model overview for descriptions of them.
         /// </summary>
         /// <remarks>https://beta.openai.com/docs/api-reference/edits/create#edits/create-model</remarks>
         [JsonPropertyName("model")]
-        [Required]
-        public string? Model { get; set; }
+        public string Model { get; }
 
         /// <summary>
         /// The input text to use as a starting point for the edit.
@@ -26,8 +38,7 @@ namespace OpenAISharp.Edit.Requests
         /// </summary>
         /// <remarks>https://beta.openai.com/docs/api-reference/edits/create#edits/create-instruction</remarks>
         [JsonPropertyName("instruction")]
-        [Required]
-        public string? Instruction { get; set; }
+        public string Instruction { get; }
 
         /// <summary>
         /// How many edits to generate for the input and instruction.
@@ -45,7 +56,7 @@ namespace OpenAISharp.Edit.Requests
         /// <remarks>https://beta.openai.com/docs/api-reference/edits/create#edits/create-temperature</remarks>
         [JsonPropertyName("temperature")]
         [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
-        public int? Temperature { get; set; }
+        public double? Temperature { get; set; }
 
         /// <summary>
         /// An alternative to sampling with temperature, called nucleus sampling, where the model considers the results of the tokens with top_p probability mass. 
@@ -55,7 +66,7 @@ namespace OpenAISharp.Edit.Requests
         /// <remarks>https://beta.openai.com/docs/api-reference/edits/create#edits/create-top_p</remarks>
         [JsonPropertyName("top_p")]
         [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
-        public int? TopP { get; set; }
+        public double? TopP { get; set; }
     }
 }
 

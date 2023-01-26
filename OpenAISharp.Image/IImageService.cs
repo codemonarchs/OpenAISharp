@@ -29,7 +29,7 @@ namespace OpenAISharp.Image
         /// </summary>
         /// <returns>CreateImageVariationResponse</returns>
         /// <remarks>POST https://api.openai.com/v1/images/variations</remarks>
-        Task<CreateImageVariationResponse> CreateImageEditAsync(CreateImageVariationRequest request);
+        Task<CreateImageVariationResponse> CreateImageVariationAsync(CreateImageVariationRequest request);
     }
 }
 

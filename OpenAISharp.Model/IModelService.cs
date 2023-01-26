@@ -1,5 +1,4 @@
-﻿using OpenAISharp.Constants;
-using OpenAISharp.Model.Responses;
+﻿using OpenAISharp.Model.Responses;
 using System.Threading.Tasks;
 
 namespace OpenAISharp.Model
@@ -24,9 +23,6 @@ namespace OpenAISharp.Model
         /// <returns>RetrieveModelsResponse</returns>
         /// <remarks>GET https://api.openai.com/v1/models/{model}</remarks>
         Task<RetrieveModelResponse> RetrieveModelAsync(string model);
-
-        /// <inheritdoc cref="IModelService.RetrieveModelAsync"/>
-        Task<RetrieveModelResponse> RetrieveModelAsync(DefaultModels model);
     }
 }
 

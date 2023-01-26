@@ -1,17 +1,31 @@
-﻿using System.ComponentModel.DataAnnotations;
-using System.Text.Json.Serialization;
+﻿using System.Text.Json.Serialization;
 
 namespace OpenAISharp.Image.Requests
 {
+    /// <summary>
+    /// Creates a variation of a given image.
+    /// </summary>
     public class CreateImageVariationRequest
     {
+        /// <summary>
+        /// The almighty constructor.
+        /// </summary>
+        /// <param name="image"></param>
+        /// <param name="imagePath"></param>
+        /// <param name="prompt"></param>
+        public CreateImageVariationRequest(string image, string imagePath, bool useImageFilePath)
+        {
+            Image = image;
+            ImageContent = imagePath;
+            UseImageFilePath = useImageFilePath;
+        }
+
         /// <summary>
         /// The image to use as the basis for the variation(s). Must be a valid PNG file, less than 4MB, and square.
         /// </summary>
         /// <remarks>https://beta.openai.com/docs/api-reference/images/create-variation#images/create-variation-image</remarks>
         [JsonPropertyName("image")]
-        [Required]
-        public string? Image { get; set; }
+        public string Image { get; set; }
 
         /// <summary>
         /// The number of images to generate. Must be between 1 and 10.
@@ -44,6 +58,18 @@ namespace OpenAISharp.Image.Requests
         [JsonPropertyName("user")]
         [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
         public string? User { get; set; }
+
+        /// <summary>
+        /// The actual image content or a path to the image file.
+        /// </summary>
+        [JsonIgnore]
+        public string ImageContent { get; }
+
+        /// <summary>
+        /// A flag to determine whether to get image data from a file path or if the data is already included.
+        /// </summary>
+        [JsonIgnore]
+        public bool UseImageFilePath { get; }
     }
 }
 

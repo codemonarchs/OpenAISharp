@@ -1,6 +1,7 @@
 ﻿using OpenAISharp.Client;
 using OpenAISharp.FineTune.Requests;
 using OpenAISharp.FineTune.Responses;
+using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
@@ -30,7 +31,9 @@ namespace OpenAISharp.FineTune
 
         /// <inheritdoc cref="IFineTuneService.ListFineTuneEventsAsync"/>
         public async Task<ListFineTuneEventsResponse> ListFineTuneEventsAsync(string fineTuneId, bool? stream = null)
-            => await _openAIClient.GetWithQueryParametersAsync<ListFineTuneEventsResponse>($"/fine-tunes/{fineTuneId}/events", stream != null ? new Dictionary<string, object> { { "stream", stream } } : null);
+            => stream == null || (stream.HasValue && !stream.Value)
+                ? await _openAIClient.GetWithQueryParametersAsync<ListFineTuneEventsResponse>($"/fine-tunes/{fineTuneId}/events", stream != null ? new Dictionary<string, object> { { nameof(stream), stream.ToString().ToLower() } } : null)
+                : throw new NotImplementedException("Streamed events not currently supported in OpenAISharp. Set 'stream' to null or 'false' for the time being.");
 
         /// <inheritdoc cref="IFineTuneService.DeleteFineTuneModelAsync"/>
         public async Task<DeleteFineTuneModelResponse> DeleteFineTuneModelAsync(string model)

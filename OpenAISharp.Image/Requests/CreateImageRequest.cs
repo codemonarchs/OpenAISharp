@@ -1,17 +1,27 @@
-﻿using System.ComponentModel.DataAnnotations;
-using System.Text.Json.Serialization;
+﻿using System.Text.Json.Serialization;
 
 namespace OpenAISharp.Image.Requests
 {
+    /// <summary>
+    /// Creates an image given a prompt.
+    /// </summary>
     public class CreateImageRequest
     {
+        /// <summary>
+        /// The almighty constructor.
+        /// </summary>
+        /// <param name="prompt"></param>
+        public CreateImageRequest(string prompt)
+        {
+            Prompt = prompt;
+        }
+
         /// <summary>
         /// A text description of the desired image(s). The maximum length is 1000 characters.
         /// </summary>
         /// <remarks>https://beta.openai.com/docs/api-reference/images/create#images/create-prompt</remarks>
         [JsonPropertyName("prompt")]
-        [Required]
-        public string? Prompt { get; set; }
+        public string Prompt { get; set; }
 
         /// <summary>
         /// The number of images to generate. Must be between 1 and 10.

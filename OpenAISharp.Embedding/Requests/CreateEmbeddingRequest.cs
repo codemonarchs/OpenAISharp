@@ -1,17 +1,62 @@
-﻿using System.ComponentModel.DataAnnotations;
-using System.Text.Json.Serialization;
+﻿using System.Text.Json.Serialization;
 
 namespace OpenAISharp.Embedding.Requests
 {
+    /// <summary>
+    /// Creates an embedding vector representing the input text.
+    /// </summary>
     public class CreateEmbeddingRequest
     {
+        /// <summary>
+        /// The almighty constructor. A single string input.
+        /// </summary>
+        /// <param name="model"></param>
+        /// <param name="input"></param>
+        public CreateEmbeddingRequest(string model, string input)
+        {
+            Model = model;
+            Input = input;
+        }
+
+        /// <summary>
+        /// The almighty constructor. A token array input.
+        /// </summary>
+        /// <param name="model"></param>
+        /// <param name="input"></param>
+        public CreateEmbeddingRequest(string model, int[] input)
+        {
+            Model = model;
+            Input = input;
+        }
+
+        /// <summary>
+        /// The almighty constructor. A string array of inputs.
+        /// </summary>
+        /// <param name="model"></param>
+        /// <param name="input"></param>
+        public CreateEmbeddingRequest(string model, string[] input)
+        {
+            Model = model;
+            Input = input;
+        }
+
+        /// <summary>
+        /// The almighty constructor. An array of token arrays.
+        /// </summary>
+        /// <param name="model"></param>
+        /// <param name="input"></param>
+        public CreateEmbeddingRequest(string model, int[][] input)
+        {
+            Model = model;
+            Input = input;
+        }
+
         /// <summary>
         /// ID of the model to use. You can use the List models API to see all of your available models, or see our Model overview for descriptions of them.
         /// </summary>
         /// <remarks>https://beta.openai.com/docs/api-reference/embeddings/create#embeddings/create-model</remarks>
         [JsonPropertyName("model")]
-        [Required]
-        public string? Model { get; set; }
+        public string Model { get; }
 
         /// <summary>
         /// Input text to get embeddings for, encoded as a string or array of tokens. 
@@ -20,8 +65,7 @@ namespace OpenAISharp.Embedding.Requests
         /// </summary>
         /// <remarks>https://beta.openai.com/docs/api-reference/embeddings/create#embeddings/create-input</remarks>
         [JsonPropertyName("input")]
-        [Required]
-        public string? Input { get; set; }
+        public object Input { get; }
 
         /// <summary>
         /// A unique identifier representing your end-user, which can help OpenAI to monitor and detect abuse. Learn more.

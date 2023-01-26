@@ -1,7 +1,5 @@
 ﻿using OpenAISharp.Client;
-using OpenAISharp.Constants;
 using OpenAISharp.Model.Responses;
-using OpenAISharp.Utilities;
 using System.Threading.Tasks;
 
 namespace OpenAISharp.Model
@@ -14,15 +12,11 @@ namespace OpenAISharp.Model
 
         /// <inheritdoc cref="IModelService.RetrieveModelAsync"/>
         public async Task<ListModelsResponse> ListModelsAsync()
-            => await _openAIClient.GetAsync<ListModelsResponse>(string.Empty);
+            => await _openAIClient.GetAsync<ListModelsResponse>("/models");
 
         /// <inheritdoc cref="IModelService.RetrieveModelAsync"/>
         public async Task<RetrieveModelResponse> RetrieveModelAsync(string model)
-            => await _openAIClient.GetAsync<RetrieveModelResponse>($"/{model}");
-
-        /// <inheritdoc cref="IModelService.RetrieveModelAsync"/>
-        public async Task<RetrieveModelResponse> RetrieveModelAsync(DefaultModels model)
-            => await RetrieveModelAsync($"/{ModelUtility.GetModelId(model)}");
+            => await _openAIClient.GetAsync<RetrieveModelResponse>($"/models/{model}");
     }
 }
 
