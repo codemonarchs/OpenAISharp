@@ -13,7 +13,7 @@ namespace OpenAISharp.Embedding
 
         /// <inheritdoc cref="IEmbeddingService.CreateEmbeddingAsync"/>
         public async Task<CreateEmbeddingResponse> CreateEmbeddingAsync(CreateEmbeddingRequest request)
-            => await _openAIClient.PostAsync<CreateEmbeddingRequest, CreateEmbeddingResponse>("/embeddings", request);
+            => await _openAIClient.PostAsync<CreateEmbeddingRequest, CreateEmbeddingResponse>("/v1/embeddings", request);
     }
 }
 

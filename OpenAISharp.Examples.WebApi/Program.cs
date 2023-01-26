@@ -1,16 +1,6 @@
-using OpenAISharp.Client;
-using OpenAISharp.Client.Options;
-using OpenAISharp.Completion;
-using OpenAISharp.Edit;
-using OpenAISharp.Embedding;
-using OpenAISharp.File;
-using OpenAISharp.FineTune;
-using OpenAISharp.Image;
-using OpenAISharp.Model;
-using OpenAISharp.Moderation;
+using OpenAISharp.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
-
 // Add services to the container.
 
 builder.Services.AddControllers();
@@ -19,17 +9,9 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 // Add OpenAISharp Dependencies and Configuration
-builder.Services.AddHttpClient();
-builder.Services.AddScoped<IOpenAIClient, OpenAIClient>();
-builder.Services.Configure<OpenAIClientOptions>(builder.Configuration.GetSection("OpenAI"));
-builder.Services.AddScoped<ICompletionService, CompletionService>();
-builder.Services.AddScoped<IEditService, EditService>();
-builder.Services.AddScoped<IEmbeddingService, EmbeddingService>();
-builder.Services.AddScoped<IFileService, FileService>();
-builder.Services.AddScoped<IFineTuneService, FineTuneService>();
-builder.Services.AddScoped<IImageService, ImageService>();
-builder.Services.AddScoped<IModelService, ModelService>();
-builder.Services.AddScoped<IModerationService, ModerationService>();
+var apiKey = builder.Configuration["OpenAI:ApiKey"];
+var organizationId = builder.Configuration["OpenAI:OrganizationId"];
+builder.Services.AddOpenAI(apiKey, organizationId);
 
 var app = builder.Build();
 

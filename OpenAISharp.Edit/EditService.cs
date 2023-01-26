@@ -13,7 +13,7 @@ namespace OpenAISharp.Edit
 
         /// <inheritdoc cref="IEditService.CreateEditAsync"/>
         public async Task<CreateEditResponse> CreateEditAsync(CreateEditRequest request)
-            => await _openAIClient.PostAsync<CreateEditRequest, CreateEditResponse>("/edits", request);
+            => await _openAIClient.PostAsync<CreateEditRequest, CreateEditResponse>("/v1/edits", request);
     }
 }
 

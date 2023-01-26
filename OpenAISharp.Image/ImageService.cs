@@ -15,7 +15,7 @@ namespace OpenAISharp.Image
 
         /// <inheritdoc cref="IImageService.CreateImageAsync"/>
         public async Task<CreateImageResponse> CreateImageAsync(CreateImageRequest request)
-            => await _openAIClient.PostAsync<CreateImageRequest, CreateImageResponse>("/images/generations", request);
+            => await _openAIClient.PostAsync<CreateImageRequest, CreateImageResponse>("/v1/images/generations", request);
 
         /// <inheritdoc cref="IImageService.CreateImageEditAsync"/>
         public async Task<CreateImageEditResponse> CreateImageEditAsync(CreateImageEditRequest request)
@@ -31,7 +31,7 @@ namespace OpenAISharp.Image
             if (!string.IsNullOrWhiteSpace(request.Mask) && !string.IsNullOrWhiteSpace(request.MaskContent))
                 formData.Add(new ByteArrayContent(request.UseMaskFilePath ? System.IO.File.ReadAllBytes(request.MaskContent) : Encoding.UTF8.GetBytes(request.MaskContent)), "mask", request.Mask);
 
-            return await _openAIClient.MultiPartFormPostAsync<CreateImageEditResponse>("/images/edits", formData);
+            return await _openAIClient.MultiPartFormPostAsync<CreateImageEditResponse>("/v1/images/edits", formData);
         }
 
         /// <inheritdoc cref="IImageService.CreateImageVarationAsync"/>
@@ -43,7 +43,7 @@ namespace OpenAISharp.Image
                 { new StringContent(request.N != null ? request.N.ToString() : "1"), "n" },
                 { new StringContent(!string.IsNullOrWhiteSpace(request.Size) ? request.Size : "1024x1024"), "size" },
             };
-            return await _openAIClient.MultiPartFormPostAsync<CreateImageVariationResponse>("/images/variations", formData);
+            return await _openAIClient.MultiPartFormPostAsync<CreateImageVariationResponse>("/v1/images/variations", formData);
         }
     }
 }

@@ -18,7 +18,7 @@ namespace OpenAISharp.Completion
         /// <returns></returns>
         /// <remarks>POST https://api.openai.com/v1/completions</remarks>
         public async Task<CreateCompletionResponse> CreateCompletionAsync(CreateCompletionRequest request)
-            => await _openAIClient.PostAsync<CreateCompletionRequest, CreateCompletionResponse>("/completions", request);
+            => await _openAIClient.PostAsync<CreateCompletionRequest, CreateCompletionResponse>("/v1/completions", request);
     }
 }
 

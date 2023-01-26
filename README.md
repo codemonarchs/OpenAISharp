@@ -8,43 +8,32 @@ A <b>.NET Standard 2.1</b> C# class library created to easily interface with the
 ### Getting Started - Web API (.NET/.NET Core)
 1. Install the NuGet package from <a href="#">CodeMonarchs.OpenAISharp</a>:
     - ```dotnet add package CodeMonarchs.OpenAISharp```
-2. Open your `appsettings.json` file and add the following key/value pair:
+2. Grab your `ApiKey` and `OrganizationId`  from Open AI:
+    - https://beta.openai.com/account/api-keys
+    - https://beta.openai.com/account/org-settings (optional)
+3. Open your `appsettings.json` (or wherever your specific use case stores <a href="https://learn.microsoft.com/en-us/aspnet/core/fundamentals/configuration/?view=aspnetcore-7.0">configuration settings</a>) and add the following key/value pair:
     ```json
     {
-        ...omitted for brevity
-        "OpenAI": {
-            "ApiKey": "<your-api-key>",
-            "OrganizationId": "<your-organization-id>"
-        }
+        "OpenAI:ApiKey": "<your-api-key>",
+        "OpenAI:OrganizationId": "<your-organization-id>"
     } 
     ```
-3. Replace `<your-api-key>` with your <b>Open AI API Key</b> from here: 
-   - https://beta.openai.com/account/api-keys
-4. Replace `<your-organizatin-key>` with your <b>Open AI Organization Id</b> from here: 
-   - https://beta.openai.com/account/org-settings
-5. Add <b>required dependencies</b> to the `Program.cs` file:
+4. Register the dependencies in your `Program.cs` file:
     ```cs 
-    builder.Services.AddHttpClient();
-    builder.Services.AddScoped<IOpenAIClient, OpenAIClient>();
-    builder.Services.Configure<OpenAIClientOptions>(builder.Configuration.GetSection("OpenAI"));
-    ```
-    Currently, the `OpenAIClient` class depends on `IHttpClientFactory` so you have to `AddHttpClient()` to your project for the dependencies to resolve properly.
-6. Add any the API specifc service classes you want to utilize to the `Program.cs` file:
-   ```cs
-    builder.Services.AddScoped<ICompletionService, CompletionService>();
-    builder.Services.AddScoped<IEditService, EditService>();
-    builder.Services.AddScoped<IEmbeddingService, EmbeddingService>();
-    builder.Services.AddScoped<IFileService, FileService>();
-    builder.Services.AddScoped<IFineTuneService, FineTuneService>();
-    builder.Services.AddScoped<IImageService, ImageService>();
-    builder.Services.AddScoped<IModelService, ModelService>();
-    builder.Services.AddScoped<IModerationService, ModerationService>();
-   ```
-7. <b>That's it!</b> Now you can consume any of the services in this repository as you normally would with regular old dependency injection.
+    // Include OpenAISharp.Extensions library to access the .AddOpenAI(...) extension method
+    using OpenAISharp.Extensions;
 
-<i><b>Note: </b>If you add the base package `CodeMonarchs.OpenAISharp` it will include all of the packages listed above. If you are only interested in a particular endpoint (such as the Completion API) from Open AI then just install the package related to that endpoint you're interested in. Example: </i> ```dotnet add package CodeMonarchs.OpenAISharp.Completion```
+    var builder = WebApplication.CreateBuilder(args);
+
+    // Add OpenAISharp Dependencies and Configuration
+    var apiKey = builder.Configuration["OpenAI:ApiKey"];
+    var organizationId = builder.Configuration["OpenAI:OrganizationId"];
+    builder.Services.AddOpenAI(apiKey, organizationId);
+    ```
+7. <b>That's it!</b> Now you can consume any of the services in this repository as you normally would with regular old dependency injection. See example project links below if you need help.
 
 ### Usage
+Below is a run down of all of the services within this library and a sample of how to use them. All required parameters are set via the constructor in each of the request objects.
 #### CompletionService
 ```cs
 // Create Completion
@@ -167,46 +156,33 @@ var response = await service.CreateModerationAsync(request);
    - https://github.com/codemonarchs/OpenAISharp/tree/main/OpenAISharp.Examples.BlazorWebAssembly
 3. Blazor Server 
    - https://github.com/codemonarchs/OpenAISharp/tree/main/OpenAISharp.Examples.BlazorServer
-4. Azure Functions v4 
-   - https://github.com/codemonarchs/OpenAISharp/tree/main/OpenAISharp.Examples.AzureFunctions
 
-#### NuGet Packages
+#### Libraries
 1. `CodeMonarchs.OpenAISharp`
-    - <small>Includes all of the below packages.</small>
-    - <small><a href="#">NuGet Package</a></small>
+    - Meta package that includes all of the below libraries.
 2. `CodeMonarchs.OpenAISharp.Completion`
-    - <small>Based on the Completions API - (https://beta.openai.com/docs/api-reference/completions)</small>
-    - <small><a href="#">NuGet Package</a></small>
+    - Completions API - (https://beta.openai.com/docs/api-reference/completions)
 3. `CodeMonarchs.OpenAISharp.Edit`
-    - <small>Based on the Edit API - (https://beta.openai.com/docs/api-reference/edits)</small>
-    - <small><a href="#">NuGet Package</a></small>
+    - Edit API - (https://beta.openai.com/docs/api-reference/edits)
 4. `CodeMonarchs.OpenAISharp.Embedding`
-    - <small>Based on the Embeddings API - (https://beta.openai.com/docs/api-reference/embeddings)</small>
-    - <small><a href="#">NuGet Package</a></small>
+    - Embeddings API - (https://beta.openai.com/docs/api-reference/embeddings)
 5. `CodeMonarchs.OpenAISharp.File`
-    - <small>Based on the Files API - (https://beta.openai.com/docs/api-reference/files)</small>
-    - <small><a href="#">NuGet Package</a></small>
+    - Files API - (https://beta.openai.com/docs/api-reference/files)
 6. `CodeMonarchs.OpenAISharp.FineTune`
-    - <small>Based on the FineTunes API - (https://beta.openai.com/docs/api-reference/fine-tunes)</small>
-    - <small><a href="#">NuGet Package</a></small>
+    - FineTunes API - (https://beta.openai.com/docs/api-reference/fine-tunes)
 7. `CodeMonarchs.OpenAISharp.Image`
-    - <small>Based on the Images API - (https://beta.openai.com/docs/api-reference/images)</small>
-    - <small><a href="#">NuGet Package</a></small>
+    - Images API - (https://beta.openai.com/docs/api-reference/images)
 8. `CodeMonarchs.OpenAISharp.Model`
-    - <small>Based on the Models API - (https://beta.openai.com/docs/api-reference/models)</small>
-    - <small><a href="#">NuGet Package</a></small>
+    - Models API - (https://beta.openai.com/docs/api-reference/models)
 9. `CodeMonarchs.OpenAISharp.Moderation`
-    - <small>Based on the Moderations API - (https://beta.openai.com/docs/api-reference/moderation)</small>
-    - <small><a href="#">NuGet Package</a></small>
+    - Moderations API - (https://beta.openai.com/docs/api-reference/moderation)
 10. `CodeMonarchs.OpenAISharp.Client`
-    - <small>An abstraction layer specific to sending HTTP requests to the Open AI API. You don't need to include this by itself.</small>
-    - <small><a href="#">NuGet Package</a></small>
+    - An abstraction layer specific to sending HTTP requests to the Open AI API. You don't need to include this by itself.
 11. `CodeMonarchs.OpenAISharp.Utilities`
-    - <small>A utility library that contains an implementation of the <a href="https://beta.openai.com/tokenizer?view=bpe">Tokenizer Tool</a> for GPT-3.</small>
-    - <small><a href="#">NuGet Package</a></small>
+    - A utility library that contains an implementation of the <a href="https://beta.openai.com/tokenizer?view=bpe">Tokenizer Tool</a> for GPT-3.
 
-#### Integration Testing Setup (OpenAISharp.IntegrationTests)
-1. Retrieve your `Apikey` and `OrganizationId` from the Open AI Api.
+#### Integration Testing Setup For Contributers (OpenAISharp.IntegrationTests)
+1. Retrieve your `Apikey` and `OrganizationId` from the Open AI API.
     - https://beta.openai.com/account/api-keys
     - https://beta.openai.com/account/org-settings
 2. Run the powershell script located in `OpenAISharp.IntegrationTests` to set environment variables with your `ApiKey` and `OrganizationId` from the Open AI API:
