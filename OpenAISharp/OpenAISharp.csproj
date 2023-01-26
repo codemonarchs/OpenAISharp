@@ -5,7 +5,7 @@
     <IsPackable>true</IsPackable>
     <PackageId>CodeMonarchs.OpenAISharp</PackageId>
     <Description>Metapackage for the OpenAI API Wrapper Packages</Description>
-    <Version>0.0.1</Version>
+    <VersionPrefix>0.0.1</VersionPrefix>
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
@@ -26,6 +26,10 @@
     <ProjectReference Include="..\OpenAISharp.Model\OpenAISharp.Model.csproj" />
     <ProjectReference Include="..\OpenAISharp.Moderation\OpenAISharp.Moderation.csproj" />
     <ProjectReference Include="..\OpenAISharp.Utilities\OpenAISharp.Utilities.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\README.md" Pack="true" PackagePath="\"/>
   </ItemGroup>
 
 </Project>

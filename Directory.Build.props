@@ -1,10 +1,12 @@
 <Project>
     <PropertyGroup Label="Package Information">
+        <VersionSuffix>beta</VersionSuffix>
         <Copyright>Copyright © CodeMonarchs</Copyright>
         <Authors>CodeMonarchs</Authors>
         <Company>CodeMonarchs</Company>
         <Product>OpenAISharp</Product>
         <PackageTags>REST;api;OpenAI;ai</PackageTags>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
         <PackageLicenseExpression>MIT</PackageLicenseExpression>
         <RepositoryUrl>https://github.com/codemonarchs/OpenAISharp.git</RepositoryUrl>
         <RepositoryType>git</RepositoryType>
