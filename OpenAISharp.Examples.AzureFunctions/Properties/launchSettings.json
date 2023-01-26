@@ -1,9 +1,0 @@
-{
-  "profiles": {
-    "OpenAISharp.Examples.AzureFunctions": {
-      "commandName": "Project",
-      "commandLineArgs": "--port 7025",
-      "launchBrowser": false
-    }
-  }
-}

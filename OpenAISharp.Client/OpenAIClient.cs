@@ -1,51 +1,39 @@
-﻿using Microsoft.Extensions.Options;
-using OpenAISharp.Client.Exceptions;
-using OpenAISharp.Client.Options;
-using System;
+﻿using OpenAISharp.Client.Exceptions;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http;
-using System.Net.Http.Headers;
 using System.Net.Mime;
 using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
-using System.Web;
 
 namespace OpenAISharp.Client
 {
     /// <inheritdoc cref="IOpenAIClient"/>
     public class OpenAIClient : IOpenAIClient
     {
-        private readonly IHttpClientFactory _httpClientFactory;
-        private readonly IOptions<OpenAIClientOptions> _options;
-        private readonly string? BaseUri = "https://api.openai.com/v1";
+        private readonly HttpClient _httpClient;
 
         /// <summary>
         /// The almighty constructor.
         /// </summary>
-        /// <param name="httpClientFactory"></param>
+        /// <param name="httpClient"></param>
         /// <param name="options"></param>
-        public OpenAIClient(IHttpClientFactory httpClientFactory, IOptions<OpenAIClientOptions> options)
-        {
-            _httpClientFactory = httpClientFactory;
-            _options = options;
-        }
+        public OpenAIClient(HttpClient httpClient) { _httpClient = httpClient; }
 
         /// <inheritdoc cref="IOpenAIClient.DeleteAsync"/>
         public async Task<TResponse> DeleteAsync<TResponse>(string path) where TResponse : class
-            => await SendAsync<TResponse>(new HttpRequestMessage(HttpMethod.Delete, GetUrl(path)));
+            => await SendAsync<TResponse>(new HttpRequestMessage(HttpMethod.Delete, path));
 
         /// <inheritdoc cref="IOpenAIClient.GetAsync"/>
         public async Task<TResponse> GetAsync<TResponse>(string path) where TResponse : class
-            => await SendAsync<TResponse>(new HttpRequestMessage(HttpMethod.Get, GetUrl(path)));
+            => await SendAsync<TResponse>(new HttpRequestMessage(HttpMethod.Get, path));
 
         /// <inheritdoc cref="IOpenAIClient.GetStringAsync"/>
         public async Task<string> GetStringAsync(string path)
         {
-            var message = new HttpRequestMessage(HttpMethod.Get, GetUrl(path));
-            var client = CreateClient();
-            var response = await client.SendAsync(message);
+            var message = new HttpRequestMessage(HttpMethod.Get, path);
+            var response = await _httpClient.SendAsync(message);
             var content = await response.Content.ReadAsStringAsync();
             if (response.IsSuccessStatusCode && !string.IsNullOrWhiteSpace(content))
                 return content;
@@ -59,8 +47,7 @@ namespace OpenAISharp.Client
         /// <inheritdoc cref="IOpenAIClient.MultiPartFormPostAsync"/>
         public async Task<TResponse> MultiPartFormPostAsync<TResponse>(string path, MultipartFormDataContent formData) where TResponse : class
         {
-            var client = CreateClient();
-            var response = await client.PostAsync(GetUrl(path), formData);
+            var response = await _httpClient.PostAsync(path, formData);
             if (response.IsSuccessStatusCode)
             {
                 using var contentStream = await response.Content.ReadAsStreamAsync();
@@ -76,32 +63,11 @@ namespace OpenAISharp.Client
 
         /// <inheritdoc cref="IOpenAIClient.PostAsync"/>
         public async Task<TResponse> PostAsync<TRequest, TResponse>(string path, TRequest request) where TRequest : class where TResponse : class
-                => await SendAsync<TResponse>(new HttpRequestMessage(HttpMethod.Post, GetUrl(path)) { Content = new StringContent(JsonSerializer.Serialize(request), Encoding.UTF8, MediaTypeNames.Application.Json) });
+                => await SendAsync<TResponse>(new HttpRequestMessage(HttpMethod.Post, path) { Content = new StringContent(JsonSerializer.Serialize(request), Encoding.UTF8, MediaTypeNames.Application.Json) });
 
         /// <inheritdoc cref="IOpenAIClient.PostEmptyBodyAsync"/>
         public async Task<TResponse> PostEmptyBodyAsync<TResponse>(string path) where TResponse : class
-            => await SendAsync<TResponse>(new HttpRequestMessage(HttpMethod.Post, GetUrl(path)) { Content = new StringContent(string.Empty, Encoding.UTF8, MediaTypeNames.Application.Json) });
-
-        /// <summary>
-        /// Creates the HttpClient with the BaseUri, sets the Bearer token with the ApiKey, and sets the OpenAI-Organization header.
-        /// </summary>
-        /// <returns></returns>
-        private HttpClient CreateClient()
-        {
-            var client = _httpClientFactory.CreateClient();
-            client.BaseAddress = new Uri(BaseUri);
-            client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", _options.Value.ApiKey);
-            client.DefaultRequestHeaders.Add("OpenAI-Organization", _options.Value.OrganizationId);
-            return client;
-        }
-
-        /// <summary>
-        /// Gets the URL used to hit the Open AI API.
-        /// </summary>
-        /// <param name="path"></param>
-        /// <returns></returns>
-        private string GetUrl(string path)
-            => path.StartsWith("/") ? $"{BaseUri}{path}" : $"{BaseUri}/{path}";
+            => await SendAsync<TResponse>(new HttpRequestMessage(HttpMethod.Post, path) { Content = new StringContent(string.Empty, Encoding.UTF8, MediaTypeNames.Application.Json) });
 
         /// <summary>
         /// Sends any HttpRequestMessage to the Open AI API.
@@ -111,8 +77,7 @@ namespace OpenAISharp.Client
         /// <returns></returns>
         private async Task<TResponse> SendAsync<TResponse>(HttpRequestMessage httpRequestMessage) where TResponse : class
         {
-            var client = CreateClient();
-            var response = await client.SendAsync(httpRequestMessage);
+            var response = await _httpClient.SendAsync(httpRequestMessage);
             if (response.IsSuccessStatusCode)
             {
                 using var contentStream = await response.Content.ReadAsStreamAsync();

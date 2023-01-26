@@ -15,7 +15,7 @@ namespace OpenAISharp.File
 
         /// <inheritdoc cref="IFileService.ListFilesAsync"/>
         public async Task<ListFilesResponse> ListFilesAsync()
-            => await _openAIClient.GetAsync<ListFilesResponse>("/files");
+            => await _openAIClient.GetAsync<ListFilesResponse>("/v1/files");
 
         /// <inheritdoc cref="IFileService.UploadFileAsync"/>
         public async Task<UploadFileResponse> UploadFileAsync(UploadFileRequest request)
@@ -25,20 +25,20 @@ namespace OpenAISharp.File
                 { new StringContent(request.Purpose), "purpose" },
                 { new ByteArrayContent(request.UseFilePath ? System.IO.File.ReadAllBytes(request.FileContent) : Encoding.UTF8.GetBytes(request.FileContent)), "file", request.File }
             };
-            return await _openAIClient.MultiPartFormPostAsync<UploadFileResponse>("/files", formData);
+            return await _openAIClient.MultiPartFormPostAsync<UploadFileResponse>("/v1/files", formData);
         }
 
         /// <inheritdoc cref="IFileService.DeleteFileAsync"/>
         public async Task<DeleteFileResponse> DeleteFileAsync(string fileId)
-            => await _openAIClient.DeleteAsync<DeleteFileResponse>($"/files/{fileId}");
+            => await _openAIClient.DeleteAsync<DeleteFileResponse>($"/v1/files/{fileId}");
 
         /// <inheritdoc cref="IFileService.RetrieveFileAsync"/>
         public async Task<RetrieveFileResponse> RetrieveFileAsync(string fileId)
-            => await _openAIClient.GetAsync<RetrieveFileResponse>($"/files/{fileId}");
+            => await _openAIClient.GetAsync<RetrieveFileResponse>($"/v1/files/{fileId}");
 
         /// <inheritdoc cref="IFileService.RetrieveFileContentAsync"/>
         public async Task<string> RetrieveFileContentAsync(string fileId)
-            => await _openAIClient.GetStringAsync($"/files/{fileId}/content");
+            => await _openAIClient.GetStringAsync($"/v1/files/{fileId}/content");
     }
 }
 

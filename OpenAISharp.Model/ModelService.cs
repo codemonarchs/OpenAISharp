@@ -12,11 +12,11 @@ namespace OpenAISharp.Model
 
         /// <inheritdoc cref="IModelService.RetrieveModelAsync"/>
         public async Task<ListModelsResponse> ListModelsAsync()
-            => await _openAIClient.GetAsync<ListModelsResponse>("/models");
+            => await _openAIClient.GetAsync<ListModelsResponse>("/v1/models");
 
         /// <inheritdoc cref="IModelService.RetrieveModelAsync"/>
         public async Task<RetrieveModelResponse> RetrieveModelAsync(string model)
-            => await _openAIClient.GetAsync<RetrieveModelResponse>($"/models/{model}");
+            => await _openAIClient.GetAsync<RetrieveModelResponse>($"/v1/models/{model}");
     }
 }
 

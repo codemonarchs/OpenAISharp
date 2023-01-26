@@ -13,7 +13,7 @@ namespace OpenAISharp.Moderation
 
         /// <inheritdoc cref="IModerationService.CreateModerationAsync"/>
         public async Task<CreateModerationResponse> CreateModerationAsync(CreateModerationRequest request)
-            => await _openAIClient.PostAsync<CreateModerationRequest, CreateModerationResponse>("/moderations", request);
+            => await _openAIClient.PostAsync<CreateModerationRequest, CreateModerationResponse>("/v1/moderations", request);
     }
 }
 
