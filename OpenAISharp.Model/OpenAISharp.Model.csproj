@@ -5,7 +5,7 @@
     <IsPackable>true</IsPackable>
     <PackageId>CodeMonarchs.OpenAISharp.Model</PackageId>
     <Description>Wrapper for the OpenAI Model API</Description>
-    <VersionPrefix>0.0.1</VersionPrefix>
+    <VersionPrefix>0.0.2</VersionPrefix>
     <Nullable>enable</Nullable>
   </PropertyGroup>
 

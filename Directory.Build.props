@@ -1,6 +1,6 @@
 <Project>
     <PropertyGroup Label="Package Information">
-        <VersionSuffix>beta</VersionSuffix>
+        <VersionSuffix></VersionSuffix>
         <Copyright>Copyright © CodeMonarchs</Copyright>
         <Authors>CodeMonarchs</Authors>
         <Company>CodeMonarchs</Company>

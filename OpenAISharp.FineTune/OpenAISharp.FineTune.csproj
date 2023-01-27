@@ -5,7 +5,7 @@
     <IsPackable>true</IsPackable>
     <PackageId>CodeMonarchs.OpenAISharp.FineTune</PackageId>
     <Description>Wrapper for the OpenAI FineTune API</Description>
-    <VersionPrefix>0.0.1</VersionPrefix>
+    <VersionPrefix>0.0.2</VersionPrefix>
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
