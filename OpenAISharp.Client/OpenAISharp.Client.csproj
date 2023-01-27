@@ -5,7 +5,7 @@
     <IsPackable>true</IsPackable>
     <PackageId>CodeMonarchs.OpenAISharp.Client</PackageId>
     <Description>Http Client used by the other OpenAI Wrapper Packages. Not intended for use on its own.</Description>
-    <VersionPrefix>0.0.1</VersionPrefix>
+    <VersionPrefix>0.0.2</VersionPrefix>
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
