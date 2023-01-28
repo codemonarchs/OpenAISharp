@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33205.214
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OpenAISharp.Examples.BlazorServer", "OpenAISharp.Examples.BlazorServer\OpenAISharp.Examples.BlazorServer.csproj", "{5D07517B-15B6-4352-B686-D9252F36B2C8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OpenAISharp.Examples.BlazorWebAssembly", "OpenAISharp.Examples.BlazorWebAssembly\OpenAISharp.Examples.BlazorWebAssembly.csproj", "{3B423983-AD48-4024-B895-B4E6F08D0C53}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OpenAISharp.Examples.WebApiNet6", "OpenAISharp.Examples.WebApiNet6\OpenAISharp.Examples.WebApiNet6.csproj", "{D9699575-C28B-48DD-AACA-7AA0BCFA67FF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OpenAISharp.Examples.WebApiNet7", "OpenAISharp.Examples.WebApiNet7\OpenAISharp.Examples.WebApiNet7.csproj", "{966C6FD5-7A84-4D74-9BF7-65ECE201AA05}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OpenAISharp.Examples.WebApiNetCore31", "OpenAISharp.Examples.WebApiNetCore31\OpenAISharp.Examples.WebApiNetCore31.csproj", "{E0737F23-0A7A-4FDE-A372-FAAB5C9C1979}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5D07517B-15B6-4352-B686-D9252F36B2C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D07517B-15B6-4352-B686-D9252F36B2C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D07517B-15B6-4352-B686-D9252F36B2C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D07517B-15B6-4352-B686-D9252F36B2C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B423983-AD48-4024-B895-B4E6F08D0C53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B423983-AD48-4024-B895-B4E6F08D0C53}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B423983-AD48-4024-B895-B4E6F08D0C53}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B423983-AD48-4024-B895-B4E6F08D0C53}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D9699575-C28B-48DD-AACA-7AA0BCFA67FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9699575-C28B-48DD-AACA-7AA0BCFA67FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9699575-C28B-48DD-AACA-7AA0BCFA67FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9699575-C28B-48DD-AACA-7AA0BCFA67FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{966C6FD5-7A84-4D74-9BF7-65ECE201AA05}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{966C6FD5-7A84-4D74-9BF7-65ECE201AA05}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{966C6FD5-7A84-4D74-9BF7-65ECE201AA05}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{966C6FD5-7A84-4D74-9BF7-65ECE201AA05}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E0737F23-0A7A-4FDE-A372-FAAB5C9C1979}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E0737F23-0A7A-4FDE-A372-FAAB5C9C1979}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E0737F23-0A7A-4FDE-A372-FAAB5C9C1979}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E0737F23-0A7A-4FDE-A372-FAAB5C9C1979}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BEDBF8FB-11B4-47DB-B706-40EB8CBB5BBD}
+	EndGlobalSection
+EndGlobal

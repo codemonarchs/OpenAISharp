@@ -5,11 +5,8 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="CodeMonarchs.OpenAISharp" Version="0.0.2" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\..\OpenAISharp\OpenAISharp.csproj" />
   </ItemGroup>
 
 </Project>
