@@ -23,17 +23,41 @@ Supported Versions of .NET and .NET Core
     ```
 4. Register the dependencies in your `Program.cs` file:
     ```cs 
+    // If using an individual package on its own or just the OpenAISharp library you can register the services and client like this:
+    // This is useful if you want to customize the HttpClient with your own handlers or if you only want to register a limited set of services.
+    var builder = WebApplication.CreateBuilder(args);
+
+    var apiKey = builder.Configuration["OpenAI:ApiKey"];
+    var organizationId = builder.Configuration["OpenAI:OrganizationId"];
+
+    services.AddHttpClient<IOpenAIClient, OpenAIClient>(client =>
+    {
+        client.BaseAddress = new Uri("https://api.openai.com");
+        client.DefaultRequestHeaders.Add("Authorization", $"Bearer {apiKey}");
+        if (!string.IsNullOrWhiteSpace(organizationId))
+            client.DefaultRequestHeaders.Add("OpenAI-Organization", organizationId);
+    });
+
+    services.AddTransient<ICompletionService, CompletionService>();
+    services.AddTransient<IEditService, EditService>();
+    services.AddTransient<IEmbeddingService, EmbeddingService>();
+    services.AddTransient<IFileService, FileService>();
+    services.AddTransient<IFineTuneService, FineTuneService>();
+    services.AddTransient<IImageService, ImageService>();
+    services.AddTransient<IModelService, ModelService>();
+    services.AddTransient<IModerationService, ModerationService>();
+
+    // If you want to use the OpenAISharp.Extensions library you can register them like below (this will register all of the above for you in one line):
     // Include OpenAISharp.Extensions library to access the .AddOpenAI(...) extension method
     using OpenAISharp.Extensions;
 
     var builder = WebApplication.CreateBuilder(args);
 
-    // Add OpenAISharp Dependencies and Configuration
     var apiKey = builder.Configuration["OpenAI:ApiKey"];
     var organizationId = builder.Configuration["OpenAI:OrganizationId"];
+
     builder.Services.AddOpenAI(apiKey, organizationId);
     ```
-
 5. **That's it!** Now you can consume any of the services in this repository as you normally would with regular old dependency injection. See example project links below if you need help.
 
 ## Usage

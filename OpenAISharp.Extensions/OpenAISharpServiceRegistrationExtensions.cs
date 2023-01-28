@@ -12,6 +12,9 @@ using System;
 
 namespace OpenAISharp.Extensions
 {
+    /// <summary>
+    /// Registration extensions for adding the services and the typed HttpClient for Open AI to your project.
+    /// </summary>
     public static class OpenAISharpServiceRegistrationExtensions
     {
         /// <summary>
