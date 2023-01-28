@@ -1,0 +1,11 @@
+# Definitions
+[OpenAISharp.Client](./OpenAISharp.Client)
+[OpenAISharp.Completion](./OpenAISharp.Completion)
+[OpenAISharp.Edit](./OpenAISharp.Edit)
+[OpenAISharp.Embedding](./OpenAISharp.Embedding)
+[OpenAISharp.File](./OpenAISharp.File)
+[OpenAISharp.FineTune](./OpenAISharp.FineTune)
+[OpenAISharp.Image](./OpenAISharp.Image)
+[OpenAISharp.Model](./OpenAISharp.Model)
+[OpenAISharp.Moderation](./OpenAISharp.Moderation)
+[OpenAISharp.Utilites](./OpenAISharp.Utilities)
