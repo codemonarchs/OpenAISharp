@@ -4,6 +4,7 @@ using System.Text.Json.Serialization;
 
 namespace OpenAISharp.Moderation.Responses
 {
+    /// <remarks>Returned from <see cref="IModerationService.CreateModerationAsync"/>.</remarks>
     public class CreateModerationResponse
     {
         [JsonPropertyName("id")]

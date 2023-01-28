@@ -9,6 +9,8 @@ namespace OpenAISharp.Completion
     public class CompletionService : ICompletionService
     {
         private readonly IOpenAIClient _openAIClient;
+
+        /// <inheritdoc cref="ICompletionService"/>
         public CompletionService(IOpenAIClient openAIClient) { _openAIClient = openAIClient; }
 
         /// <summary>

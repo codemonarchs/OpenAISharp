@@ -2,6 +2,7 @@
 
 namespace OpenAISharp.FineTune.Responses
 {
+    /// <remarks>Returned from <see cref="IFineTuneService.DeleteFineTuneModelAsync"/>.</remarks>
     public class DeleteFineTuneModelResponse
     {
         [JsonPropertyName("id")]

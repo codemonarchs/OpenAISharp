@@ -2,6 +2,7 @@
 
 namespace OpenAISharp.File.Responses
 {
+    /// <remarks>Returned from <see cref="IFileService.UploadFileAsync"/>.</remarks>
     public class UploadFileResponse
     {
         [JsonPropertyName("id")]

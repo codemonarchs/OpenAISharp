@@ -5,6 +5,7 @@ namespace OpenAISharp.Image.Requests
     /// <summary>
     /// Creates a variation of a given image.
     /// </summary>
+    /// <remarks>Used with <see cref="IImageService.CreateImageVariationAsync"/>.</remarks>
     public class CreateImageVariationRequest
     {
         /// <summary>
@@ -12,7 +13,7 @@ namespace OpenAISharp.Image.Requests
         /// </summary>
         /// <param name="image"></param>
         /// <param name="imagePath"></param>
-        /// <param name="prompt"></param>
+        /// <param name="useImageFilePath"></param>
         public CreateImageVariationRequest(string image, string imagePath, bool useImageFilePath)
         {
             Image = image;

@@ -4,6 +4,7 @@ using System.Text.Json.Serialization;
 
 namespace OpenAISharp.File.Responses
 {
+    /// <remarks>Returned from <see cref="IFileService.ListFilesAsync"/>.</remarks>
     public class ListFilesResponse
     {
         [JsonPropertyName("data")]

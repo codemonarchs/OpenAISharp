@@ -5,6 +5,7 @@ namespace OpenAISharp.Moderation.Requests
     /// <summary>
     /// Classifies if text violates OpenAI's Content Policy.
     /// </summary>
+    /// <remarks>Used with <see cref="IModerationService.CreateModerationAsync"/>.</remarks>
     public class CreateModerationRequest
     {
         /// <summary>

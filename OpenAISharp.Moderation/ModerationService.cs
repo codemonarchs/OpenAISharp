@@ -9,6 +9,8 @@ namespace OpenAISharp.Moderation
     public class ModerationService : IModerationService
     {
         private readonly IOpenAIClient _openAIClient;
+
+        /// <inheritdoc cref="IModerationService"/>
         public ModerationService(IOpenAIClient openAIClient) { _openAIClient = openAIClient; }
 
         /// <inheritdoc cref="IModerationService.CreateModerationAsync"/>

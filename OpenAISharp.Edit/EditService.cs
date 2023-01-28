@@ -9,6 +9,8 @@ namespace OpenAISharp.Edit
     public class EditService : IEditService
     {
         private readonly IOpenAIClient _openAIClient;
+        
+        /// <inheritdoc cref="IEditService"/>
         public EditService(IOpenAIClient openAIClient) { _openAIClient = openAIClient; }
 
         /// <inheritdoc cref="IEditService.CreateEditAsync"/>

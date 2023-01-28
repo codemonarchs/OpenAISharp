@@ -4,6 +4,7 @@ using System.Text.Json.Serialization;
 
 namespace OpenAISharp.FineTune.Responses
 {
+    /// <remarks>Returned from <see cref="IFineTuneService.ListFineTuneEventsAsync"/>.</remarks>
     public class ListFineTuneEventsResponse
     {
         [JsonPropertyName("object")]

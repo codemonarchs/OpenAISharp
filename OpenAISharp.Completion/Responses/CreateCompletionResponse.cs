@@ -4,6 +4,7 @@ using System.Text.Json.Serialization;
 
 namespace OpenAISharp.Completion.Responses
 {
+    /// <remarks>Returned from <see cref="ICompletionService.CreateCompletionAsync"/>.</remarks>
     public class CreateCompletionResponse
     {
         [JsonPropertyName("id")]

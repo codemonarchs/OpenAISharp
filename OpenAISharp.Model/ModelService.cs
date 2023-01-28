@@ -8,6 +8,8 @@ namespace OpenAISharp.Model
     public class ModelService : IModelService
     {
         private readonly IOpenAIClient _openAIClient;
+
+        /// <inheritdoc cref="IModelService"/>
         public ModelService(IOpenAIClient openAIClient) { _openAIClient = openAIClient; }
 
         /// <inheritdoc cref="IModelService.RetrieveModelAsync"/>

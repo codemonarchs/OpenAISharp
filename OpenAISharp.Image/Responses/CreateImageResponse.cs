@@ -4,6 +4,7 @@ using System.Text.Json.Serialization;
 
 namespace OpenAISharp.Image.Responses
 {
+    /// <remarks>Returned from <see cref="IImageService.CreateImageAsync"/>.</remarks>
     public class CreateImageResponse
     {
         [JsonPropertyName("created")]

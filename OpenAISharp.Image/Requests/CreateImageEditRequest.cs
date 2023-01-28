@@ -5,6 +5,7 @@ namespace OpenAISharp.Image.Requests
     /// <summary>
     /// Creates an edited or extended image given an original image and a prompt.
     /// </summary>
+    /// <remarks>Used with <see cref="IImageService.CreateImageEditAsync"/>.</remarks>
     public class CreateImageEditRequest
     {
         /// <summary>

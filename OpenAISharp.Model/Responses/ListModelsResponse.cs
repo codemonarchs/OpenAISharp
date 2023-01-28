@@ -4,6 +4,7 @@ using System.Text.Json.Serialization;
 
 namespace OpenAISharp.Model.Responses
 {
+    /// <remarks>Returned from <see cref="IModelService.ListModelsAsync"/>.</remarks>
     public class ListModelsResponse
     {
         [JsonPropertyName("data")]

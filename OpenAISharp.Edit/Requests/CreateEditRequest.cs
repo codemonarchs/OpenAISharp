@@ -5,6 +5,7 @@ namespace OpenAISharp.Edit.Requests
     /// <summary>
     /// Creates a new edit for the provided input, instruction, and parameters.
     /// </summary>
+    /// <remarks>Used with <see cref="IEditService.CreateEditAsync"/>.</remarks>
     public class CreateEditRequest
     {
         /// <summary>

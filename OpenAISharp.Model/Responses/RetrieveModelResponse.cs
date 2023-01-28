@@ -4,6 +4,7 @@ using System.Text.Json.Serialization;
 
 namespace OpenAISharp.Model.Responses
 {
+    /// <remarks>Returned from <see cref="IModelService.RetrieveModelAsync"/>.</remarks>
     public class RetrieveModelResponse
     {
         [JsonPropertyName("id")]

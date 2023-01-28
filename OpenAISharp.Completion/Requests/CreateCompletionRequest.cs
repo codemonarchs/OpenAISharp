@@ -5,6 +5,7 @@ namespace OpenAISharp.Completion.Requests
     /// <summary>
     /// Creates a completion for the provided prompt and parameters.
     /// </summary>
+    /// <remarks>Used with <see cref="ICompletionService.CreateCompletionAsync"/>.</remarks>
     public class CreateCompletionRequest
     {
         /// <summary>

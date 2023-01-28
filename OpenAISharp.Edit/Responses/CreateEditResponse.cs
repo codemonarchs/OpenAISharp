@@ -4,6 +4,7 @@ using System.Text.Json.Serialization;
 
 namespace OpenAISharp.Edit.Responses
 {
+    /// <remarks>Returned from <see cref="IEditService.CreateEditAsync"/>.</remarks>
     public class CreateEditResponse
     {
         [JsonPropertyName("object")]
@@ -13,7 +14,7 @@ namespace OpenAISharp.Edit.Responses
         public int? Created { get; set; }
 
         [JsonPropertyName("choices")]
-        public List<EditChoice>? Choices { get; set; }
+        public List<EditChoice?>? Choices { get; set; }
 
         [JsonPropertyName("usage")]
         public EditUsage? Usage { get; set; }

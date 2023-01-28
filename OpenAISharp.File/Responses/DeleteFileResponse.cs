@@ -2,6 +2,7 @@
 
 namespace OpenAISharp.File.Responses
 {
+    /// <remarks>Returned from <see cref="IFileService.DeleteFileAsync"/>.</remarks>
     public class DeleteFileResponse
     {
         [JsonPropertyName("id")]
