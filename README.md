@@ -4,8 +4,10 @@ A **.NET Standard 2.1** C# class library created to easily interface with the th
 
 Supported Versions of .NET and .NET Core
 
-| .NET Core 3.0 | .NET Core 3.1 | .NET 5.0 | .NET 6.0 | .NET 7.0 |
-| ------------- | ------------- | -------- | -------- | -------- |
+| .NET Core 3.1 | .NET 6.0 | .NET 7.0 |
+| ------------- | -------- | -------- |
+
+**Note:** Technically any framework that can support .NET Standard 2.1 can support this library (including .NET Core 3.0, .NET 5) but we've only included examples for the above.
 
 ## Getting Started - Web API (.NET/.NET Core)
 
@@ -200,34 +202,76 @@ var request = new CreateModerationRequest("is this a bad word");
 var response = await service.CreateModerationAsync(request);
 ```
 
+## Error Handling
+
+Currently there is no documentation on the Open AI API that tells you what type of object is returned on an unsuccessful response. So, until there is, rather than try to guess at what each type of response object is that comes back from the Open AI API, if there is no successful status code in the response of the API call we throw an exception. 
+
+The exception is as follows:
+```csharp
+public class OpenAIClientException : Exception
+{
+    public HttpStatusCode HttpStatusCode { get; set; }
+    public OpenAIClientException(HttpStatusCode httpStatusCode, string message) : base(message)
+    {
+        HttpStatusCode = httpStatusCode;
+    }
+}
+```
+In the `OpenAISharp.Client` library that makes these requests, all we are doing is if there is a non successful status code we are just reading the response object as a string and putting that entire response inside the `Message` property of the exception. So in essence, you get the exact response that Open AI will return if your request is unsuccessful. It's just that it isn't in the form of a concrete object yet. This way, you can handle unsuccessful responses (for now) by catching the exception and doing what you need to do in your application like this:
+```csharp
+try
+{
+    var response = await service.ListModelsAsync();
+}
+catch (OpenAIClientException ex)
+{
+    /// handle errors appropriately
+}
+```
+
+Until there is more fleshed out documentation on the type of responses that can come back from unsuccessful requests this is what we've come up with. We imagine once the API gets out of beta there will be more documentation on what those responses could be and we will adjust this library appropriately to match what their API states.
+
 ### Examples
+
+Current examples include the following:
+| Example | .NET Core 3.1 | .NET 6 | .NET 7 |
+|:--------|:-------------:|:------:|:------:|
+| Blazor Server | No | No | Yes |
+| Blazor WebAssembly | No | No | Yes |
+| Console Application | Yes | Yes | Yes |
+| Azure Functions | Yes | Yes | Yes |
+| ASP.NET Web API | Yes | Yes | Yes |
+| Windows Forms | Yes | Yes | Yes |
+| WPF | Yes | Yes | Yes |
 
 https://github.com/codemonarchs/OpenAISharp/tree/main/Examples
 
 ### Libraries
 
-1. `CodeMonarchs.OpenAISharp`
+1. [CodeMonarchs.OpenAISharp]()
     - Meta package that includes all of the below libraries.
-2. `CodeMonarchs.OpenAISharp.Completion`
+2. [CodeMonarchs.OpenAISharp.Completion](https://www.nuget.org/packages/CodeMonarchs.OpenAISharp.Completion/)
     - Completions API - (https://beta.openai.com/docs/api-reference/completions)
-3. `CodeMonarchs.OpenAISharp.Edit`
+3. [CodeMonarchs.OpenAISharp.Edit](https://www.nuget.org/packages/CodeMonarchs.OpenAISharp.Edit/)
     - Edit API - (https://beta.openai.com/docs/api-reference/edits)
-4. `CodeMonarchs.OpenAISharp.Embedding`
+4. [CodeMonarchs.OpenAISharp.Embedding](https://www.nuget.org/packages/CodeMonarchs.OpenAISharp.Embedding/)
     - Embeddings API - (https://beta.openai.com/docs/api-reference/embeddings)
-5. `CodeMonarchs.OpenAISharp.File`
+5. [CodeMonarchs.OpenAISharp.File](https://www.nuget.org/packages/CodeMonarchs.OpenAISharp.File/)
     - Files API - (https://beta.openai.com/docs/api-reference/files)
-6. `CodeMonarchs.OpenAISharp.FineTune`
+6. [CodeMonarchs.OpenAISharp.FineTune](https://www.nuget.org/packages/CodeMonarchs.OpenAISharp.FineTune/)
     - FineTunes API - (https://beta.openai.com/docs/api-reference/fine-tunes)
-7. `CodeMonarchs.OpenAISharp.Image`
+7. [CodeMonarchs.OpenAISharp.Image](https://www.nuget.org/packages/CodeMonarchs.OpenAISharp.Image/)
     - Images API - (https://beta.openai.com/docs/api-reference/images)
-8. `CodeMonarchs.OpenAISharp.Model`
+8. [CodeMonarchs.OpenAISharp.Model](https://www.nuget.org/packages/CodeMonarchs.OpenAISharp.Model/)
     - Models API - (https://beta.openai.com/docs/api-reference/models)
-9. `CodeMonarchs.OpenAISharp.Moderation`
+9. [CodeMonarchs.OpenAISharp.Moderation](https://www.nuget.org/packages/CodeMonarchs.OpenAISharp.Moderation/)
     - Moderations API - (https://beta.openai.com/docs/api-reference/moderation)
-10. `CodeMonarchs.OpenAISharp.Client`
+10. [CodeMonarchs.OpenAISharp.Client](https://www.nuget.org/packages/CodeMonarchs.OpenAISharp.Client/)
     - An abstraction layer specific to sending HTTP requests to the Open AI API. You don't need to include this by itself.
-11. `CodeMonarchs.OpenAISharp.Utilities`
+11. [CodeMonarchs.OpenAISharp.Utilities](https://www.nuget.org/packages/CodeMonarchs.OpenAISharp.Utilities/)
     - A utility library that contains an implementation of the [Tokenizer Tool](https://beta.openai.com/tokenizer?view=bpe) for GPT-3.
+12. [CodeMonarchs.OpenAISharp.Extensions](https://www.nuget.org/packages/CodeMonarchs.OpenAISharp.Extensions)
+    - Extension methods for registering the OpenAIClient and services.
 
 ### Integration Testing Setup For Contributers (OpenAISharp.IntegrationTests)
 
