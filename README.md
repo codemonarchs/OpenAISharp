@@ -1,5 +1,4 @@
 # OpenAISharp
-
 A **.NET Standard 2.1** C# class library created to easily interface with the the Open AI API.
 
 Supported Versions of .NET and .NET Core
@@ -10,7 +9,6 @@ Supported Versions of .NET and .NET Core
 **Note:** Technically any framework that can support .NET Standard 2.1 can support this library (including .NET Core 3.0, .NET 5) but we've only included examples for the above.
 
 ## Getting Started
-
 1. Install the NuGet package from [CodeMonarchs.OpenAISharp](https://www.nuget.org/packages/CodeMonarchs.OpenAISharp/#show-readme-container):
     - ```dotnet add package CodeMonarchs.OpenAISharp```
 2. Grab your `ApiKey` and `OrganizationId`  from Open AI:
@@ -87,12 +85,10 @@ Supported Versions of .NET and .NET Core
     ```
 6. **That's it!** See example project links below if you need help for another type of project.
 
-## Usage
-
+## Basic Usage
 Below is a run down of all of the services within this library and a sample of how to use them. All required parameters are set via the constructor in each of the request objects.
 
 ### CompletionService
-
 ```cs
 // Create Completion
 var request = new CreateCompletionRequest("model-name") { Prompt = "Say this is cool" };
@@ -100,7 +96,6 @@ var response = await service.CreateCompletionAsync(request);
 ```
 
 ### EditService
-
 ```cs
 // Create Edit
 var request = new CreateEditRequest(KnownModelNames.TextDavinciEdit001, "Translate this to Spanish") { Input = "Hey" };
@@ -108,7 +103,6 @@ var response = await service.CreateEditAsync(request);
 ```
 
 ### EmbeddingService
-
 ```cs
 // Create Embedding
 var request = new CreateEmbeddingRequest(KnownModelNames.TextEmbeddingAda002, "The car was super fast and...");
@@ -116,7 +110,6 @@ var response = await service.CreateEmbeddingAsync(request);
 ```
 
 ### FileService
-
 ```cs
 // List Files
 var response = await service.ListFilesAsync();
@@ -155,7 +148,6 @@ var response = await service.RetrieveFileContentAsync("file-id");
 ```
 
 ### FineTuneService
-
 ```cs
 // List FineTunes
 var response = await service.ListFineTunesAsync();
@@ -188,7 +180,6 @@ var response = await service.ListFineTuneEventsAsync("fine-tune-id");
 ```
 
 ### ImageService
-
 ```cs
 // Create Image
 var request = new CreateImageRequest("Draw Etzio from Assassin's Creed");
@@ -208,7 +199,6 @@ var response = await service.CreateImageVariationAsync(request);
 ```
 
 ### ModelService
-
 ```cs
 // List Models
 var response = await service.ListModelsAsync();
@@ -220,15 +210,17 @@ var response = await service.RetrieveModelAsync(KnownModelNames.Ada);
 ```
 
 ### ModerationService
-
 ```cs
 // List Models
 var request = new CreateModerationRequest("is this a bad word");
 var response = await service.CreateModerationAsync(request);
 ```
 
-## Error Handling
+## API Definitions
+To view the API for this library you can check the Docs here (scroll down past the mega list of files):
+https://github.com/codemonarchs/OpenAISharp/tree/documentation/Docs
 
+## Error Handling
 Currently there is no documentation on the Open AI API that tells you what type of object is returned on an unsuccessful response. So, until there is, rather than try to guess at what each type of response object is that comes back from the Open AI API, if there is no successful status code in the response of the API call we throw an exception. 
 
 The exception is as follows:
@@ -256,8 +248,7 @@ catch (OpenAIClientException ex)
 
 Until there is more fleshed out documentation on the type of responses that can come back from unsuccessful requests this is what we've come up with. We imagine once the API gets out of beta there will be more documentation on what those responses could be and we will adjust this library appropriately to match what their API states.
 
-### Examples
-
+## Examples
 Current examples include the following:
 | Example | .NET Core 3.1 | .NET 6 | .NET 7 |
 |:--------|:-------------:|:------:|:------:|
@@ -271,8 +262,7 @@ Current examples include the following:
 
 https://github.com/codemonarchs/OpenAISharp/tree/main/Examples
 
-### Libraries
-
+## Libraries
 1. [CodeMonarchs.OpenAISharp]()
     - Meta package that includes all of the below libraries.
 2. [CodeMonarchs.OpenAISharp.Completion](https://www.nuget.org/packages/CodeMonarchs.OpenAISharp.Completion/)
@@ -298,8 +288,7 @@ https://github.com/codemonarchs/OpenAISharp/tree/main/Examples
 12. [CodeMonarchs.OpenAISharp.Extensions](https://www.nuget.org/packages/CodeMonarchs.OpenAISharp.Extensions)
     - Extension methods for registering the OpenAIClient and services.
 
-### Integration Testing Setup For Contributers (OpenAISharp.IntegrationTests)
-
+## Integration Testing Setup For Contributers (OpenAISharp.IntegrationTests)
 1. Retrieve your `Apikey` and `OrganizationId` from the Open AI API.
     - https://beta.openai.com/account/api-keys
     - https://beta.openai.com/account/org-settings

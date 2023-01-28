@@ -1,4 +1,4 @@
-# Definitions
+# API Definitions
 
 #### [OpenAISharp.Client](./OpenAISharp.Client.md)
 #### [OpenAISharp.Completion](./OpenAISharp.Completion.md)
