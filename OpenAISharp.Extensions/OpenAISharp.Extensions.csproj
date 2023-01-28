@@ -2,6 +2,10 @@
 
 	<PropertyGroup>
 		<TargetFramework>netstandard2.1</TargetFramework>
+		<IsPackable>true</IsPackable>
+		<PackageId>CodeMonarchs.OpenAISharp.Extensions</PackageId>
+		<Description>Extension methods for registering the OpenAIClient and services.</Description>
+		<VersionPrefix>0.0.2</VersionPrefix>
 		<Nullable>enable</Nullable>
 		<GenerateDocumentationFile>True</GenerateDocumentationFile>
 	</PropertyGroup>
@@ -14,4 +18,7 @@
 		<ProjectReference Include="..\OpenAISharp\OpenAISharp.csproj" />
 	</ItemGroup>
 
+	<ItemGroup>
+		<None Include="..\README.md" Pack="true" PackagePath="\" />
+	</ItemGroup>
 </Project>
