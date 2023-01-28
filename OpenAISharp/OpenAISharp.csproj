@@ -10,11 +10,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.Extensions.Http" Version="7.0.0" />
-    <PackageReference Include="System.Text.Json" Version="7.0.1" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\OpenAISharp.Client\OpenAISharp.Client.csproj" />
     <ProjectReference Include="..\OpenAISharp.Completion\OpenAISharp.Completion.csproj" />
     <ProjectReference Include="..\OpenAISharp.Edit\OpenAISharp.Edit.csproj" />

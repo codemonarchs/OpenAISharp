@@ -38,6 +38,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OpenAISharp.IntegrationTest
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OpenAISharp.UnitTests", "Tests\OpenAISharp.UnitTests\OpenAISharp.UnitTests.csproj", "{6971B960-305F-49AE-8A73-D7963B917739}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenAISharp.Extensions", "OpenAISharp.Extensions\OpenAISharp.Extensions.csproj", "{37625144-28D0-422D-920B-3CA65912FFD3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -96,6 +98,10 @@ Global
 		{6971B960-305F-49AE-8A73-D7963B917739}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6971B960-305F-49AE-8A73-D7963B917739}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6971B960-305F-49AE-8A73-D7963B917739}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37625144-28D0-422D-920B-3CA65912FFD3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37625144-28D0-422D-920B-3CA65912FFD3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37625144-28D0-422D-920B-3CA65912FFD3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37625144-28D0-422D-920B-3CA65912FFD3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

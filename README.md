@@ -21,7 +21,6 @@ Supported Versions of .NET and .NET Core
         "OpenAI:OrganizationId": "<your-organization-id>"
     } 
     ```
-
 4. Register the dependencies in your `Program.cs` file:
     ```cs 
     // Include OpenAISharp.Extensions library to access the .AddOpenAI(...) extension method
