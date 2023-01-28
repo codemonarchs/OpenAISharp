@@ -9,7 +9,7 @@ Supported Versions of .NET and .NET Core
 
 **Note:** Technically any framework that can support .NET Standard 2.1 can support this library (including .NET Core 3.0, .NET 5) but we've only included examples for the above.
 
-## Getting Started - Web API (.NET/.NET Core)
+## Getting Started
 
 1. Install the NuGet package from [CodeMonarchs.OpenAISharp](https://www.nuget.org/packages/CodeMonarchs.OpenAISharp/#show-readme-container):
     - ```dotnet add package CodeMonarchs.OpenAISharp```
@@ -60,7 +60,32 @@ Supported Versions of .NET and .NET Core
 
     builder.Services.AddOpenAI(apiKey, organizationId);
     ```
-5. **That's it!** Now you can consume any of the services in this repository as you normally would with regular old dependency injection. See example project links below if you need help.
+5. Consume any of the services in your controller via dependency injection:
+    ```csharp
+    using Microsoft.AspNetCore.Mvc;
+    using OpenAISharp.Model;
+    using OpenAISharp.Model.Responses;
+
+    namespace OpenAISharp.Examples.WebApiNet7.Controllers
+    {
+        [ApiController]
+        [Route("[controller]")]
+        public class ExampleController : ControllerBase
+        {
+            private readonly IModelService _modelService;
+
+            public ExampleController(IModelService modelService)
+            {
+                _modelService = modelService;
+            }
+
+            [HttpGet]
+            public async Task<ListModelsResponse> GetAsync()
+                => await _modelService.ListModelsAsync();
+        }
+    }
+    ```
+6. **That's it!** See example project links below if you need help for another type of project.
 
 ## Usage
 
