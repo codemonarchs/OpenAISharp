@@ -4,6 +4,9 @@ using System.Threading.Tasks;
 
 namespace OpenAISharp.Client
 {
+    /// <summary>
+    /// Typed client containing generic HTTP request methods for interfacing with the Open AI API.
+    /// </summary>
     public interface IOpenAIClient
     {
         /// <summary>
@@ -19,8 +22,8 @@ namespace OpenAISharp.Client
         /// </summary>
         /// <typeparam name="TRequest"></typeparam>
         /// <typeparam name="TResponse"></typeparam>
+        /// <param name="path"></param>
         /// <param name="request"></param>
-        /// <param name="uri"></param>
         /// <returns></returns>
         Task<TResponse> PostAsync<TRequest, TResponse>(string path, TRequest request) where TRequest : class where TResponse : class;
 

@@ -18,7 +18,6 @@ namespace OpenAISharp.Client
         /// The almighty constructor.
         /// </summary>
         /// <param name="httpClient"></param>
-        /// <param name="options"></param>
         public OpenAIClient(HttpClient httpClient) { _httpClient = httpClient; }
 
         /// <inheritdoc cref="IOpenAIClient.DeleteAsync"/>

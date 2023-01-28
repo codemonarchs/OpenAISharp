@@ -22,7 +22,7 @@ namespace OpenAISharp.Extensions
         /// <param name="organizationId">Your Organization Id from Open AI. (Optional)</param>
         /// <param name="baseUrl">The Base URL for the API. (Optional)</param>
         /// <returns></returns>
-        public static IServiceCollection AddOpenAI(this IServiceCollection services, string apiKey, string organizationId = "", string baseUrl = "https://api.openai.com")
+        public static IServiceCollection AddOpenAI(this IServiceCollection services, string? apiKey, string organizationId = "", string baseUrl = "https://api.openai.com")
         {
             // Add OpenAISharp Dependencies and Configuration
             services.AddHttpClient<IOpenAIClient, OpenAIClient>(client =>
