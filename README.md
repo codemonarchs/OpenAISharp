@@ -9,7 +9,7 @@ Supported Versions of .NET and .NET Core
 
 ## Getting Started - Web API (.NET/.NET Core)
 
-1. Install the NuGet package from [CodeMonarchs.OpenAISharp](https://www.nuget.org/packages/CodeMonarchs.OpenAISharp/0.0.2#show-readme-container):
+1. Install the NuGet package from [CodeMonarchs.OpenAISharp](https://www.nuget.org/packages/CodeMonarchs.OpenAISharp/#show-readme-container):
     - ```dotnet add package CodeMonarchs.OpenAISharp```
 2. Grab your `ApiKey` and `OrganizationId`  from Open AI:
     - [https://beta.openai.com/account/api-keys](https://beta.openai.com/account/api-keys)
