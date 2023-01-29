@@ -14,7 +14,7 @@ namespace OpenAISharp.File.Requests
         /// <param name="file"></param>
         /// <param name="fileContent"></param>
         /// <param name="useFilePath"></param>
-        public UploadFileRequest(string file, string fileContent, bool useFilePath)
+        public UploadFileRequest(string file, string? fileContent, bool useFilePath)
         {
             File = file.EndsWith(".jsonl") ? file : $"{file}.jsonl";
             FileContent = fileContent;

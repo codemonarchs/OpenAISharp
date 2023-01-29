@@ -11,6 +11,8 @@ namespace OpenAISharp.Image
     public class ImageService : IImageService
     {
         private readonly IOpenAIClient _openAIClient;
+
+        /// <inheritdoc cref="IImageService"/>
         public ImageService(IOpenAIClient openAIClient) { _openAIClient = openAIClient; }
 
         /// <inheritdoc cref="IImageService.CreateImageAsync"/>
@@ -34,7 +36,7 @@ namespace OpenAISharp.Image
             return await _openAIClient.MultiPartFormPostAsync<CreateImageEditResponse>("/v1/images/edits", formData);
         }
 
-        /// <inheritdoc cref="IImageService.CreateImageVarationAsync"/>
+        /// <inheritdoc cref="IImageService.CreateImageVariationAsync"/>
         public async Task<CreateImageVariationResponse> CreateImageVariationAsync(CreateImageVariationRequest request)
         {
             var formData = new MultipartFormDataContent

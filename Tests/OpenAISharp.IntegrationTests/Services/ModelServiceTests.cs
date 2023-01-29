@@ -14,7 +14,6 @@ namespace OpenAISharp.IntegrationTests.Services
             using var server = new TestServer(new WebHostBuilder().UseStartup<IntegrationTestStartup>());
             var service = server.Host.Services.GetService<IModelService>();
             var response = await service.ListModelsAsync();
-            var hi = response.Data.OrderBy(x => x.Id);
             Assert.NotNull(response);
         }
 
