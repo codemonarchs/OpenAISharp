@@ -218,7 +218,7 @@ var response = await service.CreateModerationAsync(request);
 
 ## API Definitions
 To view the API for this library you can check the Docs here (scroll down past the mega list of files):
-https://github.com/codemonarchs/OpenAISharp/tree/documentation/Docs
+https://github.com/codemonarchs/OpenAISharp/tree/main/Docs
 
 ## Error Handling
 Currently there is no documentation on the Open AI API that tells you what type of object is returned on an unsuccessful response. So, until there is, rather than try to guess at what each type of response object is that comes back from the Open AI API, if there is no successful status code in the response of the API call we throw an exception. 
