@@ -1,5 +1,7 @@
 # KnownModelNames.IfCurieV2 field
 
+Model name: if-curie-v2
+
 ```csharp
 public const string IfCurieV2;
 ```

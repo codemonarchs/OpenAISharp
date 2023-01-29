@@ -1,5 +1,7 @@
 # KnownModelNames.TextSearchAdaDoc001 field
 
+Model name: text-search-ada-doc-001
+
 ```csharp
 public const string TextSearchAdaDoc001;
 ```

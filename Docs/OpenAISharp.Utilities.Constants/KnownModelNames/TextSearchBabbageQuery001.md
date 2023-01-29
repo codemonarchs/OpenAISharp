@@ -1,5 +1,7 @@
 # KnownModelNames.TextSearchBabbageQuery001 field
 
+Model name: text-search-babbage-query-001
+
 ```csharp
 public const string TextSearchBabbageQuery001;
 ```

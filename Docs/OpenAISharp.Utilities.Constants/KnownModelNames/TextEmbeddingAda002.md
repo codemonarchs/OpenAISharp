@@ -1,5 +1,7 @@
 # KnownModelNames.TextEmbeddingAda002 field
 
+Model name: text-embedding-ada-002
+
 ```csharp
 public const string TextEmbeddingAda002;
 ```

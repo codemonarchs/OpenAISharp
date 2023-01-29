@@ -1,5 +1,7 @@
 # KnownModelNames.DavinciSearchDocument field
 
+Model name: davinci-search-document
+
 ```csharp
 public const string DavinciSearchDocument;
 ```

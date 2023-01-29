@@ -1,12 +1,15 @@
-﻿using System;
+﻿using OpenAISharp.Utilities.Lookups;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
-using OpenAISharp.Utilities.Lookups;
 
 namespace OpenAISharp.Utilities
 {
+    /// <summary>
+    /// Utility used to help encode/decode tokens for the logit_bias parameter when sending a request to Completion API.
+    /// </summary>
     public class EncoderUtility
     {
         /// <summary>

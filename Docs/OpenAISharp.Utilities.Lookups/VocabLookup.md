@@ -1,5 +1,7 @@
 # VocabLookup class
 
+Loop up class for vocab data.
+
 ```csharp
 public static class VocabLookup
 ```
@@ -8,7 +10,7 @@ public static class VocabLookup
 
 | name | description |
 | --- | --- |
-| static [Data](VocabLookup/Data.md) |  |
+| static [Data](VocabLookup/Data.md) | The lookup data used within the EncoderUtility when encoding/decoding tokens. |
 
 ## See Also
 

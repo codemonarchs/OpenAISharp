@@ -1,5 +1,7 @@
 # OpenAIClientException class
 
+Generic exception throw from calls made to OpenAI API via the OpenAIClient.
+
 ```csharp
 public class OpenAIClientException : Exception
 ```
@@ -8,8 +10,8 @@ public class OpenAIClientException : Exception
 
 | name | description |
 | --- | --- |
-| [OpenAIClientException](OpenAIClientException/OpenAIClientException.md)(…) |  |
-| [HttpStatusCode](OpenAIClientException/HttpStatusCode.md) { get; set; } |  |
+| [OpenAIClientException](OpenAIClientException/OpenAIClientException.md)(…) | The almighty OpenAIClientExceptionconstructor. |
+| [HttpStatusCode](OpenAIClientException/HttpStatusCode.md) { get; set; } | The HTTP status code returned from the request. |
 
 ## See Also
 

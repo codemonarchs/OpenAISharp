@@ -1,5 +1,7 @@
 # KnownModelNames.CodeSearchBabbageText001 field
 
+Model name: code-search-babbage-text-001
+
 ```csharp
 public const string CodeSearchBabbageText001;
 ```

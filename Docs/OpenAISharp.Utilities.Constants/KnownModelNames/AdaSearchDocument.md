@@ -1,5 +1,7 @@
 # KnownModelNames.AdaSearchDocument field
 
+Model name: ada-search-document
+
 ```csharp
 public const string AdaSearchDocument;
 ```

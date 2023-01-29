@@ -1,5 +1,7 @@
 # KnownModelNames.TextDavinciInsert002 field
 
+Model name: text-davinci-insert-002
+
 ```csharp
 public const string TextDavinciInsert002;
 ```

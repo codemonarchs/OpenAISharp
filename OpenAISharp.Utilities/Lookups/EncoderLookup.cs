@@ -2,8 +2,14 @@ using System.Collections.Generic;
 
 namespace OpenAISharp.Utilities.Lookups
 {
+    /// <summary>
+    /// Encoder look up values.
+    /// </summary>
     public static class EncoderLookup
     {
+        /// <summary>
+        /// The lookup data used within the EncoderUtility when encoding/decoding tokens.
+        /// </summary>
         public static Dictionary<string, int> Data = new Dictionary<string, int>
         {
             { @"!", 0 },

@@ -1,6 +1,3 @@
-using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.TestHost;
-using Microsoft.Extensions.DependencyInjection;
 using OpenAISharp.File;
 using OpenAISharp.File.Models;
 using OpenAISharp.File.Requests;
@@ -13,8 +10,7 @@ namespace OpenAISharp.IntegrationTests.Services
         [Fact]
         public async Task WhenCallingListFilesAsyncShouldNotBeNull()
         {
-            using var server = new TestServer(new WebHostBuilder().UseStartup<IntegrationTestStartup>());
-            var service = server.Host.Services.GetService<IFileService>();
+            var service = IntegrationTestStartup.GetService<IFileService>();
             var response = await service.ListFilesAsync();
             Assert.NotNull(response);
         }
@@ -22,8 +18,7 @@ namespace OpenAISharp.IntegrationTests.Services
         [Fact]
         public async Task WhenCallingUploadFileAsyncShouldNotBeNull()
         {
-            using var server = new TestServer(new WebHostBuilder().UseStartup<IntegrationTestStartup>());
-            var service = server.Host.Services.GetService<IFileService>();
+            var service = IntegrationTestStartup.GetService<IFileService>();
             var fileContent = FileUtility.ToJsonL(new List<FilePromptAndCompletion>
             {
                 new FilePromptAndCompletion("How old is Ryan Tunis?", "35"),
@@ -38,8 +33,7 @@ namespace OpenAISharp.IntegrationTests.Services
         [Fact]
         public async Task WhenCallingRetrieveFileAsyncShouldNotBeNull()
         {
-            using var server = new TestServer(new WebHostBuilder().UseStartup<IntegrationTestStartup>());
-            var service = server.Host.Services.GetService<IFileService>();
+            var service = IntegrationTestStartup.GetService<IFileService>();
             var response = await service.RetrieveFileAsync("");
             Assert.NotNull(response);
         }
@@ -47,8 +41,7 @@ namespace OpenAISharp.IntegrationTests.Services
         [Fact]
         public async Task WhenCallingDeleteFileAsyncShouldNotBeNull()
         {
-            using var server = new TestServer(new WebHostBuilder().UseStartup<IntegrationTestStartup>());
-            var service = server.Host.Services.GetService<IFileService>();
+            var service = IntegrationTestStartup.GetService<IFileService>();
             var response = await service.DeleteFileAsync("");
             Assert.NotNull(response);
             Assert.True(response.Deleted);
@@ -58,8 +51,7 @@ namespace OpenAISharp.IntegrationTests.Services
         public async Task WhenCallingRetrieveFileContentAsyncShouldNotBeNull()
         {
             // This requires a paid account
-            using var server = new TestServer(new WebHostBuilder().UseStartup<IntegrationTestStartup>());
-            var service = server.Host.Services.GetService<IFileService>();
+            var service = IntegrationTestStartup.GetService<IFileService>();
             var response = await service.RetrieveFileContentAsync("");
             Assert.NotNull(response);
         }

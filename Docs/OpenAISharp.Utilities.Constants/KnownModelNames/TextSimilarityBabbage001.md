@@ -1,5 +1,7 @@
 # KnownModelNames.TextSimilarityBabbage001 field
 
+Model name: text-similarity-ada-001
+
 ```csharp
 public const string TextSimilarityBabbage001;
 ```

@@ -1,5 +1,7 @@
 # KnownModelNames.AdaSimilarity field
 
+Model name: ada-similarity
+
 ```csharp
 public const string AdaSimilarity;
 ```

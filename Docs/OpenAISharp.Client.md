@@ -11,7 +11,7 @@
 
 | public type | description |
 | --- | --- |
-| class [OpenAIClientException](./OpenAISharp.Client.Exceptions/OpenAIClientException.md) |  |
+| class [OpenAIClientException](./OpenAISharp.Client.Exceptions/OpenAIClientException.md) | Generic exception throw from calls made to OpenAI API via the OpenAIClient. |
 
 ## OpenAISharp.Client.Options namespace
 

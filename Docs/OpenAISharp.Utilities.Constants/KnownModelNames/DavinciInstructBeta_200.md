@@ -1,5 +1,7 @@
 # KnownModelNames.DavinciInstructBeta_200 field
 
+Model name: davinci-instruct-beta:2.0.0
+
 ```csharp
 public const string DavinciInstructBeta_200;
 ```

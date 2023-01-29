@@ -1,5 +1,7 @@
 # EncoderLookup class
 
+Encoder look up values.
+
 ```csharp
 public static class EncoderLookup
 ```
@@ -8,7 +10,7 @@ public static class EncoderLookup
 
 | name | description |
 | --- | --- |
-| static [Data](EncoderLookup/Data.md) |  |
+| static [Data](EncoderLookup/Data.md) | The lookup data used within the EncoderUtility when encoding/decoding tokens. |
 
 ## See Also
 
