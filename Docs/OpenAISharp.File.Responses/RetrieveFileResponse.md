@@ -1,5 +1,7 @@
 # RetrieveFileResponse class
 
+Description not provided by Open AI API.
+
 ```csharp
 public class RetrieveFileResponse
 ```
@@ -9,12 +11,16 @@ public class RetrieveFileResponse
 | name | description |
 | --- | --- |
 | [RetrieveFileResponse](RetrieveFileResponse/RetrieveFileResponse.md)() | The default constructor. |
-| [Bytes](RetrieveFileResponse/Bytes.md) { get; set; } |  |
-| [CreatedAt](RetrieveFileResponse/CreatedAt.md) { get; set; } |  |
-| [Filename](RetrieveFileResponse/Filename.md) { get; set; } |  |
-| [Id](RetrieveFileResponse/Id.md) { get; set; } |  |
-| [Object](RetrieveFileResponse/Object.md) { get; set; } |  |
-| [Purpose](RetrieveFileResponse/Purpose.md) { get; set; } |  |
+| [Bytes](RetrieveFileResponse/Bytes.md) { get; set; } | Description not provided by Open AI API. |
+| [CreatedAt](RetrieveFileResponse/CreatedAt.md) { get; set; } | Description not provided by Open AI API. |
+| [Filename](RetrieveFileResponse/Filename.md) { get; set; } | Description not provided by Open AI API. |
+| [Id](RetrieveFileResponse/Id.md) { get; set; } | Description not provided by Open AI API. |
+| [Object](RetrieveFileResponse/Object.md) { get; set; } | Description not provided by Open AI API. |
+| [Purpose](RetrieveFileResponse/Purpose.md) { get; set; } | Description not provided by Open AI API. |
+
+## Remarks
+
+Returned from [`RetrieveFileAsync`](../OpenAISharp.File/IFileService/RetrieveFileAsync.md).
 
 ## See Also
 

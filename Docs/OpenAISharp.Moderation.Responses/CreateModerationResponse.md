@@ -1,5 +1,7 @@
 # CreateModerationResponse class
 
+Description not provided by Open AI API.
+
 ```csharp
 public class CreateModerationResponse
 ```
@@ -9,9 +11,13 @@ public class CreateModerationResponse
 | name | description |
 | --- | --- |
 | [CreateModerationResponse](CreateModerationResponse/CreateModerationResponse.md)() | The default constructor. |
-| [Id](CreateModerationResponse/Id.md) { get; set; } |  |
-| [Model](CreateModerationResponse/Model.md) { get; set; } |  |
-| [Results](CreateModerationResponse/Results.md) { get; set; } |  |
+| [Id](CreateModerationResponse/Id.md) { get; set; } | Description not provided by Open AI API. |
+| [Model](CreateModerationResponse/Model.md) { get; set; } | Description not provided by Open AI API. |
+| [Results](CreateModerationResponse/Results.md) { get; set; } | Description not provided by Open AI API. |
+
+## Remarks
+
+Returned from [`CreateModerationAsync`](../OpenAISharp.Moderation/IModerationService/CreateModerationAsync.md).
 
 ## See Also
 

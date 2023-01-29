@@ -1,5 +1,7 @@
 # RetrieveModelResponse.Permission property
 
+Description not provided by Open AI API.
+
 ```csharp
 public List<ModelPermission?>? Permission { get; set; }
 ```

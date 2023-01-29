@@ -1,5 +1,7 @@
 # CreateFineTuneResponse.FineTunedModel property
 
+Description not provided by Open AI API.
+
 ```csharp
 public string? FineTunedModel { get; set; }
 ```

@@ -1,5 +1,7 @@
 # EmbeddingData class
 
+Description not provided by Open AI API.
+
 ```csharp
 public class EmbeddingData
 ```
@@ -9,9 +11,9 @@ public class EmbeddingData
 | name | description |
 | --- | --- |
 | [EmbeddingData](EmbeddingData/EmbeddingData.md)() | The default constructor. |
-| [Embedding](EmbeddingData/Embedding.md) { get; set; } |  |
-| [Index](EmbeddingData/Index.md) { get; set; } |  |
-| [Object](EmbeddingData/Object.md) { get; set; } |  |
+| [Embedding](EmbeddingData/Embedding.md) { get; set; } | Description not provided by Open AI API. |
+| [Index](EmbeddingData/Index.md) { get; set; } | Description not provided by Open AI API. |
+| [Object](EmbeddingData/Object.md) { get; set; } | Description not provided by Open AI API. |
 
 ## See Also
 

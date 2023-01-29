@@ -16,6 +16,10 @@ public class UploadFileRequest
 | [Purpose](UploadFileRequest/Purpose.md) { get; } | The intended purpose of the uploaded documents. Use "fine-tune" for Fine-tuning.This allows us to validate the format of the uploaded file. Currently the only supported purpose is "fine-tune". |
 | [UseFilePath](UploadFileRequest/UseFilePath.md) { get; } | A flag to tell the service class whether the FileContent is actual .jsonl content or if it's a file path. |
 
+## Remarks
+
+Used with [`UploadFileAsync`](../OpenAISharp.File/IFileService/UploadFileAsync.md).
+
 ## See Also
 
 * namespace [OpenAISharp.File.Requests](../OpenAISharp.File.md)

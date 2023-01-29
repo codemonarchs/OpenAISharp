@@ -15,6 +15,10 @@ public class CreateEmbeddingRequest
 | [Model](CreateEmbeddingRequest/Model.md) { get; } | ID of the model to use. You can use the List models API to see all of your available models, or see our Model overview for descriptions of them. |
 | [User](CreateEmbeddingRequest/User.md) { get; set; } | A unique identifier representing your end-user, which can help OpenAI to monitor and detect abuse. Learn more. |
 
+## Remarks
+
+Used with [`CreateEmbeddingAsync`](../OpenAISharp.Embedding/IEmbeddingService/CreateEmbeddingAsync.md).
+
 ## See Also
 
 * namespace [OpenAISharp.Embedding.Requests](../OpenAISharp.Embedding.md)

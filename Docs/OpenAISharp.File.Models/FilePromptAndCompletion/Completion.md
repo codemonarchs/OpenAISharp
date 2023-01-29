@@ -1,5 +1,7 @@
 # FilePromptAndCompletion.Completion property
 
+The completion for the AI.
+
 ```csharp
 public string Completion { get; set; }
 ```

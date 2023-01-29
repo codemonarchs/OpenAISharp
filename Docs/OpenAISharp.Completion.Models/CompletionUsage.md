@@ -1,5 +1,7 @@
 # CompletionUsage class
 
+Description not provided by Open AI API.
+
 ```csharp
 public class CompletionUsage
 ```
@@ -9,9 +11,9 @@ public class CompletionUsage
 | name | description |
 | --- | --- |
 | [CompletionUsage](CompletionUsage/CompletionUsage.md)() | The default constructor. |
-| [CompletionTokens](CompletionUsage/CompletionTokens.md) { get; set; } |  |
-| [PromptTokens](CompletionUsage/PromptTokens.md) { get; set; } |  |
-| [TotalTokens](CompletionUsage/TotalTokens.md) { get; set; } |  |
+| [CompletionTokens](CompletionUsage/CompletionTokens.md) { get; set; } | Description not provided by Open AI API. |
+| [PromptTokens](CompletionUsage/PromptTokens.md) { get; set; } | Description not provided by Open AI API. |
+| [TotalTokens](CompletionUsage/TotalTokens.md) { get; set; } | Description not provided by Open AI API. |
 
 ## See Also
 

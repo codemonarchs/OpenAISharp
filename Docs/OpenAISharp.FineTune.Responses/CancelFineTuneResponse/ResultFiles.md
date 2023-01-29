@@ -1,5 +1,7 @@
 # CancelFineTuneResponse.ResultFiles property
 
+Description not provided by Open AI API.
+
 ```csharp
 public List<FineTuneResultFile>? ResultFiles { get; set; }
 ```

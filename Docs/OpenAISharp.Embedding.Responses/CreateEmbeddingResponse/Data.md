@@ -1,7 +1,9 @@
 # CreateEmbeddingResponse.Data property
 
+Description not provided by Open AI API.
+
 ```csharp
-public List<EmbeddingData> Data { get; set; }
+public List<EmbeddingData?>? Data { get; set; }
 ```
 
 ## See Also

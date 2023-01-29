@@ -10,7 +10,7 @@ public class CreateImageEditRequest
 
 | name | description |
 | --- | --- |
-| [CreateImageEditRequest](CreateImageEditRequest/CreateImageEditRequest.md)(…) | The almighty constructor. |
+| [CreateImageEditRequest](CreateImageEditRequest/CreateImageEditRequest.md)(…) |  |
 | [Image](CreateImageEditRequest/Image.md) { get; } | The image to edit. Must be a valid PNG file, less than 4MB, and square. If mask is not provided, image must have transparency, which will be used as the mask. |
 | [ImageContent](CreateImageEditRequest/ImageContent.md) { get; } | The actual image content or a path to the image file. |
 | [Mask](CreateImageEditRequest/Mask.md) { get; set; } | An additional image whose fully transparent areas (e.g. where alpha is zero) indicate where image should be edited. Must be a valid PNG file, less than 4MB, and have the same dimensions as image. |
@@ -22,6 +22,10 @@ public class CreateImageEditRequest
 | [UseImageFilePath](CreateImageEditRequest/UseImageFilePath.md) { get; } | A flag to determine whether to get image data from a file path or if the data is already included. |
 | [UseMaskFilePath](CreateImageEditRequest/UseMaskFilePath.md) { get; set; } | A flag to determine whether to get mask image data from a file path or if the data is already included. |
 | [User](CreateImageEditRequest/User.md) { get; set; } | A unique identifier representing your end-user, which can help OpenAI to monitor and detect abuse. |
+
+## Remarks
+
+Used with [`CreateImageEditAsync`](../OpenAISharp.Image/IImageService/CreateImageEditAsync.md).
 
 ## See Also
 

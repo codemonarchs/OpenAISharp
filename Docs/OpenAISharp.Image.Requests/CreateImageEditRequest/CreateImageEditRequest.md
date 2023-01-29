@@ -1,16 +1,16 @@
 # CreateImageEditRequest constructor
 
-The almighty constructor.
-
 ```csharp
-public CreateImageEditRequest(string image, string imagePath, string prompt, bool useImageFilePath)
+public CreateImageEditRequest(string image, string imageContent, string prompt, 
+    bool useImageFilePath)
 ```
 
 | parameter | description |
 | --- | --- |
-| image |  |
-| imagePath |  |
-| prompt |  |
+| image | An image file name you want to use. Ex. 'myimage.png' |
+| imageContent | The content of the image in a string format or a file path to the image. path to |
+| prompt | The text to prompt the AI. |
+| useImageFilePath | A flag to determine if the ImageContent should be read from a file or sent as is. |
 
 ## See Also
 

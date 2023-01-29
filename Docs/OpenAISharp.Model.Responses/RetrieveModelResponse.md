@@ -1,5 +1,7 @@
 # RetrieveModelResponse class
 
+Description not provided by Open AI API.
+
 ```csharp
 public class RetrieveModelResponse
 ```
@@ -9,10 +11,14 @@ public class RetrieveModelResponse
 | name | description |
 | --- | --- |
 | [RetrieveModelResponse](RetrieveModelResponse/RetrieveModelResponse.md)() | The default constructor. |
-| [Id](RetrieveModelResponse/Id.md) { get; set; } |  |
-| [Object](RetrieveModelResponse/Object.md) { get; set; } |  |
-| [OwnedBy](RetrieveModelResponse/OwnedBy.md) { get; set; } |  |
-| [Permission](RetrieveModelResponse/Permission.md) { get; set; } |  |
+| [Id](RetrieveModelResponse/Id.md) { get; set; } | Description not provided by Open AI API. |
+| [Object](RetrieveModelResponse/Object.md) { get; set; } | Description not provided by Open AI API. |
+| [OwnedBy](RetrieveModelResponse/OwnedBy.md) { get; set; } | Description not provided by Open AI API. |
+| [Permission](RetrieveModelResponse/Permission.md) { get; set; } | Description not provided by Open AI API. |
+
+## Remarks
+
+Returned from [`RetrieveModelAsync`](../OpenAISharp.Model/IModelService/RetrieveModelAsync.md).
 
 ## See Also
 

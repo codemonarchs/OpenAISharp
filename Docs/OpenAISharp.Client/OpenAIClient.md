@@ -8,7 +8,7 @@ public class OpenAIClient : IOpenAIClient
 
 | name | description |
 | --- | --- |
-| [OpenAIClient](OpenAIClient/OpenAIClient.md)(…) | The almighty constructor. |
+| [OpenAIClient](OpenAIClient/OpenAIClient.md)(…) |  |
 | [DeleteAsync&lt;TResponse&gt;](OpenAIClient/DeleteAsync.md)(…) |  |
 | [GetAsync&lt;TResponse&gt;](OpenAIClient/GetAsync.md)(…) |  |
 | [GetStringAsync](OpenAIClient/GetStringAsync.md)(…) |  |

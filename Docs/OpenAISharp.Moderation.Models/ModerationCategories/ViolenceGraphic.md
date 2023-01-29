@@ -1,5 +1,7 @@
 # ModerationCategories.ViolenceGraphic property
 
+Description not provided by Open AI API.
+
 ```csharp
 public bool? ViolenceGraphic { get; set; }
 ```

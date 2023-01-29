@@ -17,6 +17,10 @@ public class CreateImageRequest
 | [Size](CreateImageRequest/Size.md) { get; set; } | The size of the generated images. Must be one of 256x256, 512x512, or 1024x1024. |
 | [User](CreateImageRequest/User.md) { get; set; } | A unique identifier representing your end-user, which can help OpenAI to monitor and detect abuse. |
 
+## Remarks
+
+Used with [`CreateImageAsync`](../OpenAISharp.Image/IImageService/CreateImageAsync.md).
+
 ## See Also
 
 * namespace [OpenAISharp.Image.Requests](../OpenAISharp.Image.md)

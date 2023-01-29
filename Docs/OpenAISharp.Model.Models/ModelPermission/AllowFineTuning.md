@@ -1,5 +1,7 @@
 # ModelPermission.AllowFineTuning property
 
+Description not provided by Open AI API.
+
 ```csharp
 public bool AllowFineTuning { get; set; }
 ```

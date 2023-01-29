@@ -1,5 +1,7 @@
 # ListFineTuneEventsResponse class
 
+Description not provided by Open AI API.
+
 ```csharp
 public class ListFineTuneEventsResponse
 ```
@@ -9,8 +11,12 @@ public class ListFineTuneEventsResponse
 | name | description |
 | --- | --- |
 | [ListFineTuneEventsResponse](ListFineTuneEventsResponse/ListFineTuneEventsResponse.md)() | The default constructor. |
-| [Data](ListFineTuneEventsResponse/Data.md) { get; set; } |  |
-| [Object](ListFineTuneEventsResponse/Object.md) { get; set; } |  |
+| [Data](ListFineTuneEventsResponse/Data.md) { get; set; } | Description not provided by Open AI API. |
+| [Object](ListFineTuneEventsResponse/Object.md) { get; set; } | Description not provided by Open AI API. |
+
+## Remarks
+
+Returned from [`ListFineTuneEventsAsync`](../OpenAISharp.FineTune/IFineTuneService/ListFineTuneEventsAsync.md).
 
 ## See Also
 

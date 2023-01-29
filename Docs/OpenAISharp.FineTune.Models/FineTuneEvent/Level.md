@@ -1,5 +1,7 @@
 # FineTuneEvent.Level property
 
+Description not provided by Open AI API.
+
 ```csharp
 public string? Level { get; set; }
 ```

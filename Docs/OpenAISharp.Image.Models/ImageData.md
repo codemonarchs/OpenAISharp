@@ -1,5 +1,7 @@
 # ImageData class
 
+Description not provided by Open AI API.
+
 ```csharp
 public class ImageData
 ```
@@ -9,7 +11,7 @@ public class ImageData
 | name | description |
 | --- | --- |
 | [ImageData](ImageData/ImageData.md)() | The default constructor. |
-| [Url](ImageData/Url.md) { get; set; } |  |
+| [Url](ImageData/Url.md) { get; set; } | Description not provided by Open AI API. |
 
 ## See Also
 

@@ -1,7 +1,9 @@
 # CreateEditResponse.Choices property
 
+Description not provided by Open AI API.
+
 ```csharp
-public List<EditChoice>? Choices { get; set; }
+public List<EditChoice?>? Choices { get; set; }
 ```
 
 ## See Also

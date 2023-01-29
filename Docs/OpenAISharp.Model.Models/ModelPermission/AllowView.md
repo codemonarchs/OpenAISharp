@@ -1,5 +1,7 @@
 # ModelPermission.AllowView property
 
+Description not provided by Open AI API.
+
 ```csharp
 public bool AllowView { get; set; }
 ```

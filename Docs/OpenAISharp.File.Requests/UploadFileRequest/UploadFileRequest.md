@@ -3,7 +3,7 @@
 The almighty constructor.
 
 ```csharp
-public UploadFileRequest(string file, string fileContent, bool useFilePath)
+public UploadFileRequest(string file, string? fileContent, bool useFilePath)
 ```
 
 | parameter | description |

@@ -1,5 +1,7 @@
 # CreateCompletionResponse.Usage property
 
+Description not provided by Open AI API.
+
 ```csharp
 public CompletionUsage? Usage { get; set; }
 ```

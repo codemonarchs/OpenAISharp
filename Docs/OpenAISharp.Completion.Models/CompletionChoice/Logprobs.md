@@ -1,5 +1,7 @@
 # CompletionChoice.Logprobs property
 
+Description not provided by Open AI API.
+
 ```csharp
 public int? Logprobs { get; set; }
 ```

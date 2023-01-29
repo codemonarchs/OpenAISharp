@@ -9,19 +9,23 @@ public class CancelFineTuneResponse
 | name | description |
 | --- | --- |
 | [CancelFineTuneResponse](CancelFineTuneResponse/CancelFineTuneResponse.md)() | The default constructor. |
-| [CreatedAt](CancelFineTuneResponse/CreatedAt.md) { get; set; } |  |
-| [Events](CancelFineTuneResponse/Events.md) { get; set; } |  |
-| [FineTunedModel](CancelFineTuneResponse/FineTunedModel.md) { get; set; } |  |
-| [Hyperparams](CancelFineTuneResponse/Hyperparams.md) { get; set; } |  |
-| [Id](CancelFineTuneResponse/Id.md) { get; set; } |  |
-| [Model](CancelFineTuneResponse/Model.md) { get; set; } |  |
-| [Object](CancelFineTuneResponse/Object.md) { get; set; } |  |
-| [OrganizationId](CancelFineTuneResponse/OrganizationId.md) { get; set; } |  |
-| [ResultFiles](CancelFineTuneResponse/ResultFiles.md) { get; set; } |  |
-| [Status](CancelFineTuneResponse/Status.md) { get; set; } |  |
-| [TrainingFiles](CancelFineTuneResponse/TrainingFiles.md) { get; set; } |  |
-| [UpdatedAt](CancelFineTuneResponse/UpdatedAt.md) { get; set; } |  |
-| [ValidationFiles](CancelFineTuneResponse/ValidationFiles.md) { get; set; } |  |
+| [CreatedAt](CancelFineTuneResponse/CreatedAt.md) { get; set; } | Description not provided by Open AI API. |
+| [Events](CancelFineTuneResponse/Events.md) { get; set; } | Description not provided by Open AI API. |
+| [FineTunedModel](CancelFineTuneResponse/FineTunedModel.md) { get; set; } | Description not provided by Open AI API. |
+| [Hyperparams](CancelFineTuneResponse/Hyperparams.md) { get; set; } | Description not provided by Open AI API. |
+| [Id](CancelFineTuneResponse/Id.md) { get; set; } | Description not provided by Open AI API. |
+| [Model](CancelFineTuneResponse/Model.md) { get; set; } | Description not provided by Open AI API. |
+| [Object](CancelFineTuneResponse/Object.md) { get; set; } | Description not provided by Open AI API. |
+| [OrganizationId](CancelFineTuneResponse/OrganizationId.md) { get; set; } | Description not provided by Open AI API. |
+| [ResultFiles](CancelFineTuneResponse/ResultFiles.md) { get; set; } | Description not provided by Open AI API. |
+| [Status](CancelFineTuneResponse/Status.md) { get; set; } | Description not provided by Open AI API. |
+| [TrainingFiles](CancelFineTuneResponse/TrainingFiles.md) { get; set; } | Description not provided by Open AI API. |
+| [UpdatedAt](CancelFineTuneResponse/UpdatedAt.md) { get; set; } | Description not provided by Open AI API. |
+| [ValidationFiles](CancelFineTuneResponse/ValidationFiles.md) { get; set; } | Description not provided by Open AI API. |
+
+## Remarks
+
+Returned from [`CancelFineTuneAsync`](../OpenAISharp.FineTune/IFineTuneService/CancelFineTuneAsync.md).
 
 ## See Also
 

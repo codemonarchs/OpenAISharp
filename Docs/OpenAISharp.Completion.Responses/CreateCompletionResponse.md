@@ -1,5 +1,7 @@
 # CreateCompletionResponse class
 
+Description not provided by Open AI API.
+
 ```csharp
 public class CreateCompletionResponse
 ```
@@ -9,12 +11,16 @@ public class CreateCompletionResponse
 | name | description |
 | --- | --- |
 | [CreateCompletionResponse](CreateCompletionResponse/CreateCompletionResponse.md)() | The default constructor. |
-| [Choices](CreateCompletionResponse/Choices.md) { get; set; } |  |
-| [Created](CreateCompletionResponse/Created.md) { get; set; } |  |
-| [Id](CreateCompletionResponse/Id.md) { get; set; } |  |
-| [Model](CreateCompletionResponse/Model.md) { get; set; } |  |
-| [Object](CreateCompletionResponse/Object.md) { get; set; } |  |
-| [Usage](CreateCompletionResponse/Usage.md) { get; set; } |  |
+| [Choices](CreateCompletionResponse/Choices.md) { get; set; } | Description not provided by Open AI API. |
+| [Created](CreateCompletionResponse/Created.md) { get; set; } | Description not provided by Open AI API. |
+| [Id](CreateCompletionResponse/Id.md) { get; set; } | Description not provided by Open AI API. |
+| [Model](CreateCompletionResponse/Model.md) { get; set; } | Description not provided by Open AI API. |
+| [Object](CreateCompletionResponse/Object.md) { get; set; } | Description not provided by Open AI API. |
+| [Usage](CreateCompletionResponse/Usage.md) { get; set; } | Description not provided by Open AI API. |
+
+## Remarks
+
+Returned from [`CreateCompletionAsync`](../OpenAISharp.Completion/ICompletionService/CreateCompletionAsync.md).
 
 ## See Also
 

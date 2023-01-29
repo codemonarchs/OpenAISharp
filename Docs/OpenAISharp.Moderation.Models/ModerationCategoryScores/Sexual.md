@@ -1,5 +1,7 @@
 # ModerationCategoryScores.Sexual property
 
+Description not provided by Open AI API.
+
 ```csharp
 public double? Sexual { get; set; }
 ```

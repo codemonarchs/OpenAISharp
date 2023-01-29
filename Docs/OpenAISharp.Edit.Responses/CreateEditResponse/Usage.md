@@ -1,5 +1,7 @@
 # CreateEditResponse.Usage property
 
+Description not provided by Open AI API.
+
 ```csharp
 public EditUsage? Usage { get; set; }
 ```

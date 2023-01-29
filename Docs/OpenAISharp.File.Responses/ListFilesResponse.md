@@ -1,5 +1,7 @@
 # ListFilesResponse class
 
+Description not provided by Open AI API.
+
 ```csharp
 public class ListFilesResponse
 ```
@@ -9,8 +11,12 @@ public class ListFilesResponse
 | name | description |
 | --- | --- |
 | [ListFilesResponse](ListFilesResponse/ListFilesResponse.md)() | The default constructor. |
-| [Data](ListFilesResponse/Data.md) { get; set; } |  |
-| [Object](ListFilesResponse/Object.md) { get; set; } |  |
+| [Data](ListFilesResponse/Data.md) { get; set; } | Description not provided by Open AI API. |
+| [Object](ListFilesResponse/Object.md) { get; set; } | Description not provided by Open AI API. |
+
+## Remarks
+
+Returned from [`ListFilesAsync`](../OpenAISharp.File/IFileService/ListFilesAsync.md).
 
 ## See Also
 

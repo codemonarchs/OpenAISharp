@@ -1,5 +1,7 @@
 # FineTuneData.TrainingFiles property
 
+Description not provided by Open AI API.
+
 ```csharp
 public List<FineTuneTrainingFile>? TrainingFiles { get; set; }
 ```

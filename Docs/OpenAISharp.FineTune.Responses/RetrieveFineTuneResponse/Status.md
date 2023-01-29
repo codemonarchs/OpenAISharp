@@ -1,5 +1,7 @@
 # RetrieveFineTuneResponse.Status property
 
+Description not provided by Open AI API.
+
 ```csharp
 public string? Status { get; set; }
 ```

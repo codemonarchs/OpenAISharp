@@ -1,5 +1,7 @@
 # ModerationResult.Flagged property
 
+Description not provided by Open AI API.
+
 ```csharp
 public bool? Flagged { get; set; }
 ```

@@ -1,5 +1,7 @@
 # CreateFineTuneResponse class
 
+Description not provided by Open AI API.
+
 ```csharp
 public class CreateFineTuneResponse
 ```
@@ -9,19 +11,23 @@ public class CreateFineTuneResponse
 | name | description |
 | --- | --- |
 | [CreateFineTuneResponse](CreateFineTuneResponse/CreateFineTuneResponse.md)() | The default constructor. |
-| [CreatedAt](CreateFineTuneResponse/CreatedAt.md) { get; set; } |  |
-| [Events](CreateFineTuneResponse/Events.md) { get; set; } |  |
-| [FineTunedModel](CreateFineTuneResponse/FineTunedModel.md) { get; set; } |  |
-| [Hyperparams](CreateFineTuneResponse/Hyperparams.md) { get; set; } |  |
-| [Id](CreateFineTuneResponse/Id.md) { get; set; } |  |
-| [Model](CreateFineTuneResponse/Model.md) { get; set; } |  |
-| [Object](CreateFineTuneResponse/Object.md) { get; set; } |  |
-| [OrganizationId](CreateFineTuneResponse/OrganizationId.md) { get; set; } |  |
-| [ResultFiles](CreateFineTuneResponse/ResultFiles.md) { get; set; } |  |
-| [Status](CreateFineTuneResponse/Status.md) { get; set; } |  |
-| [TrainingFiles](CreateFineTuneResponse/TrainingFiles.md) { get; set; } |  |
-| [UpdatedAt](CreateFineTuneResponse/UpdatedAt.md) { get; set; } |  |
-| [ValidationFiles](CreateFineTuneResponse/ValidationFiles.md) { get; set; } |  |
+| [CreatedAt](CreateFineTuneResponse/CreatedAt.md) { get; set; } | Description not provided by Open AI API. |
+| [Events](CreateFineTuneResponse/Events.md) { get; set; } | Description not provided by Open AI API. |
+| [FineTunedModel](CreateFineTuneResponse/FineTunedModel.md) { get; set; } | Description not provided by Open AI API. |
+| [Hyperparams](CreateFineTuneResponse/Hyperparams.md) { get; set; } | Description not provided by Open AI API. |
+| [Id](CreateFineTuneResponse/Id.md) { get; set; } | Description not provided by Open AI API. |
+| [Model](CreateFineTuneResponse/Model.md) { get; set; } | Description not provided by Open AI API. |
+| [Object](CreateFineTuneResponse/Object.md) { get; set; } | Description not provided by Open AI API. |
+| [OrganizationId](CreateFineTuneResponse/OrganizationId.md) { get; set; } | Description not provided by Open AI API. |
+| [ResultFiles](CreateFineTuneResponse/ResultFiles.md) { get; set; } | Description not provided by Open AI API. |
+| [Status](CreateFineTuneResponse/Status.md) { get; set; } | Description not provided by Open AI API. |
+| [TrainingFiles](CreateFineTuneResponse/TrainingFiles.md) { get; set; } | Description not provided by Open AI API. |
+| [UpdatedAt](CreateFineTuneResponse/UpdatedAt.md) { get; set; } | Description not provided by Open AI API. |
+| [ValidationFiles](CreateFineTuneResponse/ValidationFiles.md) { get; set; } | Description not provided by Open AI API. |
+
+## Remarks
+
+Returned from [`CreateFineTuneAsync`](../OpenAISharp.FineTune/IFineTuneService/CreateFineTuneAsync.md).
 
 ## See Also
 

@@ -1,5 +1,7 @@
 # ModerationResult class
 
+Description not provided by Open AI API.
+
 ```csharp
 public class ModerationResult
 ```
@@ -9,9 +11,9 @@ public class ModerationResult
 | name | description |
 | --- | --- |
 | [ModerationResult](ModerationResult/ModerationResult.md)() | The default constructor. |
-| [Categories](ModerationResult/Categories.md) { get; set; } |  |
-| [CategoryScores](ModerationResult/CategoryScores.md) { get; set; } |  |
-| [Flagged](ModerationResult/Flagged.md) { get; set; } |  |
+| [Categories](ModerationResult/Categories.md) { get; set; } | Description not provided by Open AI API. |
+| [CategoryScores](ModerationResult/CategoryScores.md) { get; set; } | Description not provided by Open AI API. |
+| [Flagged](ModerationResult/Flagged.md) { get; set; } | Description not provided by Open AI API. |
 
 ## See Also
 

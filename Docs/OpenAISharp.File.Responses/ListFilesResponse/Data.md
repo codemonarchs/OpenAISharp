@@ -1,7 +1,9 @@
 # ListFilesResponse.Data property
 
+Description not provided by Open AI API.
+
 ```csharp
-public List<FileData> Data { get; set; }
+public List<FileData>? Data { get; set; }
 ```
 
 ## See Also

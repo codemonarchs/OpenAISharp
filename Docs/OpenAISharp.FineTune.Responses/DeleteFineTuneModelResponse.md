@@ -1,5 +1,7 @@
 # DeleteFineTuneModelResponse class
 
+Description not provided by Open AI API.
+
 ```csharp
 public class DeleteFineTuneModelResponse
 ```
@@ -9,9 +11,13 @@ public class DeleteFineTuneModelResponse
 | name | description |
 | --- | --- |
 | [DeleteFineTuneModelResponse](DeleteFineTuneModelResponse/DeleteFineTuneModelResponse.md)() | The default constructor. |
-| [Deleted](DeleteFineTuneModelResponse/Deleted.md) { get; set; } |  |
-| [Id](DeleteFineTuneModelResponse/Id.md) { get; set; } |  |
-| [Object](DeleteFineTuneModelResponse/Object.md) { get; set; } |  |
+| [Deleted](DeleteFineTuneModelResponse/Deleted.md) { get; set; } | Description not provided by Open AI API. |
+| [Id](DeleteFineTuneModelResponse/Id.md) { get; set; } | Description not provided by Open AI API. |
+| [Object](DeleteFineTuneModelResponse/Object.md) { get; set; } | Description not provided by Open AI API. |
+
+## Remarks
+
+Returned from [`DeleteFineTuneModelAsync`](../OpenAISharp.FineTune/IFineTuneService/DeleteFineTuneModelAsync.md).
 
 ## See Also
 

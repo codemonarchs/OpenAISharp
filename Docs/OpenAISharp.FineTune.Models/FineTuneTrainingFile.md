@@ -1,5 +1,7 @@
 # FineTuneTrainingFile class
 
+Description not provided by Open AI API.
+
 ```csharp
 public class FineTuneTrainingFile
 ```
@@ -9,12 +11,12 @@ public class FineTuneTrainingFile
 | name | description |
 | --- | --- |
 | [FineTuneTrainingFile](FineTuneTrainingFile/FineTuneTrainingFile.md)() | The default constructor. |
-| [Bytes](FineTuneTrainingFile/Bytes.md) { get; set; } |  |
-| [CreatedAt](FineTuneTrainingFile/CreatedAt.md) { get; set; } |  |
-| [Filename](FineTuneTrainingFile/Filename.md) { get; set; } |  |
-| [Id](FineTuneTrainingFile/Id.md) { get; set; } |  |
-| [Object](FineTuneTrainingFile/Object.md) { get; set; } |  |
-| [Purpose](FineTuneTrainingFile/Purpose.md) { get; set; } |  |
+| [Bytes](FineTuneTrainingFile/Bytes.md) { get; set; } | Description not provided by Open AI API. |
+| [CreatedAt](FineTuneTrainingFile/CreatedAt.md) { get; set; } | Description not provided by Open AI API. |
+| [Filename](FineTuneTrainingFile/Filename.md) { get; set; } | Description not provided by Open AI API. |
+| [Id](FineTuneTrainingFile/Id.md) { get; set; } | Description not provided by Open AI API. |
+| [Object](FineTuneTrainingFile/Object.md) { get; set; } | Description not provided by Open AI API. |
+| [Purpose](FineTuneTrainingFile/Purpose.md) { get; set; } | Description not provided by Open AI API. |
 
 ## See Also
 

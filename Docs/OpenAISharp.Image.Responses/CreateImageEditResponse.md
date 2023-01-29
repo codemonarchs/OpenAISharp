@@ -1,5 +1,7 @@
 # CreateImageEditResponse class
 
+Description not provided by Open AI API.
+
 ```csharp
 public class CreateImageEditResponse
 ```
@@ -9,8 +11,12 @@ public class CreateImageEditResponse
 | name | description |
 | --- | --- |
 | [CreateImageEditResponse](CreateImageEditResponse/CreateImageEditResponse.md)() | The default constructor. |
-| [Created](CreateImageEditResponse/Created.md) { get; set; } |  |
-| [Data](CreateImageEditResponse/Data.md) { get; set; } |  |
+| [Created](CreateImageEditResponse/Created.md) { get; set; } | Description not provided by Open AI API. |
+| [Data](CreateImageEditResponse/Data.md) { get; set; } | Description not provided by Open AI API. |
+
+## Remarks
+
+Returned from [`CreateImageEditAsync`](../OpenAISharp.Image/IImageService/CreateImageEditAsync.md).
 
 ## See Also
 

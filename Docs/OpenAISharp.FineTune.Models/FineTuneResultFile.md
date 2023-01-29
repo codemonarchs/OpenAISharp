@@ -1,5 +1,7 @@
 # FineTuneResultFile class
 
+Description not provided by Open AI API.
+
 ```csharp
 public class FineTuneResultFile
 ```
@@ -9,12 +11,12 @@ public class FineTuneResultFile
 | name | description |
 | --- | --- |
 | [FineTuneResultFile](FineTuneResultFile/FineTuneResultFile.md)() | The default constructor. |
-| [Bytes](FineTuneResultFile/Bytes.md) { get; set; } |  |
-| [CreatedAt](FineTuneResultFile/CreatedAt.md) { get; set; } |  |
-| [Filename](FineTuneResultFile/Filename.md) { get; set; } |  |
-| [Id](FineTuneResultFile/Id.md) { get; set; } |  |
-| [Object](FineTuneResultFile/Object.md) { get; set; } |  |
-| [Purpose](FineTuneResultFile/Purpose.md) { get; set; } |  |
+| [Bytes](FineTuneResultFile/Bytes.md) { get; set; } | Description not provided by Open AI API. |
+| [CreatedAt](FineTuneResultFile/CreatedAt.md) { get; set; } | Description not provided by Open AI API. |
+| [Filename](FineTuneResultFile/Filename.md) { get; set; } | Description not provided by Open AI API. |
+| [Id](FineTuneResultFile/Id.md) { get; set; } | Description not provided by Open AI API. |
+| [Object](FineTuneResultFile/Object.md) { get; set; } | Description not provided by Open AI API. |
+| [Purpose](FineTuneResultFile/Purpose.md) { get; set; } | Description not provided by Open AI API. |
 
 ## See Also
 

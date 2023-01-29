@@ -1,5 +1,7 @@
 # FineTuneData.OrganizationId property
 
+Description not provided by Open AI API.
+
 ```csharp
 public string? OrganizationId { get; set; }
 ```

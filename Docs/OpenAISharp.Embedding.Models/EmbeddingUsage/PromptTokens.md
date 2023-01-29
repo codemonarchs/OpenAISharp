@@ -1,5 +1,7 @@
 # EmbeddingUsage.PromptTokens property
 
+Description not provided by Open AI API.
+
 ```csharp
 public int? PromptTokens { get; set; }
 ```
