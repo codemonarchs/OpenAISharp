@@ -7,6 +7,13 @@
 | interface [IImageService](./OpenAISharp.Image/IImageService.md) | Given a prompt and/or an input image, the model will generate a new image. |
 | class [ImageService](./OpenAISharp.Image/ImageService.md) |  |
 
+## OpenAISharp.Image.Constants namespace
+
+| public type | description |
+| --- | --- |
+| class [ImageResponseFormat](./OpenAISharp.Image.Constants/ImageResponseFormat.md) | Allowed image respone formats. |
+| class [ImageSize](./OpenAISharp.Image.Constants/ImageSize.md) | Accepted image sizes. |
+
 ## OpenAISharp.Image.Models namespace
 
 | public type | description |

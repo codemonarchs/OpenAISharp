@@ -1,5 +1,7 @@
 # KnownModelNames.IfDavinci_300 field
 
+Model name: if-davinci:3.0.0
+
 ```csharp
 public const string IfDavinci_300;
 ```

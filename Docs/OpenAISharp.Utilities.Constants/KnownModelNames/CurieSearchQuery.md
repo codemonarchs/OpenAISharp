@@ -1,5 +1,7 @@
 # KnownModelNames.CurieSearchQuery field
 
+Model name: curie-search-query
+
 ```csharp
 public const string CurieSearchQuery;
 ```

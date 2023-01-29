@@ -1,5 +1,7 @@
 # KnownModelNames.Davinci field
 
+Model name: davinci
+
 ```csharp
 public const string Davinci;
 ```

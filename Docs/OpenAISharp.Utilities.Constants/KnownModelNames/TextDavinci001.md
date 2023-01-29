@@ -1,5 +1,7 @@
 # KnownModelNames.TextDavinci001 field
 
+Model name: text-davinci-001
+
 ```csharp
 public const string TextDavinci001;
 ```

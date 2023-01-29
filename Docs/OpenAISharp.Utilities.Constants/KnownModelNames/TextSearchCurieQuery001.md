@@ -1,5 +1,7 @@
 # KnownModelNames.TextSearchCurieQuery001 field
 
+Model name: text-search-curie-query-001
+
 ```csharp
 public const string TextSearchCurieQuery001;
 ```

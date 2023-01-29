@@ -1,5 +1,7 @@
 # KnownModelNames.BabbageCodeSearchCode field
 
+Model name: babbage-code-search-code
+
 ```csharp
 public const string BabbageCodeSearchCode;
 ```

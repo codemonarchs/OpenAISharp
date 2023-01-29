@@ -1,5 +1,7 @@
 # KnownModelNames.CurieSimilarity field
 
+Model name: curie-similarity
+
 ```csharp
 public const string CurieSimilarity;
 ```

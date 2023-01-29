@@ -1,5 +1,7 @@
 # KnownModelNames.CurieInstructBeta field
 
+Model name: curie-instruct-beta
+
 ```csharp
 public const string CurieInstructBeta;
 ```

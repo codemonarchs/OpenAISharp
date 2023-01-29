@@ -1,5 +1,7 @@
 # KnownModelNames.CurieSearchDocument field
 
+Model name: curie-search-document
+
 ```csharp
 public const string CurieSearchDocument;
 ```

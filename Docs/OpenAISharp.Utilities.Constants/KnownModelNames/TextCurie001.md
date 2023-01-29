@@ -1,5 +1,7 @@
 # KnownModelNames.TextCurie001 field
 
+Model name: text-curie-001
+
 ```csharp
 public const string TextCurie001;
 ```

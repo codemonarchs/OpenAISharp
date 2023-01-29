@@ -1,5 +1,7 @@
 # KnownModelNames.BabbageSimilarity field
 
+Model name: babbage-similarity
+
 ```csharp
 public const string BabbageSimilarity;
 ```

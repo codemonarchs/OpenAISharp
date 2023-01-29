@@ -1,5 +1,7 @@
 # EncoderUtility class
 
+Utility used to help encode/decode tokens for the logit_bias parameter when sending a request to Completion API.
+
 ```csharp
 public class EncoderUtility
 ```

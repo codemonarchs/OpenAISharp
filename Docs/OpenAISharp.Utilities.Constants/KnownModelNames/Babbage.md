@@ -1,5 +1,7 @@
 # KnownModelNames.Babbage field
 
+Model name: babbage
+
 ```csharp
 public const string Babbage;
 ```

@@ -1,5 +1,7 @@
 # EncoderLookup.Data field
 
+The lookup data used within the EncoderUtility when encoding/decoding tokens.
+
 ```csharp
 public static Dictionary<string, int> Data;
 ```

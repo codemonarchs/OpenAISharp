@@ -1,5 +1,7 @@
 # KnownModelNames.DavinciSimilarity field
 
+Model name: davinci-similarity
+
 ```csharp
 public const string DavinciSimilarity;
 ```

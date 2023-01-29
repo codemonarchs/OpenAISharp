@@ -1,5 +1,7 @@
 # KnownModelNames.AudioTranscribe001 field
 
+Model name: audio-transcribe-001
+
 ```csharp
 public const string AudioTranscribe001;
 ```

@@ -1,7 +1,13 @@
 namespace OpenAISharp.Utilities.Lookups
 {
+    /// <summary>
+    /// Loop up class for vocab data.
+    /// </summary>
     public static class VocabLookup
     {
+        /// <summary>
+        /// The lookup data used within the EncoderUtility when encoding/decoding tokens.
+        /// </summary>
         public static string[] Data = new[]
         {
              @"#version: 0.2",

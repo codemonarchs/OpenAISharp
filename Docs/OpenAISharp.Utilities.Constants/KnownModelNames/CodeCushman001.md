@@ -1,5 +1,7 @@
 # KnownModelNames.CodeCushman001 field
 
+Model name: code-cushman-001
+
 ```csharp
 public const string CodeCushman001;
 ```

@@ -1,5 +1,7 @@
 # OpenAIClientException.HttpStatusCode property
 
+The HTTP status code returned from the request.
+
 ```csharp
 public HttpStatusCode HttpStatusCode { get; set; }
 ```

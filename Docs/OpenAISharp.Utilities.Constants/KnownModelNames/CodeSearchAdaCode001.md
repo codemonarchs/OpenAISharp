@@ -1,5 +1,7 @@
 # KnownModelNames.CodeSearchAdaCode001 field
 
+Model name: code-search-ada-code-001
+
 ```csharp
 public const string CodeSearchAdaCode001;
 ```

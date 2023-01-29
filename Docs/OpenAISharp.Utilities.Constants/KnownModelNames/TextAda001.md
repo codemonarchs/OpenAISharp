@@ -1,5 +1,7 @@
 # KnownModelNames.TextAda001 field
 
+Model name: text-ada-001
+
 ```csharp
 public const string TextAda001;
 ```

@@ -1,5 +1,7 @@
 # KnownModelNames.BabbageSearchDocument field
 
+Model name: babbage-search-document
+
 ```csharp
 public const string BabbageSearchDocument;
 ```

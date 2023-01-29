@@ -1,5 +1,7 @@
 # KnownModelNames.DavinciSearchQuery field
 
+Model name: davinci-search-query
+
 ```csharp
 public const string DavinciSearchQuery;
 ```
