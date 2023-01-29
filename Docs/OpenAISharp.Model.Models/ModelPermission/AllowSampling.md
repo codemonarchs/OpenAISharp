@@ -1,5 +1,7 @@
 # ModelPermission.AllowSampling property
 
+Description not provided by Open AI API.
+
 ```csharp
 public bool AllowSampling { get; set; }
 ```

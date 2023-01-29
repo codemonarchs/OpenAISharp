@@ -1,5 +1,7 @@
 # ModerationCategoryScores.HateThreatening property
 
+Description not provided by Open AI API.
+
 ```csharp
 public double? HateThreatening { get; set; }
 ```

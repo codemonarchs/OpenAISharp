@@ -1,5 +1,7 @@
 # ModerationCategoryScores class
 
+Description not provided by Open AI API.
+
 ```csharp
 public class ModerationCategoryScores
 ```
@@ -9,13 +11,13 @@ public class ModerationCategoryScores
 | name | description |
 | --- | --- |
 | [ModerationCategoryScores](ModerationCategoryScores/ModerationCategoryScores.md)() | The default constructor. |
-| [Hate](ModerationCategoryScores/Hate.md) { get; set; } |  |
-| [HateThreatening](ModerationCategoryScores/HateThreatening.md) { get; set; } |  |
-| [SelfHarm](ModerationCategoryScores/SelfHarm.md) { get; set; } |  |
-| [Sexual](ModerationCategoryScores/Sexual.md) { get; set; } |  |
-| [SexualMinors](ModerationCategoryScores/SexualMinors.md) { get; set; } |  |
-| [Violence](ModerationCategoryScores/Violence.md) { get; set; } |  |
-| [ViolenceGraphic](ModerationCategoryScores/ViolenceGraphic.md) { get; set; } |  |
+| [Hate](ModerationCategoryScores/Hate.md) { get; set; } | Description not provided by Open AI API. |
+| [HateThreatening](ModerationCategoryScores/HateThreatening.md) { get; set; } | Description not provided by Open AI API. |
+| [SelfHarm](ModerationCategoryScores/SelfHarm.md) { get; set; } | Description not provided by Open AI API. |
+| [Sexual](ModerationCategoryScores/Sexual.md) { get; set; } | Description not provided by Open AI API. |
+| [SexualMinors](ModerationCategoryScores/SexualMinors.md) { get; set; } | Description not provided by Open AI API. |
+| [Violence](ModerationCategoryScores/Violence.md) { get; set; } | Description not provided by Open AI API. |
+| [ViolenceGraphic](ModerationCategoryScores/ViolenceGraphic.md) { get; set; } | Description not provided by Open AI API. |
 
 ## See Also
 

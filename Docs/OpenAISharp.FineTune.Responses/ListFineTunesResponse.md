@@ -1,5 +1,7 @@
 # ListFineTunesResponse class
 
+Description not provided by Open AI API.
+
 ```csharp
 public class ListFineTunesResponse
 ```
@@ -9,8 +11,12 @@ public class ListFineTunesResponse
 | name | description |
 | --- | --- |
 | [ListFineTunesResponse](ListFineTunesResponse/ListFineTunesResponse.md)() | The default constructor. |
-| [Data](ListFineTunesResponse/Data.md) { get; set; } |  |
-| [Object](ListFineTunesResponse/Object.md) { get; set; } |  |
+| [Data](ListFineTunesResponse/Data.md) { get; set; } | Description not provided by Open AI API. |
+| [Object](ListFineTunesResponse/Object.md) { get; set; } | Description not provided by Open AI API. |
+
+## Remarks
+
+Returned from [`ListFineTunesAsync`](../OpenAISharp.FineTune/IFineTuneService/ListFineTunesAsync.md).
 
 ## See Also
 

@@ -5,6 +5,7 @@ namespace OpenAISharp.File.Requests
     /// <summary>
     /// Upload a file that contains document(s) to be used across various endpoints/features. Currently, the size of all the files uploaded by one organization can be up to 1 GB. Please contact Open AI if you need to increase the storage limit.
     /// </summary>
+    /// <remarks>Used with <see cref="IFileService.UploadFileAsync"/>.</remarks>
     public class UploadFileRequest
     {
         /// <summary>
@@ -13,7 +14,7 @@ namespace OpenAISharp.File.Requests
         /// <param name="file"></param>
         /// <param name="fileContent"></param>
         /// <param name="useFilePath"></param>
-        public UploadFileRequest(string file, string fileContent, bool useFilePath)
+        public UploadFileRequest(string file, string? fileContent, bool useFilePath)
         {
             File = file.EndsWith(".jsonl") ? file : $"{file}.jsonl";
             FileContent = fileContent;

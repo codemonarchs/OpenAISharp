@@ -1,5 +1,7 @@
 # DeleteFileResponse class
 
+Description not provided by Open AI API.
+
 ```csharp
 public class DeleteFileResponse
 ```
@@ -9,9 +11,13 @@ public class DeleteFileResponse
 | name | description |
 | --- | --- |
 | [DeleteFileResponse](DeleteFileResponse/DeleteFileResponse.md)() | The default constructor. |
-| [Deleted](DeleteFileResponse/Deleted.md) { get; set; } |  |
-| [Id](DeleteFileResponse/Id.md) { get; set; } |  |
-| [Object](DeleteFileResponse/Object.md) { get; set; } |  |
+| [Deleted](DeleteFileResponse/Deleted.md) { get; set; } | Description not provided by Open AI API. |
+| [Id](DeleteFileResponse/Id.md) { get; set; } | Description not provided by Open AI API. |
+| [Object](DeleteFileResponse/Object.md) { get; set; } | Description not provided by Open AI API. |
+
+## Remarks
+
+Returned from [`DeleteFileAsync`](../OpenAISharp.File/IFileService/DeleteFileAsync.md).
 
 ## See Also
 

@@ -1,5 +1,7 @@
 # FileUtility class
 
+A utilty to class to help with files.
+
 ```csharp
 public class FileUtility
 ```

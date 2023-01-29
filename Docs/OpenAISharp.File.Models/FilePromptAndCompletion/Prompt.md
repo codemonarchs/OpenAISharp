@@ -1,5 +1,7 @@
 # FilePromptAndCompletion.Prompt property
 
+The prompt for the AI.
+
 ```csharp
 public string Prompt { get; set; }
 ```

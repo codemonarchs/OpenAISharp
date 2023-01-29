@@ -9,7 +9,7 @@ namespace OpenAISharp.IntegrationTests
         public void ConfigureServices(IServiceCollection services)
         {
             var apiKey = Environment.GetEnvironmentVariable("OpenAI:ApiKey");
-            var organizationId = Environment.GetEnvironmentVariable("OpenAI:OrganizationId");
+            var organizationId = Environment.GetEnvironmentVariable("OpenAI:OrganizationId") ?? string.Empty;
             if (apiKey == null)
                 throw new ArgumentNullException("OpenAI API Key is null. Did you set your environment variables using the 'set-openai-credentials.ps1' script?");
             services.AddOpenAI(apiKey, organizationId);

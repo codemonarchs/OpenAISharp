@@ -1,5 +1,7 @@
 # ModerationCategoryScores.Violence property
 
+Description not provided by Open AI API.
+
 ```csharp
 public double? Violence { get; set; }
 ```

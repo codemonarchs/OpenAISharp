@@ -1,5 +1,7 @@
 # FineTuneTrainingFile.CreatedAt property
 
+Description not provided by Open AI API.
+
 ```csharp
 public int? CreatedAt { get; set; }
 ```

@@ -1,5 +1,7 @@
 # CreateEditResponse class
 
+Description not provided by Open AI API.
+
 ```csharp
 public class CreateEditResponse
 ```
@@ -9,10 +11,14 @@ public class CreateEditResponse
 | name | description |
 | --- | --- |
 | [CreateEditResponse](CreateEditResponse/CreateEditResponse.md)() | The default constructor. |
-| [Choices](CreateEditResponse/Choices.md) { get; set; } |  |
-| [Created](CreateEditResponse/Created.md) { get; set; } |  |
-| [Object](CreateEditResponse/Object.md) { get; set; } |  |
-| [Usage](CreateEditResponse/Usage.md) { get; set; } |  |
+| [Choices](CreateEditResponse/Choices.md) { get; set; } | Description not provided by Open AI API. |
+| [Created](CreateEditResponse/Created.md) { get; set; } | Description not provided by Open AI API. |
+| [Object](CreateEditResponse/Object.md) { get; set; } | Description not provided by Open AI API. |
+| [Usage](CreateEditResponse/Usage.md) { get; set; } | Description not provided by Open AI API. |
+
+## Remarks
+
+Returned from [`CreateEditAsync`](../OpenAISharp.Edit/IEditService/CreateEditAsync.md).
 
 ## See Also
 

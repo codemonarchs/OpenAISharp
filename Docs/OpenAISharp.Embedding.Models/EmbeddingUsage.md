@@ -1,5 +1,7 @@
 # EmbeddingUsage class
 
+Description not provided by Open AI API.
+
 ```csharp
 public class EmbeddingUsage
 ```
@@ -9,9 +11,9 @@ public class EmbeddingUsage
 | name | description |
 | --- | --- |
 | [EmbeddingUsage](EmbeddingUsage/EmbeddingUsage.md)() | The default constructor. |
-| [CompletionTokens](EmbeddingUsage/CompletionTokens.md) { get; set; } |  |
-| [PromptTokens](EmbeddingUsage/PromptTokens.md) { get; set; } |  |
-| [TotalTokens](EmbeddingUsage/TotalTokens.md) { get; set; } |  |
+| [CompletionTokens](EmbeddingUsage/CompletionTokens.md) { get; set; } | Description not provided by Open AI API. |
+| [PromptTokens](EmbeddingUsage/PromptTokens.md) { get; set; } | Description not provided by Open AI API. |
+| [TotalTokens](EmbeddingUsage/TotalTokens.md) { get; set; } | Description not provided by Open AI API. |
 
 ## See Also
 

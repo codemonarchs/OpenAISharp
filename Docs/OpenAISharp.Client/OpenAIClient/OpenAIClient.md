@@ -1,14 +1,8 @@
 # OpenAIClient constructor
 
-The almighty constructor.
-
 ```csharp
 public OpenAIClient(HttpClient httpClient)
 ```
-
-| parameter | description |
-| --- | --- |
-| httpClient |  |
 
 ## See Also
 

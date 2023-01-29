@@ -1,8 +1,15 @@
 # FilePromptAndCompletion constructor
 
+A class used to help serialized a list of prompts and completions into JSONL format.
+
 ```csharp
 public FilePromptAndCompletion(string prompt, string completion)
 ```
+
+| parameter | description |
+| --- | --- |
+| prompt | The prompt for the AI. |
+| completion | The completion for the AI. |
 
 ## See Also
 

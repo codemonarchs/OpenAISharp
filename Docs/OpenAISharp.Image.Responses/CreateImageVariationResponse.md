@@ -1,5 +1,7 @@
 # CreateImageVariationResponse class
 
+Description not provided by Open AI API.
+
 ```csharp
 public class CreateImageVariationResponse
 ```
@@ -9,8 +11,12 @@ public class CreateImageVariationResponse
 | name | description |
 | --- | --- |
 | [CreateImageVariationResponse](CreateImageVariationResponse/CreateImageVariationResponse.md)() | The default constructor. |
-| [Created](CreateImageVariationResponse/Created.md) { get; set; } |  |
-| [Data](CreateImageVariationResponse/Data.md) { get; set; } |  |
+| [Created](CreateImageVariationResponse/Created.md) { get; set; } | Description not provided by Open AI API. |
+| [Data](CreateImageVariationResponse/Data.md) { get; set; } | Description not provided by Open AI API. |
+
+## Remarks
+
+Returned from [`CreateImageVariationAsync`](../OpenAISharp.Image/IImageService/CreateImageVariationAsync.md).
 
 ## See Also
 

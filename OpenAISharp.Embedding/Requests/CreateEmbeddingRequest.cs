@@ -5,6 +5,7 @@ namespace OpenAISharp.Embedding.Requests
     /// <summary>
     /// Creates an embedding vector representing the input text.
     /// </summary>
+    /// <remarks>Used with <see cref="IEmbeddingService.CreateEmbeddingAsync"/>.</remarks>
     public class CreateEmbeddingRequest
     {
         /// <summary>

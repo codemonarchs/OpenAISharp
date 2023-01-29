@@ -9,6 +9,8 @@ namespace OpenAISharp.Embedding
     public class EmbeddingService : IEmbeddingService
     {
         private readonly IOpenAIClient _openAIClient;
+
+        /// <inheritdoc cref="IEmbeddingService"/>
         public EmbeddingService(IOpenAIClient openAIClient) { _openAIClient = openAIClient; }
 
         /// <inheritdoc cref="IEmbeddingService.CreateEmbeddingAsync"/>

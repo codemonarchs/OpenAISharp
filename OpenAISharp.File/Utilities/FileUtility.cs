@@ -5,6 +5,9 @@ using System.Text.Json;
 
 namespace OpenAISharp.File.Utilities
 {
+    /// <summary>
+    /// A utilty to class to help with files.
+    /// </summary>
     public class FileUtility
     {
         /// <summary>

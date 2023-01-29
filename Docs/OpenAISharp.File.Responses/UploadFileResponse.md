@@ -1,5 +1,7 @@
 # UploadFileResponse class
 
+Description not provided by Open AI API.
+
 ```csharp
 public class UploadFileResponse
 ```
@@ -9,12 +11,16 @@ public class UploadFileResponse
 | name | description |
 | --- | --- |
 | [UploadFileResponse](UploadFileResponse/UploadFileResponse.md)() | The default constructor. |
-| [Bytes](UploadFileResponse/Bytes.md) { get; set; } |  |
-| [CreatedAt](UploadFileResponse/CreatedAt.md) { get; set; } |  |
-| [Filename](UploadFileResponse/Filename.md) { get; set; } |  |
-| [Id](UploadFileResponse/Id.md) { get; set; } |  |
-| [Object](UploadFileResponse/Object.md) { get; set; } |  |
-| [Purpose](UploadFileResponse/Purpose.md) { get; set; } |  |
+| [Bytes](UploadFileResponse/Bytes.md) { get; set; } | Description not provided by Open AI API. |
+| [CreatedAt](UploadFileResponse/CreatedAt.md) { get; set; } | Description not provided by Open AI API. |
+| [Filename](UploadFileResponse/Filename.md) { get; set; } | Description not provided by Open AI API. |
+| [Id](UploadFileResponse/Id.md) { get; set; } | Description not provided by Open AI API. |
+| [Object](UploadFileResponse/Object.md) { get; set; } | Description not provided by Open AI API. |
+| [Purpose](UploadFileResponse/Purpose.md) { get; set; } | Description not provided by Open AI API. |
+
+## Remarks
+
+Returned from [`UploadFileAsync`](../OpenAISharp.File/IFileService/UploadFileAsync.md).
 
 ## See Also
 

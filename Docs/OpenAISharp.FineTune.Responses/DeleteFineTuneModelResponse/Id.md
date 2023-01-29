@@ -1,5 +1,7 @@
 # DeleteFineTuneModelResponse.Id property
 
+Description not provided by Open AI API.
+
 ```csharp
 public string? Id { get; set; }
 ```

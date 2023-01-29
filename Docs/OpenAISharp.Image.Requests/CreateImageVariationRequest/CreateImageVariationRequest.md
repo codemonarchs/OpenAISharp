@@ -10,7 +10,7 @@ public CreateImageVariationRequest(string image, string imagePath, bool useImage
 | --- | --- |
 | image |  |
 | imagePath |  |
-| prompt |  |
+| useImageFilePath |  |
 
 ## See Also
 

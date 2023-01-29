@@ -5,6 +5,7 @@ namespace OpenAISharp.Image.Requests
     /// <summary>
     /// Creates an image given a prompt.
     /// </summary>
+    /// <remarks>Used with <see cref="IImageService.CreateImageAsync"/>.</remarks>
     public class CreateImageRequest
     {
         /// <summary>

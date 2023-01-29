@@ -1,5 +1,7 @@
 # ListModelsResponse class
 
+Description not provided by Open AI API.
+
 ```csharp
 public class ListModelsResponse
 ```
@@ -9,8 +11,12 @@ public class ListModelsResponse
 | name | description |
 | --- | --- |
 | [ListModelsResponse](ListModelsResponse/ListModelsResponse.md)() | The default constructor. |
-| [Data](ListModelsResponse/Data.md) { get; set; } |  |
-| [Object](ListModelsResponse/Object.md) { get; set; } |  |
+| [Data](ListModelsResponse/Data.md) { get; set; } | Description not provided by Open AI API. |
+| [Object](ListModelsResponse/Object.md) { get; set; } | Description not provided by Open AI API. |
+
+## Remarks
+
+Returned from [`ListModelsAsync`](../OpenAISharp.Model/IModelService/ListModelsAsync.md).
 
 ## See Also
 

@@ -1,5 +1,7 @@
 # CompletionChoice class
 
+Description not provided by Open AI API.
+
 ```csharp
 public class CompletionChoice
 ```
@@ -9,10 +11,10 @@ public class CompletionChoice
 | name | description |
 | --- | --- |
 | [CompletionChoice](CompletionChoice/CompletionChoice.md)() | The default constructor. |
-| [FinishReason](CompletionChoice/FinishReason.md) { get; set; } |  |
-| [Index](CompletionChoice/Index.md) { get; set; } |  |
-| [Logprobs](CompletionChoice/Logprobs.md) { get; set; } |  |
-| [Text](CompletionChoice/Text.md) { get; set; } |  |
+| [FinishReason](CompletionChoice/FinishReason.md) { get; set; } | Description not provided by Open AI API. |
+| [Index](CompletionChoice/Index.md) { get; set; } | Description not provided by Open AI API. |
+| [Logprobs](CompletionChoice/Logprobs.md) { get; set; } | Description not provided by Open AI API. |
+| [Text](CompletionChoice/Text.md) { get; set; } | Description not provided by Open AI API. |
 
 ## See Also
 

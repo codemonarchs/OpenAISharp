@@ -1,5 +1,7 @@
 # ModelPermission.AllowSearchIndices property
 
+Description not provided by Open AI API.
+
 ```csharp
 public bool AllowSearchIndices { get; set; }
 ```

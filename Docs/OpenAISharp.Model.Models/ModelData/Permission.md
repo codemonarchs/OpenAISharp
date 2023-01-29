@@ -1,7 +1,9 @@
 # ModelData.Permission property
 
+Description not provided by Open AI API.
+
 ```csharp
-public IEnumerable<ModelPermission?>? Permission { get; set; }
+public IEnumerable<ModelPermission>? Permission { get; set; }
 ```
 
 ## See Also

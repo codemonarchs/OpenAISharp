@@ -1,7 +1,9 @@
 # ModelPermission.Object property
 
+Description not provided by Open AI API.
+
 ```csharp
-public string Object { get; set; }
+public string? Object { get; set; }
 ```
 
 ## See Also

@@ -1,5 +1,7 @@
 # ImageData.Url property
 
+Description not provided by Open AI API.
+
 ```csharp
 public string? Url { get; set; }
 ```

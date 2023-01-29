@@ -1,5 +1,7 @@
 # FineTuneTrainingFile.Bytes property
 
+Description not provided by Open AI API.
+
 ```csharp
 public int? Bytes { get; set; }
 ```

@@ -1,5 +1,7 @@
 # FilePromptAndCompletion class
 
+A class used to help serialized a list of prompts and completions into JSONL format.
+
 ```csharp
 public class FilePromptAndCompletion
 ```
@@ -8,9 +10,9 @@ public class FilePromptAndCompletion
 
 | name | description |
 | --- | --- |
-| [FilePromptAndCompletion](FilePromptAndCompletion/FilePromptAndCompletion.md)(…) |  |
-| [Completion](FilePromptAndCompletion/Completion.md) { get; set; } |  |
-| [Prompt](FilePromptAndCompletion/Prompt.md) { get; set; } |  |
+| [FilePromptAndCompletion](FilePromptAndCompletion/FilePromptAndCompletion.md)(…) | A class used to help serialized a list of prompts and completions into JSONL format. |
+| [Completion](FilePromptAndCompletion/Completion.md) { get; set; } | The completion for the AI. |
+| [Prompt](FilePromptAndCompletion/Prompt.md) { get; set; } | The prompt for the AI. |
 
 ## See Also
 

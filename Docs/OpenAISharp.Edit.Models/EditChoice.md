@@ -1,5 +1,7 @@
 # EditChoice class
 
+Description not provided by Open AI API.
+
 ```csharp
 public class EditChoice
 ```
@@ -9,10 +11,10 @@ public class EditChoice
 | name | description |
 | --- | --- |
 | [EditChoice](EditChoice/EditChoice.md)() | The default constructor. |
-| [FinishReason](EditChoice/FinishReason.md) { get; set; } |  |
-| [Index](EditChoice/Index.md) { get; set; } |  |
-| [Logprobs](EditChoice/Logprobs.md) { get; set; } |  |
-| [Text](EditChoice/Text.md) { get; set; } |  |
+| [FinishReason](EditChoice/FinishReason.md) { get; set; } | Description not provided by Open AI API. |
+| [Index](EditChoice/Index.md) { get; set; } | Description not provided by Open AI API. |
+| [Logprobs](EditChoice/Logprobs.md) { get; set; } | Description not provided by Open AI API. |
+| [Text](EditChoice/Text.md) { get; set; } | Description not provided by Open AI API. |
 
 ## See Also
 

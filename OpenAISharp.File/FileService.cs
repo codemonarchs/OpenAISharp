@@ -11,6 +11,8 @@ namespace OpenAISharp.File
     public class FileService : IFileService
     {
         private readonly IOpenAIClient _openAIClient;
+
+        /// <inheritdoc cref="IFileService"/>
         public FileService(IOpenAIClient openAIClient) { _openAIClient = openAIClient; }
 
         /// <inheritdoc cref="IFileService.ListFilesAsync"/>

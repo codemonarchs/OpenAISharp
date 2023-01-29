@@ -1,5 +1,7 @@
 # EditUsage class
 
+Description not provided by Open AI API.
+
 ```csharp
 public class EditUsage
 ```
@@ -9,9 +11,9 @@ public class EditUsage
 | name | description |
 | --- | --- |
 | [EditUsage](EditUsage/EditUsage.md)() | The default constructor. |
-| [CompletionTokens](EditUsage/CompletionTokens.md) { get; set; } |  |
-| [PromptTokens](EditUsage/PromptTokens.md) { get; set; } |  |
-| [TotalTokens](EditUsage/TotalTokens.md) { get; set; } |  |
+| [CompletionTokens](EditUsage/CompletionTokens.md) { get; set; } | Description not provided by Open AI API. |
+| [PromptTokens](EditUsage/PromptTokens.md) { get; set; } | Description not provided by Open AI API. |
+| [TotalTokens](EditUsage/TotalTokens.md) { get; set; } | Description not provided by Open AI API. |
 
 ## See Also
 

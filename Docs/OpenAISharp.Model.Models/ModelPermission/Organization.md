@@ -1,7 +1,9 @@
 # ModelPermission.Organization property
 
+Description not provided by Open AI API.
+
 ```csharp
-public string Organization { get; set; }
+public string? Organization { get; set; }
 ```
 
 ## See Also

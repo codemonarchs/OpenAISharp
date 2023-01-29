@@ -19,6 +19,10 @@ public class CreateImageVariationRequest
 | [UseImageFilePath](CreateImageVariationRequest/UseImageFilePath.md) { get; } | A flag to determine whether to get image data from a file path or if the data is already included. |
 | [User](CreateImageVariationRequest/User.md) { get; set; } | A unique identifier representing your end-user, which can help OpenAI to monitor and detect abuse. |
 
+## Remarks
+
+Used with [`CreateImageVariationAsync`](../OpenAISharp.Image/IImageService/CreateImageVariationAsync.md).
+
 ## See Also
 
 * namespace [OpenAISharp.Image.Requests](../OpenAISharp.Image.md)

@@ -1,5 +1,7 @@
 # FileData class
 
+Description not provided by Open AI API.
+
 ```csharp
 public class FileData
 ```
@@ -9,12 +11,12 @@ public class FileData
 | name | description |
 | --- | --- |
 | [FileData](FileData/FileData.md)() | The default constructor. |
-| [Bytes](FileData/Bytes.md) { get; set; } |  |
-| [CreatedAt](FileData/CreatedAt.md) { get; set; } |  |
-| [Filename](FileData/Filename.md) { get; set; } |  |
-| [Id](FileData/Id.md) { get; set; } |  |
-| [Object](FileData/Object.md) { get; set; } |  |
-| [Purpose](FileData/Purpose.md) { get; set; } |  |
+| [Bytes](FileData/Bytes.md) { get; set; } | Description not provided by Open AI API. |
+| [CreatedAt](FileData/CreatedAt.md) { get; set; } | Description not provided by Open AI API. |
+| [Filename](FileData/Filename.md) { get; set; } | Description not provided by Open AI API. |
+| [Id](FileData/Id.md) { get; set; } | Description not provided by Open AI API. |
+| [Object](FileData/Object.md) { get; set; } | Description not provided by Open AI API. |
+| [Purpose](FileData/Purpose.md) { get; set; } | Description not provided by Open AI API. |
 
 ## See Also
 

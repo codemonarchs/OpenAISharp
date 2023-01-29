@@ -1,7 +1,9 @@
 # RetrieveFineTuneResponse.Events property
 
+Description not provided by Open AI API.
+
 ```csharp
-public List<FineTuneEvent> Events { get; set; }
+public List<FineTuneEvent>? Events { get; set; }
 ```
 
 ## See Also

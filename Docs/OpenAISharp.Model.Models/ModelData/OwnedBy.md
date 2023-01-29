@@ -1,5 +1,7 @@
 # ModelData.OwnedBy property
 
+Description not provided by Open AI API.
+
 ```csharp
 public string? OwnedBy { get; set; }
 ```

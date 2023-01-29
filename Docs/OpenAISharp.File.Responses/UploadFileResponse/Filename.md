@@ -1,5 +1,7 @@
 # UploadFileResponse.Filename property
 
+Description not provided by Open AI API.
+
 ```csharp
 public string? Filename { get; set; }
 ```

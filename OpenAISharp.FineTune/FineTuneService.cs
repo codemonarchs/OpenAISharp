@@ -11,6 +11,8 @@ namespace OpenAISharp.FineTune
     public class FineTuneService : IFineTuneService
     {
         private readonly IOpenAIClient _openAIClient;
+
+        /// <inheritdoc cref="IFineTuneService"/>
         public FineTuneService(IOpenAIClient openAIClient) { _openAIClient = openAIClient; }
 
         /// <inheritdoc cref="IFineTuneService.CreateFineTuneAsync"/>

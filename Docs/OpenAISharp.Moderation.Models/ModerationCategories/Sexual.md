@@ -1,5 +1,7 @@
 # ModerationCategories.Sexual property
 
+Description not provided by Open AI API.
+
 ```csharp
 public bool? Sexual { get; set; }
 ```

@@ -1,5 +1,7 @@
 # FineTuneHyperparams class
 
+Description not provided by Open AI API.
+
 ```csharp
 public class FineTuneHyperparams
 ```
@@ -9,10 +11,10 @@ public class FineTuneHyperparams
 | name | description |
 | --- | --- |
 | [FineTuneHyperparams](FineTuneHyperparams/FineTuneHyperparams.md)() | The default constructor. |
-| [BatchSize](FineTuneHyperparams/BatchSize.md) { get; set; } |  |
-| [LearningRateMultiplier](FineTuneHyperparams/LearningRateMultiplier.md) { get; set; } |  |
-| [NEpochs](FineTuneHyperparams/NEpochs.md) { get; set; } |  |
-| [PromptLossWeight](FineTuneHyperparams/PromptLossWeight.md) { get; set; } |  |
+| [BatchSize](FineTuneHyperparams/BatchSize.md) { get; set; } | Description not provided by Open AI API. |
+| [LearningRateMultiplier](FineTuneHyperparams/LearningRateMultiplier.md) { get; set; } | Description not provided by Open AI API. |
+| [NEpochs](FineTuneHyperparams/NEpochs.md) { get; set; } | Description not provided by Open AI API. |
+| [PromptLossWeight](FineTuneHyperparams/PromptLossWeight.md) { get; set; } | Description not provided by Open AI API. |
 
 ## See Also
 

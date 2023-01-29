@@ -1,5 +1,7 @@
 # FineTuneEvent class
 
+Description not provided by Open AI API.
+
 ```csharp
 public class FineTuneEvent
 ```
@@ -9,10 +11,10 @@ public class FineTuneEvent
 | name | description |
 | --- | --- |
 | [FineTuneEvent](FineTuneEvent/FineTuneEvent.md)() | The default constructor. |
-| [CreatedAt](FineTuneEvent/CreatedAt.md) { get; set; } |  |
-| [Level](FineTuneEvent/Level.md) { get; set; } |  |
-| [Message](FineTuneEvent/Message.md) { get; set; } |  |
-| [Object](FineTuneEvent/Object.md) { get; set; } |  |
+| [CreatedAt](FineTuneEvent/CreatedAt.md) { get; set; } | Description not provided by Open AI API. |
+| [Level](FineTuneEvent/Level.md) { get; set; } | Description not provided by Open AI API. |
+| [Message](FineTuneEvent/Message.md) { get; set; } | Description not provided by Open AI API. |
+| [Object](FineTuneEvent/Object.md) { get; set; } | Description not provided by Open AI API. |
 
 ## See Also
 

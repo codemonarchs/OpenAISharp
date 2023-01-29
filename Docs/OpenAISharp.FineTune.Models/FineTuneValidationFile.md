@@ -1,5 +1,7 @@
 # FineTuneValidationFile class
 
+Description not provided by Open AI API.
+
 ```csharp
 public class FineTuneValidationFile
 ```
@@ -9,12 +11,12 @@ public class FineTuneValidationFile
 | name | description |
 | --- | --- |
 | [FineTuneValidationFile](FineTuneValidationFile/FineTuneValidationFile.md)() | The default constructor. |
-| [Bytes](FineTuneValidationFile/Bytes.md) { get; set; } |  |
-| [CreatedAt](FineTuneValidationFile/CreatedAt.md) { get; set; } |  |
-| [Filename](FineTuneValidationFile/Filename.md) { get; set; } |  |
-| [Id](FineTuneValidationFile/Id.md) { get; set; } |  |
-| [Object](FineTuneValidationFile/Object.md) { get; set; } |  |
-| [Purpose](FineTuneValidationFile/Purpose.md) { get; set; } |  |
+| [Bytes](FineTuneValidationFile/Bytes.md) { get; set; } | Description not provided by Open AI API. |
+| [CreatedAt](FineTuneValidationFile/CreatedAt.md) { get; set; } | Description not provided by Open AI API. |
+| [Filename](FineTuneValidationFile/Filename.md) { get; set; } | Description not provided by Open AI API. |
+| [Id](FineTuneValidationFile/Id.md) { get; set; } | Description not provided by Open AI API. |
+| [Object](FineTuneValidationFile/Object.md) { get; set; } | Description not provided by Open AI API. |
+| [Purpose](FineTuneValidationFile/Purpose.md) { get; set; } | Description not provided by Open AI API. |
 
 ## See Also
 

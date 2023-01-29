@@ -1,5 +1,7 @@
 # ModerationCategories.Hate property
 
+Description not provided by Open AI API.
+
 ```csharp
 public bool? Hate { get; set; }
 ```

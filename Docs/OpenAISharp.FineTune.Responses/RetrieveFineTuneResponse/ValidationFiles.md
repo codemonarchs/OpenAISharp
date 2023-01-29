@@ -1,5 +1,7 @@
 # RetrieveFineTuneResponse.ValidationFiles property
 
+Description not provided by Open AI API.
+
 ```csharp
 public List<FineTuneValidationFile>? ValidationFiles { get; set; }
 ```

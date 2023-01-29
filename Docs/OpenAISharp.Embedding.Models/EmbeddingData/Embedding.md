@@ -1,5 +1,7 @@
 # EmbeddingData.Embedding property
 
+Description not provided by Open AI API.
+
 ```csharp
 public List<double>? Embedding { get; set; }
 ```

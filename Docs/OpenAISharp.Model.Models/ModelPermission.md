@@ -1,5 +1,7 @@
 # ModelPermission class
 
+Description not provided by Open AI API.
+
 ```csharp
 public class ModelPermission
 ```
@@ -9,18 +11,18 @@ public class ModelPermission
 | name | description |
 | --- | --- |
 | [ModelPermission](ModelPermission/ModelPermission.md)() | The default constructor. |
-| [AllowCreateEngine](ModelPermission/AllowCreateEngine.md) { get; set; } |  |
-| [AllowFineTuning](ModelPermission/AllowFineTuning.md) { get; set; } |  |
-| [AllowLogprobs](ModelPermission/AllowLogprobs.md) { get; set; } |  |
-| [AllowSampling](ModelPermission/AllowSampling.md) { get; set; } |  |
-| [AllowSearchIndices](ModelPermission/AllowSearchIndices.md) { get; set; } |  |
-| [AllowView](ModelPermission/AllowView.md) { get; set; } |  |
-| [Created](ModelPermission/Created.md) { get; set; } |  |
-| [Group](ModelPermission/Group.md) { get; set; } |  |
-| [Id](ModelPermission/Id.md) { get; set; } |  |
-| [IsBlocking](ModelPermission/IsBlocking.md) { get; set; } |  |
-| [Object](ModelPermission/Object.md) { get; set; } |  |
-| [Organization](ModelPermission/Organization.md) { get; set; } |  |
+| [AllowCreateEngine](ModelPermission/AllowCreateEngine.md) { get; set; } | Description not provided by Open AI API. |
+| [AllowFineTuning](ModelPermission/AllowFineTuning.md) { get; set; } | Description not provided by Open AI API. |
+| [AllowLogprobs](ModelPermission/AllowLogprobs.md) { get; set; } | Description not provided by Open AI API. |
+| [AllowSampling](ModelPermission/AllowSampling.md) { get; set; } | Description not provided by Open AI API. |
+| [AllowSearchIndices](ModelPermission/AllowSearchIndices.md) { get; set; } | Description not provided by Open AI API. |
+| [AllowView](ModelPermission/AllowView.md) { get; set; } | Description not provided by Open AI API. |
+| [Created](ModelPermission/Created.md) { get; set; } | Description not provided by Open AI API. |
+| [Group](ModelPermission/Group.md) { get; set; } | Description not provided by Open AI API. |
+| [Id](ModelPermission/Id.md) { get; set; } | Description not provided by Open AI API. |
+| [IsBlocking](ModelPermission/IsBlocking.md) { get; set; } | Description not provided by Open AI API. |
+| [Object](ModelPermission/Object.md) { get; set; } | Description not provided by Open AI API. |
+| [Organization](ModelPermission/Organization.md) { get; set; } | Description not provided by Open AI API. |
 
 ## See Also
 

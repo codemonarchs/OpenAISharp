@@ -1,5 +1,7 @@
 # FineTuneData class
 
+Description not provided by Open AI API.
+
 ```csharp
 public class FineTuneData
 ```
@@ -9,18 +11,18 @@ public class FineTuneData
 | name | description |
 | --- | --- |
 | [FineTuneData](FineTuneData/FineTuneData.md)() | The default constructor. |
-| [CreatedAt](FineTuneData/CreatedAt.md) { get; set; } |  |
-| [FineTunedModel](FineTuneData/FineTunedModel.md) { get; set; } |  |
-| [Hyperparams](FineTuneData/Hyperparams.md) { get; set; } |  |
-| [Id](FineTuneData/Id.md) { get; set; } |  |
-| [Model](FineTuneData/Model.md) { get; set; } |  |
-| [Object](FineTuneData/Object.md) { get; set; } |  |
-| [OrganizationId](FineTuneData/OrganizationId.md) { get; set; } |  |
-| [ResultFiles](FineTuneData/ResultFiles.md) { get; set; } |  |
-| [Status](FineTuneData/Status.md) { get; set; } |  |
-| [TrainingFiles](FineTuneData/TrainingFiles.md) { get; set; } |  |
-| [UpdatedAt](FineTuneData/UpdatedAt.md) { get; set; } |  |
-| [ValidationFiles](FineTuneData/ValidationFiles.md) { get; set; } |  |
+| [CreatedAt](FineTuneData/CreatedAt.md) { get; set; } | Description not provided by Open AI API. |
+| [FineTunedModel](FineTuneData/FineTunedModel.md) { get; set; } | Description not provided by Open AI API. |
+| [Hyperparams](FineTuneData/Hyperparams.md) { get; set; } | Description not provided by Open AI API. |
+| [Id](FineTuneData/Id.md) { get; set; } | Description not provided by Open AI API. |
+| [Model](FineTuneData/Model.md) { get; set; } | Description not provided by Open AI API. |
+| [Object](FineTuneData/Object.md) { get; set; } | Description not provided by Open AI API. |
+| [OrganizationId](FineTuneData/OrganizationId.md) { get; set; } | Description not provided by Open AI API. |
+| [ResultFiles](FineTuneData/ResultFiles.md) { get; set; } | Description not provided by Open AI API. |
+| [Status](FineTuneData/Status.md) { get; set; } | Description not provided by Open AI API. |
+| [TrainingFiles](FineTuneData/TrainingFiles.md) { get; set; } | Description not provided by Open AI API. |
+| [UpdatedAt](FineTuneData/UpdatedAt.md) { get; set; } | Description not provided by Open AI API. |
+| [ValidationFiles](FineTuneData/ValidationFiles.md) { get; set; } | Description not provided by Open AI API. |
 
 ## See Also
 

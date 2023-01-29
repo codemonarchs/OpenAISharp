@@ -1,7 +1,9 @@
 # ModelPermission.Group property
 
+Description not provided by Open AI API.
+
 ```csharp
-public object Group { get; set; }
+public object? Group { get; set; }
 ```
 
 ## See Also

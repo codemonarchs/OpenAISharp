@@ -1,5 +1,7 @@
 # FineTuneHyperparams.PromptLossWeight property
 
+Description not provided by Open AI API.
+
 ```csharp
 public double? PromptLossWeight { get; set; }
 ```

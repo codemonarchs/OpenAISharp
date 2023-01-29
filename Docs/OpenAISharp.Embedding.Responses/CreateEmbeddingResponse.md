@@ -1,5 +1,7 @@
 # CreateEmbeddingResponse class
 
+Description not provided by Open AI API.
+
 ```csharp
 public class CreateEmbeddingResponse
 ```
@@ -9,10 +11,14 @@ public class CreateEmbeddingResponse
 | name | description |
 | --- | --- |
 | [CreateEmbeddingResponse](CreateEmbeddingResponse/CreateEmbeddingResponse.md)() | The default constructor. |
-| [Data](CreateEmbeddingResponse/Data.md) { get; set; } |  |
-| [Model](CreateEmbeddingResponse/Model.md) { get; set; } |  |
-| [Object](CreateEmbeddingResponse/Object.md) { get; set; } |  |
-| [Usage](CreateEmbeddingResponse/Usage.md) { get; set; } |  |
+| [Data](CreateEmbeddingResponse/Data.md) { get; set; } | Description not provided by Open AI API. |
+| [Model](CreateEmbeddingResponse/Model.md) { get; set; } | Description not provided by Open AI API. |
+| [Object](CreateEmbeddingResponse/Object.md) { get; set; } | Description not provided by Open AI API. |
+| [Usage](CreateEmbeddingResponse/Usage.md) { get; set; } | Description not provided by Open AI API. |
+
+## Remarks
+
+Returned from [`CreateEmbeddingAsync`](../OpenAISharp.Embedding/IEmbeddingService/CreateEmbeddingAsync.md).
 
 ## See Also
 

@@ -1,5 +1,7 @@
 # ModerationCategories.Violence property
 
+Description not provided by Open AI API.
+
 ```csharp
 public bool? Violence { get; set; }
 ```

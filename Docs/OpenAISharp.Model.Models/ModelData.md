@@ -1,5 +1,7 @@
 # ModelData class
 
+Description not provided by Open AI API.
+
 ```csharp
 public class ModelData
 ```
@@ -9,10 +11,10 @@ public class ModelData
 | name | description |
 | --- | --- |
 | [ModelData](ModelData/ModelData.md)() | The default constructor. |
-| [Id](ModelData/Id.md) { get; set; } |  |
-| [Object](ModelData/Object.md) { get; set; } |  |
-| [OwnedBy](ModelData/OwnedBy.md) { get; set; } |  |
-| [Permission](ModelData/Permission.md) { get; set; } |  |
+| [Id](ModelData/Id.md) { get; set; } | Description not provided by Open AI API. |
+| [Object](ModelData/Object.md) { get; set; } | Description not provided by Open AI API. |
+| [OwnedBy](ModelData/OwnedBy.md) { get; set; } | Description not provided by Open AI API. |
+| [Permission](ModelData/Permission.md) { get; set; } | Description not provided by Open AI API. |
 
 ## See Also
 
