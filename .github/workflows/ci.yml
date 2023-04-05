@@ -3,24 +3,20 @@ name: dotnet package
 on:
   pull_request:
     branches:
-      - 'main'
+      - "main"
   push:
     branches:
-      - 'main'
+      - "main"
 
 jobs:
   build:
-
     runs-on: windows-2022
     strategy:
       matrix:
-        dotnet-version: ['5.0.x', '6.0.x', '7.0.x' ]
+        dotnet-version: ["5.0.x", "6.0.x", "7.0.x"]
 
     steps:
-      # fetch-depth: 0 required for gitversion to work
       - uses: actions/checkout@v3
-        with:
-          fetch-depth: 0
 
       - name: Setup .NET Core SDK ${{ matrix.dotnet-version }}
         uses: actions/setup-dotnet@v3
@@ -30,10 +26,39 @@ jobs:
       - name: Install dependencies
         run: dotnet restore
 
+      - name: Build
+        run: dotnet build --configuration Release --no-restore
+
+      - name: Test
+        run: dotnet test ./Tests/OpenAISharp.UnitTests/OpenAISharp.UnitTests.csproj --no-restore --verbosity normal
+
+      - name: Package
+        run: dotnet pack .\OpenAISharp\OpenAISharp.csproj --configuration Release --no-restore
+
+  package:
+    runs-on: windows-2022
+    needs: build
+    if: github.ref == 'refs/heads/main'
+
+    steps:
+      # fetch-depth: 0 required for gitversion to work
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Setup .NET Core SDK 7.0.x
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: "7.0.x"
+
+      - name: Install dependencies
+        run: dotnet restore
+
+        # put GitVersion and Package/Tag/Publish in a separate job
       - name: Install GitVersion
         uses: gittools/actions/gitversion/setup@v0.10.2
         with:
-          versionSpec: '5.x'
+          versionSpec: "5.x"
 
       - name: Determine Version
         uses: gittools/actions/gitversion/execute@v0.10.2
@@ -46,12 +71,11 @@ jobs:
           echo "Sha: ${{ steps.gitversion.outputs.Sha }}"
           echo "NuGetVersionV2: ${{ steps.gitversion.outputs.NuGetVersionV2 }}"
 
-      - name: Build
-        run: dotnet build --configuration Release --no-restore -p:AssemblyVersion=${{ steps.gitversion.outputs.assemblySemFileVer }} -p:FileVersion=${{ steps.gitversion.outputs.assemblySemFileVer }} -p:InformationalVersion=${{ steps.gitversion.outputs.Sha }}
-
-      - name: Test
-        run: dotnet test ./Tests/OpenAISharp.UnitTests/OpenAISharp.UnitTests.csproj --no-restore --verbosity normal
-
       - name: Package
-        if: 
-        run: dotnet pack .\OpenAISharp\OpenAISharp.csproj --configuration Release --no-restore -p:PackageVersion=${{ steps.gitversion.outputs.NuGetVersionV2 }}
+        run: dotnet pack .\OpenAISharp\OpenAISharp.csproj --configuration Release --no-restore -p:PackageVersion=${{ steps.gitversion.outputs.NuGetVersionV2 }} -p:AssemblyVersion=${{ steps.gitversion.outputs.assemblySemFileVer }} -p:FileVersion=${{ steps.gitversion.outputs.assemblySemFileVer }} -p:InformationalVersion=${{ steps.gitversion.outputs.Sha }}
+
+      - name: GitHub Tag
+        uses: mathieudutour/github-tag-action@v6.1
+        with:
+          custom_tag: ${{ steps.gitversion.outputs.NuGetVersionV2 }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
