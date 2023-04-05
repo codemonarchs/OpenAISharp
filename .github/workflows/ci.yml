@@ -38,6 +38,7 @@ jobs:
   package:
     runs-on: windows-2022
     needs: build
+    if: github.ref == 'refs/heads/main'
 
     steps:
       # fetch-depth: 0 required for gitversion to work
@@ -45,7 +46,7 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Setup .NET Core SDK ${{ matrix.dotnet-version }}
+      - name: Setup .NET Core SDK 7.0.x
         uses: actions/setup-dotnet@v3
         with:
           dotnet-version: "7.0.x"
@@ -74,7 +75,6 @@ jobs:
         run: dotnet pack .\OpenAISharp\OpenAISharp.csproj --configuration Release --no-restore -p:PackageVersion=${{ steps.gitversion.outputs.NuGetVersionV2 }} -p:AssemblyVersion=${{ steps.gitversion.outputs.assemblySemFileVer }} -p:FileVersion=${{ steps.gitversion.outputs.assemblySemFileVer }} -p:InformationalVersion=${{ steps.gitversion.outputs.Sha }}
 
       - name: GitHub Tag
-        if: github.ref == 'refs/heads/main'
         uses: mathieudutour/github-tag-action@v6.1
         with:
           custom_tag: ${{ steps.gitversion.outputs.NuGetVersionV2 }}
