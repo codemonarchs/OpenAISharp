@@ -54,4 +54,4 @@ jobs:
 
       - name: Package
         if: 
-        run: dotnet pack --configuraton Release --no-restore -p:PackageVersion=${{ steps.gitversion.outputs.NuGetVersionV2 }}
+        run: dotnet pack --configuration Release --no-restore -p:PackageVersion=${{ steps.gitversion.outputs.NuGetVersionV2 }}
