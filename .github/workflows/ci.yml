@@ -53,5 +53,11 @@ jobs:
         run: dotnet test ./Tests/OpenAISharp.UnitTests/OpenAISharp.UnitTests.csproj --no-restore --verbosity normal
 
       - name: Package
-        if: 
         run: dotnet pack .\OpenAISharp\OpenAISharp.csproj --configuration Release --no-restore -p:PackageVersion=${{ steps.gitversion.outputs.NuGetVersionV2 }}
+
+      - name: GitHub Tag
+        if: github.ref == 'refs/heads/main'
+        uses: mathieudutour/github-tag-action@v6.1
+        with:
+          custom_tag: ${{ steps.gitversion.outputs.NuGetVersionV2 }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
