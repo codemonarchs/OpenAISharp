@@ -8,6 +8,10 @@ Supported Versions of .NET and .NET Core
 
 **Note:** Technically any framework that can support .NET Standard 2.1 can support this library (including .NET Core 3.0, .NET 5) but we've only included examples for the above.
 
+## Support
+This library is maintained in my own free time. If you'd like to buy me a coffee I would be eternally grateful for your support.
+https://ko-fi.com/codemonarchs
+
 ## Getting Started
 1. Install the NuGet package from [CodeMonarchs.OpenAISharp](https://www.nuget.org/packages/CodeMonarchs.OpenAISharp/#show-readme-container):
     - ```dotnet add package CodeMonarchs.OpenAISharp```
