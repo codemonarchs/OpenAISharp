@@ -299,3 +299,4 @@ https://github.com/codemonarchs/OpenAISharp/tree/main/Examples
 **Note:** If you have Visual Studio open while you set these environment variables you need to restart it as Visual Studio does not detect when the environment variables change.
 
 ## Updating NuGet Version
+Bump it.
