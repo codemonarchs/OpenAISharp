@@ -72,9 +72,11 @@ jobs:
           echo "assemblySemFileVer: ${{ steps.gitversion.outputs.assemblySemFileVer }}"
           echo "Sha: ${{ steps.gitversion.outputs.Sha }}"
           echo "NuGetVersionV2: ${{ steps.gitversion.outputs.NuGetVersionV2 }}"
+        shell: pwsh
 
       - name: Package
-        run: .\pack.ps1 -NuGetVersion ${{ steps.gitversion.outputs.NuGetVersionV2 }} -AssemblyVersion ${{ steps.gitversion.outputs.assemblySemFileVer }} -Sha ${{ steps.gitversion.outputs.Sha }}
+        run: |
+          .\pack.ps1 -NuGetVersion ${{ steps.gitversion.outputs.NuGetVersionV2 }} -AssemblyVersion ${{ steps.gitversion.outputs.assemblySemFileVer }} -Sha ${{ steps.gitversion.outputs.Sha }}
         shell: pwsh
 
       - name: Publish
