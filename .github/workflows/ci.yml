@@ -56,7 +56,6 @@ jobs:
       - name: Install dependencies
         run: dotnet restore
 
-        # put GitVersion and Package/Tag/Publish in a separate job
       - name: Install GitVersion
         uses: gittools/actions/gitversion/setup@v0.10.2
         with:
@@ -68,13 +67,20 @@ jobs:
         with:
           useConfigFile: true
 
-      - run: |
+      - name: GitVersion Information
+        run: |
           echo "assemblySemFileVer: ${{ steps.gitversion.outputs.assemblySemFileVer }}"
           echo "Sha: ${{ steps.gitversion.outputs.Sha }}"
           echo "NuGetVersionV2: ${{ steps.gitversion.outputs.NuGetVersionV2 }}"
 
       - name: Package
-        run: dotnet pack .\OpenAISharp\OpenAISharp.csproj --configuration Release --no-restore -p:PackageVersion=${{ steps.gitversion.outputs.NuGetVersionV2 }} -p:AssemblyVersion=${{ steps.gitversion.outputs.assemblySemFileVer }} -p:FileVersion=${{ steps.gitversion.outputs.assemblySemFileVer }} -p:InformationalVersion=${{ steps.gitversion.outputs.Sha }}
+        run: .\pack.ps1 -NuGetVersion ${{ steps.gitversion.outputs.NuGetVersionV2 }} -AssemblyVersion ${{ steps.gitversion.outputs.assemblySemFileVer }} -Sha ${{ steps.gitversion.outputs.Sha }}
+        shell: pwsh
+
+      - name: Publish
+        run: |
+          dotnet nuget push .\artifacts\*.nupkg --source https://api.nuget.org/v3/index.json --api-key ${{ secrets.NUGET_ORG_API_TOKEN }} --skip-duplicate
+        shell: pwsh
 
       - name: GitHub Tag
         uses: mathieudutour/github-tag-action@v6.1
