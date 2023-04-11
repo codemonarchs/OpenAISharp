@@ -254,15 +254,15 @@ Until there is more fleshed out documentation on the type of responses that can 
 
 ## Examples
 Current examples include the following:
-| Example | .NET Core 3.1 | .NET 6 | .NET 7 |
-|:--------|:-------------:|:------:|:------:|
-| Blazor Server | No | No | Yes |
-| Blazor WebAssembly | No | No | Yes |
-| Console Application | Yes | Yes | Yes |
-| Azure Functions | Yes | Yes | Yes |
-| ASP.NET Web API | Yes | Yes | Yes |
-| Windows Forms | Yes | Yes | Yes |
-| WPF | Yes | Yes | Yes |
+| Example             | .NET Core 3.1 | .NET 6 | .NET 7 |
+| :------------------ | :-----------: | :----: | :----: |
+| Blazor Server       |      No       |   No   |  Yes   |
+| Blazor WebAssembly  |      No       |   No   |  Yes   |
+| Console Application |      Yes      |  Yes   |  Yes   |
+| Azure Functions     |      Yes      |  Yes   |  Yes   |
+| ASP.NET Web API     |      Yes      |  Yes   |  Yes   |
+| Windows Forms       |      Yes      |  Yes   |  Yes   |
+| WPF                 |      Yes      |  Yes   |  Yes   |
 
 https://github.com/codemonarchs/OpenAISharp/tree/main/Examples
 
@@ -301,6 +301,3 @@ https://github.com/codemonarchs/OpenAISharp/tree/main/Examples
 3. That's it!
 
 **Note:** If you have Visual Studio open while you set these environment variables you need to restart it as Visual Studio does not detect when the environment variables change.
-
-## Updating NuGet Version
-Bump it.
