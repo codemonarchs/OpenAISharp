@@ -79,10 +79,10 @@ jobs:
           .\pack.ps1 -MetaProject .\OpenAISharp\OpenAISharp.csproj -NuGetVersion ${{ steps.gitversion.outputs.NuGetVersionV2 }} -AssemblyVersion ${{ steps.gitversion.outputs.assemblySemFileVer }} -Sha ${{ steps.gitversion.outputs.Sha }}
         shell: pwsh
 
-      # - name: Publish
-      #   run: |
-      #     dotnet nuget push .\artifacts\*.nupkg --source https://api.nuget.org/v3/index.json --api-key ${{ secrets.NUGET_ORG_API_TOKEN }} --skip-duplicate
-      #   shell: pwsh
+      - name: Publish
+        run: |
+          dotnet nuget push .\artifacts\*.nupkg --source https://api.nuget.org/v3/index.json --api-key ${{ secrets.NUGET_ORG_API_TOKEN }} --skip-duplicate
+        shell: pwsh
 
       - name: GitHub Tag
         uses: mathieudutour/github-tag-action@v6.1
